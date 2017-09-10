@@ -1,0 +1,9 @@
+; andcef.def : Declares the module parameters.
+
+LIBRARY      "andcef.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

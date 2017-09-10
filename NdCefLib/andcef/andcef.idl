@@ -1,0 +1,58 @@
+// andcef.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (andcef.tlb) that will become a resource in
+// andcef.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(BC25CF1D-D20F-4160-AC3B-908F8383853A), version(1.0),
+  helpfile("andcef.hlp"),
+  helpstring("andcef ActiveX Control module"),
+  control ]
+library andcefLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CandcefCtrl
+
+	[ uuid(B495C91F-46CA-48AC-8300-7809EDAA38CC),
+	  helpstring("Dispatch interface for andcef Control")]
+	dispinterface _Dandcef
+	{
+		properties:
+			[id(1) , helpstring("property Url")] BSTR Url;
+			[id(6) , helpstring("property imgUrl")] BSTR imgUrl;
+	methods:
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(3), helpstring("method SendCallback2H5")] VARIANT_BOOL SendCallback2H5(BSTR eventName, BSTR json);
+			[id(4), helpstring("method SetFocus")] void SetFocus(LONG nIndex);
+			[id(5), helpstring("method SetSlideIndex")] void SetSlideIndex(LONG nIndex);
+	};
+
+	//  Event dispatch interface for CandcefCtrl
+
+	[ uuid(D239E01D-4187-49E9-840E-D08C5C2FB27B),
+	  helpstring("Event interface for andcef Control") ]
+	dispinterface _DandcefEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+
+		methods:
+			[id(2)] void cefEvent(BSTR eventName, BSTR eventParam);
+	};
+
+	//  Class information for CandcefCtrl
+
+	[ uuid(EBE03648-D0A0-456A-8649-E7B9E8A199C1),
+	  helpstring("andcef Control"), control ]
+	coclass andcef
+	{
+		[default] dispinterface _Dandcef;
+		[default, source] dispinterface _DandcefEvents;
+	};
+
+};
