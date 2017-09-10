@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window  >
+  <VerticalLayout bkcolor="#FF000000">
+   <Label name="title" text="标题"  textcolor="#FF000000" />
+  </VerticalLayout>
+</Window>

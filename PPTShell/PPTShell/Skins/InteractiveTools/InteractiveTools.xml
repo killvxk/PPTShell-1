@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="373,712" maxinfo="373,712">
+  <!--size="373,712"-->
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <Font id="120000" name="微软雅黑" size="12"/>
+  <VerticalLayout bkcolor="#FF313131"  hscrollbar="false" vscrollbar="true" padding="0,0,19,0"
+                  vscrollbarstyle="thumbnormalimage=&quot;file='CourseTools/vertical_scrollbar.png' corner='0,20,0,20'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;19&quot;">
+    <VerticalLayout name="container" bkcolor="#FF313131" hole="false" hscrollbar="false" vscrollbar="false">
+
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

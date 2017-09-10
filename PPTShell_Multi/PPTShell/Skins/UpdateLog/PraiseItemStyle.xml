@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <HorizontalLayout width="520" height="20" childpadding="8">
+    <VerticalLayout width="400" height="20">
+      <Control />
+      <Label name="lblText" width="400" font="120000" height="14" endellipsis="true" aligin="center"></Label>
+      <Control />
+    </VerticalLayout>
+    <Control />
+    <Button name="btnPraise" width="19" height="20" bkimage="UpdateLog\\unpraise.png"></Button>
+    <VerticalLayout width="32" height="20">
+      <Control />
+      <Label name="lblNum" font="120000" width="32" height="12" endellipsis="true" aligin="left"></Label>
+      <Control />
+    </VerticalLayout>
+  </HorizontalLayout>
+</Window>

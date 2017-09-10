@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="458,138">
+  <Font id="300000" name="微软雅黑" size="30" bold="false" />
+  <HorizontalLayout bkimage="ForceUpdate\background.png" >
+    <Control width="150" />
+    <Label name="text" align="left" text="正在启动" font="300000" textcolor="#FFFFFFFF"/>
+    <Control width="150" />
+  </HorizontalLayout>
+</Window>

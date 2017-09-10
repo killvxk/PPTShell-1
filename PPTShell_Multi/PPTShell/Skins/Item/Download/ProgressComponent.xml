@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Container>
+    <VerticalLayout name="pro_normal_layout">
+      <Label name="pro_num" textcolor="#FF1AF7FF" align="right" endellipsis="true"/>
+      <Progress name="progress" height="6"	bkimage="file='Item/Download/pro_bk.png' corner='5,2,5,2'" foreimage="file='Item/Download/pro_fore_green.png' corner='5,2,5,2'" min="0" max="100" />
+    </VerticalLayout>
+
+    <VerticalLayout name="pro_error_layout" visible="true">
+      <Label name="pro_num" textcolor="#FFFE8B4A" align="right" endellipsis="true"/>
+      <Progress name="progress" height="6"	bkimage="file='Item/Download/pro_bk.png' corner='5,2,5,2'" foreimage="file='Item/Download/pro_fore_red.png' corner='5,2,5,2'" min="0" max="100" />
+    </VerticalLayout>
+  </Container>
+  
+</Window>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout height="65" padding="0,20,0,0">
+    <Control width="5" />
+    <Button name="firstBtn" width="24" height="24" normalimage="file='RightBar\Item\btn_page_first.png' source='0,0,24,24'" hotimage="file='RightBar\Item\btn_page_first.png' source='24,0,48,24'" />
+    <Control width="5" />
+    <Button name="preBtn" width="24" height="24" normalimage="file='RightBar\Item\btn_page_left.png' source='0,0,24,24'" hotimage="file='RightBar\Item\btn_page_left.png' source='24,0,48,24'" />
+    <HorizontalLayout>
+      <Control />
+      <HorizontalLayout name="pageIndex" childpadding="5">
+      </HorizontalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Button name="nextBtn" width="24" height="24" normalimage="file='RightBar\Item\btn_page_right.png' source='0,0,24,24'" hotimage="file='RightBar\Item\btn_page_right.png' source='24,0,48,24'" />
+    <Control width="5" />
+    <Button name="lastBtn" width="24" height="24" normalimage="file='RightBar\Item\btn_page_last.png' source='0,0,24,24'" hotimage="file='RightBar\Item\btn_page_last.png' source='24,0,48,24'" />
+    <Control width="5" />
+  </HorizontalLayout>
+</Window>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true"> 
+  <Font id="140100" name="微软雅黑" size="14" bold="true" /> 
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="640">
+      <Control />
+      <VerticalLayout width="960" name="mainWindowLayout">
+        <!-- 标题 -->
+        <HorizontalLayout height="50" inset="10,0,0,0" childpadding="20" bkcolor="#FF000000">
+          <Container width="50" bkimage="logo\\logo.png" />
+          <Label font="140100" text="新建试题" textcolor="#FFFFFFFF" />
+          <Button name="closeBtn" width="30" padding="0,10,0,0" height="30"  normalimage="file='TopBar\\btn_close.png' source='0,0,30,30'" hotimage="file='TopBar\\btn_close.png' source='30,0,60,30'" pushedimage="file='TopBar\\btn_close.png' source='60,0,90,30'" />
+        </HorizontalLayout>
+        <!-- 中间 -->
+        <VerticalLayout bkcolor="#FFFFFFFF"  vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+
+          <VerticalLayout height="50" bkcolor="#FFE1EDFA">
+            <Control />
+            <HorizontalLayout height="24" childpadding="13">
+              <Control width="7"/>
+              <Control pos="0,0,16,16" padding="4,4,4,4" bkimage="Question/icon_base.png"/>
+              <Label font="140100" text="基础题型" textcolor="#FF4E4E4E" />
+            </HorizontalLayout>
+            <Control />
+          </VerticalLayout>
+
+          <TileLayout name="base_list" height="400" padding="20,20,20,20" itemsize="140,140" childpadding="20" columns="6">
+
+          </TileLayout>
+
+
+          <VerticalLayout height="50" bkcolor="#FFE1EDFA">
+            <Control />
+            <HorizontalLayout height="24" childpadding="13">
+              <Control width="7"/>
+              <Control pos="0,0,24,24" bkimage="Question/icon_interaction.png"/>
+              <Label font="140100" text="互动题型" textcolor="#FF4E4E4E" />
+            </HorizontalLayout>
+            <Control />
+          </VerticalLayout>
+
+          <TileLayout name="interaction_list" height="600" padding="20,20,20,20" itemsize="140,140"  childpadding="20" columns="6">
+
+          </TileLayout>
+
+        </VerticalLayout>
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

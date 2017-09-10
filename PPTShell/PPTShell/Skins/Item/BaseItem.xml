@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Container name ="content" bkcolor="#FFFFFFFF">
+    <Label      name="image"  bkimage="Item/item_normal.png" />
+    <ItemOption name="item"   pushedimage="file='Item/item_border_pushed.png'  corner='5,5,5,5'" normalimage="file='Item/item_border_normal.png'  corner='5,5,5,5'" selectedimage="file='Item/item_border_pushed.png'  corner='5,5,5,5'"/>
+  </Container>
+</Window>

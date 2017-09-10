@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <ListContainerElement>
+    <VerticalLayout>
+      <Control />
+      <VerticalLayout height="58">
+        <HorizontalLayout height="38">
+          <Control />
+          <Control name="item_image" pos="0,0,38,38"/>
+          <Control />
+        </HorizontalLayout>
+        <Label name="item_name" textcolor="#FFCFCFCF" align="center"/>
+      </VerticalLayout>
+      <Control />
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

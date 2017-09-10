@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <ToolItem name="subject_item" mousechild="false" transparent="false" >
+    
+    <VerticalLayout>
+      <VerticalLayout height="50">
+        <Control />
+        <HorizontalLayout name="image_center" height="50">
+          <Control />
+          <Control name="tool_image" pos="0,0,56,50" />
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+      <Label name="tool_name" textcolor="#FFBFBFBF" align="center" endellipsis="true"/>
+    </VerticalLayout>
+
+    <VerticalLayout name="top_border">
+      <Control height="1" bkcolor="#FF646464"/>
+      <Control />
+    </VerticalLayout>
+
+    <HorizontalLayout name="left_border">
+      <Control width="1"  bkcolor="#FF646464"/>
+      <Control />
+    </HorizontalLayout>
+    
+    
+    
+  </ToolItem>
+</Window>

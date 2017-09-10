@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="561,619" bktrans="true">
+  <!--513,601-->
+  <!--bkcolor="#66000000"-->
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="200100" name="微软雅黑" size="20" bold="true" />
+  <VerticalLayout hscrollbar="false" vscrollbar="false" bkimage="UpdateLog//suggest_bg.png">
+    <Control height="4"/>
+    <HorizontalLayout hscrollbar="false" vscrollbar="false">
+      <Control width="24"/>
+      <Container hscrollbar="false" vscrollbar="false" >
+        <VerticalLayout hscrollbar="false" vscrollbar="false">
+          <VerticalLayout hscrollbar="false" vscrollbar="false" inset="0,43,0,0" height="65">
+            <HorizontalLayout>
+              <Control />
+              <Label text="我还想要这些..." font="200100" align="center" textcolor="#FF333333"></Label>
+              <Control />
+            </HorizontalLayout>
+          </VerticalLayout>
+          <HorizontalLayout hscrollbar="false" vscrollbar="false" inset="46,18,0,0" height="32">
+            <Label text="你好：" font="140000" align="left" textcolor="#FF626262"></Label>
+          </HorizontalLayout>
+          <VerticalLayout hscrollbar="false" vscrollbar="false" inset="46,12,46,0" height="186">
+            <RichEdit name="editContent" font="120000" multiline="true" tiptext="请简要描述你想要的功能或资源" tiptextcolor="#FFACABAB" textcolor="#FF626262"
+                    maxchar="800" textpadding="0,0,0,0" linespacing="10" hscrollbar="false" vscrollbar="true"
+                      vscrollbarstyle="thumbnormalimage=&quot;file='TopBar\daily_bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; padding=&quot;2,2,2,2&quot; maxwidth=&quot;8&quot;"/>
+          </VerticalLayout>
+          <HorizontalLayout >
+            <Control />
+            <VerticalLayout width="94">
+              <Control />
+              <Button name="btnSubmit" text="寄出去" textcolor="#FFFFFFFF" enabled="false" bkcolor="#FFBBBBBB" width="94" height="30"/>
+            </VerticalLayout>
+            <Control />
+          </HorizontalLayout>
+          <Control height="215"/>
+        </VerticalLayout>
+        <Button name="btnClose" width="17" height="17" float="true" pos="482,14,499,31" normalimage="file='UpdateLog\\close_normal.png'" pushedimage="file='UpdateLog\\close_press.png'" />
+      </Container>
+      <Control width="24"/>
+    </HorizontalLayout>
+    <Control height="14"/>
+  </VerticalLayout>
+</Window>

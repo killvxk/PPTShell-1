@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Update", "Update.vcproj", "{63452686-0D8C-4092-86D0-C71F7E957713}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		release_pad助手|Win32 = release_pad助手|Win32
+		release_stuPad|Win32 = release_stuPad|Win32
+		Release_迪斯尼|Win32 = Release_迪斯尼|Win32
+		Release_地下城守护者|Win32 = Release_地下城守护者|Win32
+		Release_斗斗|Win32 = Release_斗斗|Win32
+		Release_机战|Win32 = Release_机战|Win32
+		Release_开心|Win32 = Release_开心|Win32
+		Release_猎龙战记|Win32 = Release_猎龙战记|Win32
+		Release_魔域|Win32 = Release_魔域|Win32
+		Release_英雄无敌|Win32 = Release_英雄无敌|Win32
+		Release_征服|Win32 = Release_征服|Win32
+		Release_征服英文|Win32 = Release_征服英文|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Debug|Win32.ActiveCfg = Debug|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Debug|Win32.Build.0 = Debug|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.release_pad助手|Win32.ActiveCfg = release_pad助手|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.release_pad助手|Win32.Build.0 = release_pad助手|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.release_stuPad|Win32.ActiveCfg = release_stuPad|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.release_stuPad|Win32.Build.0 = release_stuPad|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_迪斯尼|Win32.ActiveCfg = Release_迪斯尼|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_迪斯尼|Win32.Build.0 = Release_迪斯尼|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_地下城守护者|Win32.ActiveCfg = Release_地下城守护者|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_地下城守护者|Win32.Build.0 = Release_地下城守护者|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_斗斗|Win32.ActiveCfg = Release_斗斗|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_斗斗|Win32.Build.0 = Release_斗斗|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_机战|Win32.ActiveCfg = Release_机战|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_机战|Win32.Build.0 = Release_机战|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_开心|Win32.ActiveCfg = Release_开心|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_开心|Win32.Build.0 = Release_开心|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_猎龙战记|Win32.ActiveCfg = Release_猎龙战记|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_猎龙战记|Win32.Build.0 = Release_猎龙战记|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_魔域|Win32.ActiveCfg = Release_魔域|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_魔域|Win32.Build.0 = Release_魔域|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_英雄无敌|Win32.ActiveCfg = Release_英雄无敌|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_英雄无敌|Win32.Build.0 = Release_英雄无敌|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_征服|Win32.ActiveCfg = Release_征服|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_征服|Win32.Build.0 = Release_征服|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_征服英文|Win32.ActiveCfg = Release_征服英文|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release_征服英文|Win32.Build.0 = Release_征服英文|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release|Win32.ActiveCfg = Release|Win32
+		{63452686-0D8C-4092-86D0-C71F7E957713}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

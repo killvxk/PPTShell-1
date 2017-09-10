@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="260,80" bktrans="true">
+  <Font id="131000" name="宋体" size="13" bold="false" />
+  <VerticalLayout bkcolor="#FFFFFFFF" inset="10,2,10,2">
+    <HorizontalLayout height="20">
+      <Label width="190" text="检测到PPT中有多媒体文件，使用" textcolor="#FF000001" font="131000"/>
+      <Label width="25" text="打包" textcolor="#FF10B0B6" font="131000" />
+      <Label width="25" text="保存" textcolor="#FF000001" font="131000" />
+    </HorizontalLayout>
+    <HorizontalLayout height="20" font="131000">
+      <Label text="让多媒体文件在其他电脑也可以正常播放。" textcolor="#FF000001" />
+    </HorizontalLayout>
+    <HorizontalLayout >
+      <Control />
+      <Button width="80" text="我知道了" textcolor="#FF10B0B6" hottextcolor="FF10E0B6" font="131000" />
+      <Control />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

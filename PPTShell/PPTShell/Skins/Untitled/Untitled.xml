@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800, 600" caption="0,0,0,0">
+  <Font id="160100" name="微软雅黑" size="16" bold="true" default="true" />
+  <Font id="190000" name="微软雅黑" size="19" bold="false" />
+  <Font id="220100" name="微软雅黑" size="22" bold="true" />
+  <VerticalLayout bkcolor="#FFE4E4E4">
+    <Control />
+    <HorizontalLayout height="300">
+      <Control />
+      <VerticalLayout name="TipLayout" width="500" height="300" bkimage="Untitled\\bk.png">
+        <Control height="105"/>
+        <VerticalLayout childpadding="0" width="500" height="180">
+          <Label  font="220100" text="您可以试试看" textcolor="#FF5F5F5F" align="center" />
+          <Label font="190000" text="打开自己的课件 或者 新建一个课件" textcolor="#FF5F5F5F" align="center" />
+          <HorizontalLayout height="25" />
+          <HorizontalLayout name="TipBtnLayout" height="40" childpadding="24">
+            <Control />
+            <Button font="160100" width="160" name="OpenBtn"  text="打开" textcolor="#FFFFFFFF" bkcolor="#FF10B0B6"  hotbkcolor="#FF58C8CC" pushedbkcolor="#FF27969B" />
+            <Button font="160100" width="160" name="NewBtn" text="新建" textcolor="#FFFFFFFF" bkcolor="#FF10B0B6"  hotbkcolor="#FF58C8CC" pushedbkcolor="#FF27969B" />
+            <Control />
+          </HorizontalLayout>
+          <Control />
+        </VerticalLayout>
+        <Control />
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

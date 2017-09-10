@@ -1,0 +1,47 @@
+[
+	{
+        "name": "互动工具",
+        "type": 1,
+        "value": [
+            {
+                "name": "放大镜",
+                "value": 1
+            },
+            {
+                "name": "聚光灯",
+                "value": 2
+            },
+	    {
+                "name": "黑板",
+                "value": 3
+            },
+            {
+                "name": "花名册",
+                "value": 4,
+                "type":1
+            },
+            {
+                "name": "推屏",
+                "value": 5,
+                "type":1
+            },
+            {
+                "name": "发送任务",
+                "value": 6,
+                "type":1
+            },
+            {
+                "name": "课堂总结",
+                "value": 7,
+                "type":1
+            }
+
+        ]
+    }
+]
+/*
+            {
+                "name": "黑板",
+                "value": 3
+            },
+*/

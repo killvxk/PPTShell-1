@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="238,107" bktrans="false">
+
+  <Font id="140100" name="微软雅黑" size="14" bold="true" /> 
+  <VerticalLayout bkcolor="#ffE0EDEC" > 
+    <VerticalLayout > 
+      <HorizontalLayout height =" 12">
+        <control></control>
+        <Button width ="12" name="btn_Close" align="center" normalimage="ChangeGrade\\close_normal.png" hotimage="ChangeGrade\\close_hover.png" ></Button> 
+      </HorizontalLayout>
+      <HorizontalLayout>
+        <control width ="20"></control>
+        <Label name="lbl_TeacherName" textcolor="#ff11B0B6" font ="140100"></Label> 
+      </HorizontalLayout>
+      <HorizontalLayout>
+        <control width ="20"></control> 
+        <Label name="lbl_GradeName" textcolor="#ff11B0B6" font ="140100"></Label>        
+      </HorizontalLayout>       
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <InteractToolView name="InteractToolView">
+    
+    <Control name="top_padding" height="320"/>
+    <TileLayout bkimage="ScreenTool\\bg_b_frame.png" columns="3" name="interact_list" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+
+    </TileLayout>
+    <Control />
+  </InteractToolView>
+
+</Window>

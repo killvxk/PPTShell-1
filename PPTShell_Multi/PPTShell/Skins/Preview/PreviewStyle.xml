@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+      <HorizontalLayout name="scrollItem" >
+        <Label name="keyword" align="left" textpadding="12,0,0,0" textcolor="#FFc6c4c4" font="11"/>
+        <Label name="date" align="right" textpadding="0,0,12,0" textcolor="#FFc6c4c4" font="11"/>
+      </HorizontalLayout>
+</Window>

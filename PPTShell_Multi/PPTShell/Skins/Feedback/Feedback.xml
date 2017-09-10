@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="180000" name="微软雅黑" size="18" bold="false" />
+  <Font id="200000" name="微软雅黑" size="20" bold="false" />
+  <VerticalLayout bkcolor="#66000000">
+    <Control />
+    <VerticalLayout height="645">
+      <HorizontalLayout>
+        <Control />
+        <Container name="mainWindowLayout" width="660" borderround="5,5" visible ="true">
+          <VerticalLayout>
+            <!--标题-->
+            <Container height="50" bkcolor="#FF11B0B6">
+              <VerticalLayout float="true" pos="20,13,48,38">
+                <Control />
+                <Control width="28" height="25" bkimage="Feedback\\feedback_log.png" />
+                <Control />
+              </VerticalLayout>
+              <VerticalLayout float="true" pos="54,0,154,50">
+                <Control />
+                <Label font="180000" text="意见反馈" textcolor="#FFFFFFFF" />
+                <Control />
+              </VerticalLayout>
+              <Button name="btnClose" width="32" height="32" float="true" pos="618,9,650,41" normalimage="file='Feedback\\close_normal.png'" hotimage="file='Feedback\\close_hover.png'" pushedimage="file='Feedback\\close_press.png'" />
+            </Container>
+            <!--内容-->
+            <Container>
+              <!--提交界面-->
+              <Container name="containerSubmit" bkcolor="#FFFFFFFF" visible="true">
+                <VerticalLayout hscrollbar="false" vscrollbar="false" >
+                  <!--问题分类-->
+                  <HorizontalLayout hscrollbar="false" vscrollbar="false" inset="20,20,20,0" childpadding="10" height="34">
+                    <Label font="140000" text="问题分类" textcolor="#FF333333" align="left" width="58"/>
+                    <Control />
+                  </HorizontalLayout>
+                  <!--问题列表-->
+                  <VerticalLayout hscrollbar="false" vscrollbar="false" inset="48,18,20,0" height="192" >
+                    <HorizontalLayout hscrollbar="false" vscrollbar="false" height="16">
+                      <CheckBox name="chkResource" bkimage="file='Feedback\cb_unchecked.png' dest='0,0,16,16'" selectedimage="file='Feedback\cb_checked.png' dest='0,0,16,16'"
+                              text="A.资源利用率低（资源陈旧、资源相关度不高、资源太少、资源质量不好等）" textpadding="30,0,0,0" align="center" textcolor="#FF707070" font="140000" width="505" height="16" />
+                      <Control />
+                    </HorizontalLayout>
+                    <Control height="10"/>
+                    <VerticalLayout hscrollbar="false" vscrollbar="false" height="24">
+                      <Control />
+                      <HorizontalLayout hscrollbar="false" vscrollbar="false" height="24" childpadding="10">
+                        <VerticalLayout hscrollbar="false" vscrollbar="false" width="155" height="24">
+                          <Control />
+                          <CheckBox name="chkOperation"	bkimage="file='Feedback\cb_unchecked.png' dest='0,0,16,16'" selectedimage="file='Feedback\cb_checked.png' dest='0,0,16,16'"
+                                text="B.软件太难操作了" textpadding="30,0,0,0" align="center" textcolor="#FF707070" font="140000" width="142" height="16" />
+                          <Control />
+                        </VerticalLayout>
+                        <VerticalLayout hscrollbar="false" vscrollbar="false" height="24">
+                          <Control />
+                          <RichEdit name="editOperation" font="120000" bordersize="1" bordercolor="#FFD4D4D4" multiline="false" maxchar="120" height="24" tiptext="您当时正在进行什么操作？" tiptextcolor="#FFACABAB"
+                                align="left" bkcolor="#FFFFFFFF" textpadding="8,4,8,4" textcolor="#FF696868" visible="false"/>
+                          <Control />
+                        </VerticalLayout>
+                      </HorizontalLayout>
+                      <Control />
+                    </VerticalLayout>
+                    <Control height="10"/>
+                    <VerticalLayout hscrollbar="false" vscrollbar="false" height="24">
+                      <Control />
+                      <HorizontalLayout hscrollbar="false" vscrollbar="false" height="24" childpadding="10">
+                        <VerticalLayout hscrollbar="false" vscrollbar="false" width="155" height="24">
+                          <Control />
+                          <CheckBox name="chkStyle"	bkimage="file='Feedback\cb_unchecked.png' dest='0,0,16,16'" selectedimage="file='Feedback\cb_checked.png' dest='0,0,16,16'"
+                                  text="C.软件风格不喜欢" textpadding="30,0,0,0" align="center" textcolor="#FF707070" font="140000" width="142" height="16" />
+                          <Control />
+                        </VerticalLayout>
+                        <VerticalLayout hscrollbar="false" vscrollbar="false" height="24">
+                          <Control />
+                          <RichEdit name="editStyle" font="120000" bordersize="1" bordercolor="#FFD4D4D4" multiline="false" maxchar="120" height="24" tiptext="您喜欢什么类型的风格？" tiptextcolor="#FFACABAB"
+                               align="left" bkcolor="#FFFFFFFF" textpadding="8,4,8,4" textcolor="#FF696868" visible="false"/>
+                          <Control />
+                        </VerticalLayout>
+                      </HorizontalLayout>
+                      <Control />
+                    </VerticalLayout>
+                    <Control height="10"/>
+                    <VerticalLayout hscrollbar="false" vscrollbar="false" height="24">
+                      <Control />
+                      <HorizontalLayout hscrollbar="false" vscrollbar="false" height="24" childpadding="10">
+                        <VerticalLayout hscrollbar="false" vscrollbar="false" width="155" height="24">
+                          <Control />
+                          <CheckBox name="chkFunction"	bkimage="file='Feedback\cb_unchecked.png' dest='0,0,16,16'" selectedimage="file='Feedback\cb_checked.png' dest='0,0,16,16'"
+                                  text="D.功能太少，不实用" textpadding="30,0,0,0" align="center" textcolor="#FF707070" font="140000" width="157" height="16" />
+                          <Control />
+                        </VerticalLayout>
+                        <VerticalLayout hscrollbar="false" vscrollbar="false" height="24">
+                          <Control />
+                          <RichEdit name="editFunction" font="120000" bordersize="1" bordercolor="#FFD4D4D4" multiline="false" maxchar="120" height="24" tiptext="您希望添加什么功能？" tiptextcolor="#FFACABAB"
+                               align="left" bkcolor="#FFFFFFFF" textpadding="8,4,8,4" textcolor="#FF696868" visible="false"/>
+                          <Control />
+                        </VerticalLayout>
+                      </HorizontalLayout>
+                      <Control />
+                    </VerticalLayout>
+                    <Control height="10"/>
+                    <HorizontalLayout hscrollbar="false" vscrollbar="false" height="16">
+                      <CheckBox name="chkFluency"	bkimage="file='Feedback\cb_unchecked.png' dest='0,0,16,16'" selectedimage="file='Feedback\cb_checked.png' dest='0,0,16,16'"
+                              text="E.太卡，流畅度不好" textpadding="30,0,0,0" align="center" textcolor="#FF707070" font="140000" width="154" height="16" />
+                      <Control />
+                    </HorizontalLayout>
+                    <Control height="14"/>
+                    <HorizontalLayout hscrollbar="false" vscrollbar="false" height="16">
+                      <CheckBox name="chkOther"	bkimage="file='Feedback\cb_unchecked.png' dest='0,0,16,16'" selectedimage="file='Feedback\cb_checked.png' dest='0,0,16,16'"
+                             text="F.其他" textpadding="30,0,0,0" align="center" textcolor="#FF707070" font="140000" width="70" height="16" />
+                      <Control />
+                    </HorizontalLayout>
+                  </VerticalLayout>
+                  <!--问题描述-->
+                  <VerticalLayout hscrollbar="false" vscrollbar="false" inset="20,22,20,0" height="215" >
+                    <HorizontalLayout hscrollbar="false" vscrollbar="false" height="14">
+                      <Label font="140000" text="问题描述" textcolor="#FF333333" align="left" width="58"/>
+                      <HorizontalLayout>
+                        <Control />
+                        <Label font="120000" text="您还可以输入" align="right" textcolor="#FF939393" width="75"/>
+                        <Label name="lblInputLeftCount" font="120000" text="800" align="center" textcolor="#FF10B0B6" width="30"/>
+                        <Label font="120000" text="字" align="left" textcolor="#FF939393" width="14"/>
+                      </HorizontalLayout>
+                    </HorizontalLayout>
+                    <VerticalLayout hscrollbar="false" vscrollbar="false" inset="28,16,0,0" childpadding="8">
+                      <RichEdit name="editDescription" font="140000" width="590" height="95"  multiline="true" tiptext="请简要描述你遇到的问题" tiptextcolor="#FFACABAB" textcolor="#FF696868"
+                                maxchar="800" bordersize="1" bordercolor="#FFD4D4D4" textpadding="8,4,8,4" autovscroll="true"
+                                vscrollbar="true" vscrollbarstyle="button1normalimage=&quot;file='Preview\\scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='Preview\\scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='Preview\\scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='Preview\\scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='Preview\\scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='Preview\\scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='Preview\\scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='Preview\\scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='Preview\\scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='Preview\\scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='Preview\\scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='Preview\\scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='Preview\\scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='Preview\\scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='Preview\\scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='Preview\\scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='Preview\\scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='Preview\\scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='Preview\\scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='Preview\\scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot;  width=&quot;16&quot;"/>
+                      <HorizontalLayout height="52" childpadding="10">
+                        <Container name="containerPic1" width="66" height="52" visible="false" >
+                          <Button name="ctrPic1"></Button>
+                          <Button name="btnDeleteFrame1" visible="false" bkimage="file='Feedback\\feedback_delete_frame_hover.png'" />
+                          <VerticalLayout name="layoutDelete1">
+                            <HorizontalLayout>
+                              <Control />
+                              <Button name="btnDeletePic1" width="15" height="15" visible="false" normalimage="file='Feedback\\feedback_delete_hover.png'" hotimage="file='Feedback\\feedback_delete_hover.png'" pushedimage="file='Feedback\\feedback_delete_press.png'"/>
+                            </HorizontalLayout>
+                            <Control />
+                          </VerticalLayout>
+                        </Container>
+                        <Container name="containerPic2" width="66" height="52" visible="false">
+                          <Button name="ctrPic2"></Button>
+                          <Button name="btnDeleteFrame2" visible="false" bkimage="file='Feedback\\feedback_delete_frame_hover.png'" />
+                          <VerticalLayout name="layoutDelete2">
+                            <HorizontalLayout>
+                              <Control />
+                              <Button name="btnDeletePic2" width="15" height="15" visible="false" normalimage="file='Feedback\\feedback_delete_hover.png'" hotimage="file='Feedback\\feedback_delete_hover.png'" pushedimage="file='Feedback\\feedback_delete_press.png'"/>
+                            </HorizontalLayout>
+                            <Control />
+                          </VerticalLayout>
+                        </Container>
+                        <Container name="containerPic3" width="66" height="52" visible="false">
+                          <Button name="ctrPic3"></Button>
+                          <Button name="btnDeleteFrame3" visible="false" bkimage="file='Feedback\\feedback_delete_frame_hover.png'" />
+                          <VerticalLayout name="layoutDelete3">
+                            <HorizontalLayout>
+                              <Control />
+                              <Button name="btnDeletePic3" width="15" height="15" visible="false" normalimage="file='Feedback\\feedback_delete_hover.png'" hotimage="file='Feedback\\feedback_delete_hover.png'" pushedimage="file='Feedback\\feedback_delete_press.png'"/>
+                            </HorizontalLayout>
+                            <Control />
+                          </VerticalLayout>
+                        </Container>
+                        <Container name="containerPic4" width="66" height="52" visible="false">
+                          <Button name="ctrPic4"></Button>
+                          <Button name="btnDeleteFrame4" visible="false" bkimage="file='Feedback\\feedback_delete_frame_hover.png'" />
+                          <VerticalLayout name="layoutDelete4">
+                            <HorizontalLayout>
+                              <Control />
+                              <Button name="btnDeletePic4" width="15" height="15" visible="false" normalimage="file='Feedback\\feedback_delete_hover.png'" hotimage="file='Feedback\\feedback_delete_hover.png'" pushedimage="file='Feedback\\feedback_delete_press.png'"/>
+                            </HorizontalLayout>
+                            <Control />
+                          </VerticalLayout>
+                        </Container>
+                        <Container name="containerPic5" width="66" height="52" visible="false">
+                          <Button name="ctrPic5"></Button>
+                          <Button name="btnDeleteFrame5" visible="false" bkimage="file='Feedback\\feedback_delete_frame_hover.png'" />
+                          <VerticalLayout name="layoutDelete5">
+                            <HorizontalLayout>
+                              <Control />
+                              <Button name="btnDeletePic5" width="15" height="15" visible="false" normalimage="file='Feedback\\feedback_delete_hover.png'" hotimage="file='Feedback\\feedback_delete_hover.png'" pushedimage="file='Feedback\\feedback_delete_press.png'"/>
+                            </HorizontalLayout>
+                            <Control />
+                          </VerticalLayout>
+                        </Container>
+                        <Button name="btnAddPic" width="66" height="52" normalimage="file='Feedback\\feedback_addpic_normal.png'" hotimage="file='Feedback\\feedback_addpic_hover.png'" pushedimage="file='Feedback\\feedback_addpic_press.png'"/>
+                        <Control />
+                      </HorizontalLayout>
+                    </VerticalLayout>
+                  </VerticalLayout>
+                  <!--联系方式-->
+                  <VerticalLayout hscrollbar="false" vscrollbar="false" inset="20,14,20,0" childpadding="10" height="68">
+                    <Label font="140000" text="联系方式" textcolor="#FF333333" align="left" height="14"/>
+                    <Container inset="28,0,0,0" height="30">
+                      <RichEdit name="editContactMode" font="120000" tiptext="请留下您的手机号码或邮箱，我们将及时告知您优化的信息。" tiptextcolor="#FFACABAB" bordersize="1" bordercolor="#FFD4D4D4"
+                                multiline="false" maxchar="120" height="30" textpadding="8,4,8,4" align="left" bkcolor="#FFFFFFFF" textcolor="#FF696868" visible="false"/>
+                      <HorizontalLayout name="layoutUserContactMode" hscrollbar="false" vscrollbar="false" height="30" bordersize="1" inset="2,0,0,0" bordercolor="#FFD4D4D4" visible="true">
+                        <VerticalLayout hscrollbar="false" vscrollbar="false">
+                          <Control />
+                          <Label name="lblUserContactMode" font="120000" multiline="false" maxchar="120" textpadding="8,4,8,4" align="left" bkcolor="#FFFFFFFF" textcolor="#FF696868" />
+                          <Control />
+                        </VerticalLayout>
+                        <Button name="btnCloseUserContactMode" width="30" height="30" normalimage="file='Commom\\close_mult_state.png' source='0,0,30,30'" hotimage="file='Commom\\close_mult_state.png' source='30,0,60,30'"
+                                pushedimage="file='Commom\\close_mult_state.png' source='60,0,90,30'"></Button>
+                      </HorizontalLayout>
+                    </Container>
+                  </VerticalLayout>
+                  <!--提交按钮-->
+                  <HorizontalLayout hscrollbar="false" vscrollbar="false" inset="0,20,0,0" height="56" >
+                    <Control />
+                    <Button name="btnSubmit" text="提交反馈" font="160000" textcolor="#FFFFFFFF" width="118" height="36" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+                    <Control />
+                  </HorizontalLayout>
+                  <Control />
+                </VerticalLayout>
+              </Container>
+              <!--loading界面-->
+              <VerticalLayout name="layoutLoading" hscrollbar="false" vscrollbar="false" visible="false">
+                <Control />
+                <HorizontalLayout hscrollbar="false" vscrollbar="false" height="36">
+                  <Control />
+                  <GifAnim name="gifLoading" width="36" height="36" bkimage="Guide\loading.gif" auto="true" />
+                  <Control />
+                </HorizontalLayout>
+                <Control />
+              </VerticalLayout>
+              <!--反馈成功界面-->
+              <VerticalLayout name="layoutSuccess" bkcolor="#FFFFFFFF" visible="false">
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="295" inset="0,170,0,0">
+                  <Control />
+                  <Control width="125" height="125" bkimage="Feedback\\feedback_success.png"></Control>
+                  <Control />
+                </HorizontalLayout>
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="40" inset="0,20,0,0">
+                  <Control />
+                  <Label width="200" height="20" text="感谢您的反馈" textcolor="#FF5a5b5b" font="200000" align="center"></Label>
+                  <Control />
+                </HorizontalLayout>
+                <VerticalLayout vscrollbar="false" hscrollbar="false" height="70" inset="0,32,0,0" childpadding="10">
+                  <HorizontalLayout vscrollbar="false" hscrollbar="false" height="14">
+                    <Control />
+                    <Label width="250" height="14" text="感谢您抽出宝贵的时间提交反馈。" font="140000" textcolor="#FF7f7f7f" align="center"></Label>
+                    <Control />
+                  </HorizontalLayout>
+                  <HorizontalLayout vscrollbar="false" hscrollbar="false" height="14">
+                    <Control />
+                    <Label width="500" height="14" text="我们正在努力改进101教育PPT，您的反馈对我们非常重要。" font="140000" textcolor="#FF7f7f7f" align="center"></Label>
+                    <Control />
+                  </HorizontalLayout>
+                </VerticalLayout>
+                <HorizontalLayout vscrollbar="false" inset="0,10,0,0" hscrollbar="false" height="56" >
+                  <Control />
+                  <Button name="btnClose" text="关闭" font="160000" textcolor="#FFFFFFFF" width="138" height="36" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+                  <Control />
+                </HorizontalLayout>
+                <Control />
+              </VerticalLayout>
+              <!--反馈失败界面-->
+              <VerticalLayout name="layoutFail" bkcolor="#FFFFFFFF" visible="false">
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="295" inset="0,170,0,0">
+                  <Control />
+                  <Control width="125" height="125" bkimage="Feedback\\feedback_fail.png"></Control>
+                  <Control />
+                </HorizontalLayout>
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="40" inset="0,20,0,0">
+                  <Control />
+                  <Label width="200" height="20" text="提交失败" textcolor="#FF5a5b5b" font="200000" align="center"></Label>
+                  <Control />
+                </HorizontalLayout>
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="46" inset="0,20,0,0">
+                  <Control />
+                  <Label width="500" height="14" text="有可能是网络环境导致没有提交成功，" font="140000" textcolor="#FF7f7f7f" align="center"></Label>
+                  <Control />
+                </HorizontalLayout>
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="46" inset="0,0,0,0">
+                  <Control />
+                  <Label width="500" height="14" text="建议您检查您的网络设置。" font="140000" textcolor="#FF7f7f7f" align="center"></Label>
+                  <Control />
+                </HorizontalLayout>
+                <HorizontalLayout vscrollbar="false" hscrollbar="false" height="56" >
+                  <Control />
+                  <Button name="btnBackFeedback" text="返回意见反馈" font="160000" textcolor="#FFFFFFFF" width="138" height="36" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+                  <Control />
+                </HorizontalLayout>
+                <Control />
+              </VerticalLayout>
+            </Container>
+          </VerticalLayout>
+        </Container>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

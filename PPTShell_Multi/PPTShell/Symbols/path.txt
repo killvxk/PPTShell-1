@@ -1,0 +1,1 @@
+SRV*//192.168.59.9/$pdb/*http://msdl.microsoft.com/download/symbols

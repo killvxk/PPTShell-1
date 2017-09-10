@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ftpUpdatePacker", "ftpUpdatePacker\ftpUpdatePacker.vcproj", "{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		正式版|Win32 = 正式版|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}.Debug|Win32.Build.0 = Debug|Win32
+		{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}.Release|Win32.ActiveCfg = Release|Win32
+		{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}.Release|Win32.Build.0 = Release|Win32
+		{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}.正式版|Win32.ActiveCfg = 正式版|Win32
+		{4DA711B3-489E-4CD6-9454-BB9CF0916DAC}.正式版|Win32.Build.0 = 正式版|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

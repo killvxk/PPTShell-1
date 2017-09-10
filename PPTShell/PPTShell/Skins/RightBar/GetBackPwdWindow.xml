@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="150010" name="微软雅黑" size="15" underline="true" bold="false" />
+  <Font id="150000" name="微软雅黑" size="15" bold="false" />
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <Font id="160010" name="微软雅黑" size="16" underline="true" bold="false" />
+  <GetBackPwdWindowUI>
+    <VerticalLayout>
+      <Control height="5"/>
+      <HorizontalLayout height="30">
+        <Control width="35"/>
+        <Label text="找回密码" width="60" align="left" textcolor="#FFFFFFFF" font="150000"/>
+        <Control width="5"/>
+        <Button text="返回登录" name="backlogin_getbackpwd" width="60" font="150010" textcolor="#FF11B0B6" hottextcolor="#FF0de5ed" pushedtextcolor="#FF148084"/>
+      </HorizontalLayout>
+      <SliderTabLayoutUI name="getbackpwdslider" selectedid="0" >
+        <VerticalLayout name="getbackpwd_step1" inset="35,0,35,0">
+          <Control height="20"/>
+          <Container height="34">
+            <Label width="326" bkimage="RightBar\\getbackpwd-step1.png" />
+            <HorizontalLayout>
+              <Label text="确认账号"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+              <Label text="安全验证"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+              <Label text="重置密码"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+            </HorizontalLayout>
+          </Container>
+          
+          <Control height="20"/>
+          <Label text="请填写您需要找回的账号" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+          <Control height="10"/>
+          <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+            <Control width="10"/>
+            <EditClear height="30" width="300" padding="0,3,0,0" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="getbackpwdaccount" tiptext="请输入需要找回的账号" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="30" type="1"/>
+            <Control />
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdaccount" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+          <Control height="10"/>
+          <HorizontalLayout height="65">
+            <VerticalLayout>
+              <Label text="验证码" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+              <Control height="10"/>
+              <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+                <Control width="10"/>
+                <EditClear height="30" width="165" padding="0,3,0,0" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="getbackpwdcheckcode" tiptext="请输入验证码" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="6" type="2"/>
+                <Control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <Control width="10"/>
+            <Label name="getBackCheckCode" width="120" />
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdcheckcode" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+          <Control height="8"/>
+          <HorizontalLayout height="18">
+            <Control />
+            <Button text="看不清,请换一张" name="refreshcheckcode_getbackpwd" width="120" font="160010" textcolor="#FF11B0B6" hottextcolor="#FF0de5ed" pushedtextcolor="#FF148084"/>
+          </HorizontalLayout>
+          <Control height="45"/>
+          <HorizontalLayout height="36">
+            <Button text="下一步" name="GetBackPwdStep1Btn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="150000"/>
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdstep1" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+        </VerticalLayout>
+        <VerticalLayout name="getbackpwd_step2" inset="35,0,35,0">
+          <Control height="20"/>
+          <Container height="34">
+            <Label width="326" bkimage="RightBar\\getbackpwd-step2.png" />
+            <HorizontalLayout>
+              <Label text="确认账号"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+              <Label text="安全验证"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+              <Label text="重置密码"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+            </HorizontalLayout>
+          </Container>
+          <Control height="10"/>
+          <Label text="为了您的账号安全,请完成身份验证" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+          <Control height="20"/>
+          <Label text="验证方式" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+          <Control height="6"/>
+          <VerticalLayout name="checkAccountInfo" bordersize="1" bordercolor="#FF3A3A3A" bkcolor="#FF555555" height="40">
+            <Control height="10"/>
+            <Container height="22">
+              <HorizontalLayout name="checkAccountInfoPhone">
+                <Control width="16"/>
+                <CheckBox name="phoneCheckBox" width="22" bkimage="file='RightBar\btn-checkbox.png' dest='0,0,22,22' source='0,0,22,22'" selectedimage="file='RightBar\btn-checkbox2.png' dest='0,0,22,22' source='22,0,44,22'"/>
+                <Control width="10"/>
+                <Label name="getbackpwdphone" textcolor="#FFFFFFFF" font="150000"/>
+              </HorizontalLayout>
+              <HorizontalLayout name="checkAccountInfoEmail">
+                <Control width="16"/>
+                <CheckBox name="emailCheckBox" width="22" bkimage="file='RightBar\btn-checkbox.png' dest='0,0,22,22' source='0,0,22,22'" selectedimage="file='RightBar\btn-checkbox2.png' dest='0,0,22,22' source='22,0,44,22'"/>
+                <Control width="10"/>
+                <Label name="getbackpwdemail" textcolor="#FFFFFFFF" font="150000"/>
+              </HorizontalLayout>
+            </Container>
+            <Control height="8"/>
+          </VerticalLayout>
+          <Label name="error_tip_getbackpwdstep2select" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+          <Control height="10"/>
+          <Label text="验证码" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+          <Control height="6"/>
+          <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3' dest='0,0,200,40'">
+            <Control width="10"/>
+            <EditClear height="30" width="180" padding="0,3,0,0" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="getbackpwdstep2checkcode" tiptext="请输入验证码" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="6" type="2"/>
+            <Control width="20" />
+            <HorizontalLayout width="110" name="phonecodeLayout">
+              <Button name="sentphonecode" text="发送验证码" font="130000" textcolor="#FFFFFFFF" borderround="2,2" disabledtextcolor="#FFFFFFFF" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" />
+            </HorizontalLayout>
+            <Control />
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdstep2checkcode" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+          <Control height="30"/>
+          <HorizontalLayout height="36">
+            <Button text="下一步" name="GetBackPwdStep2Btn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="150000"/>
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdstep2" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+        </VerticalLayout>
+        <VerticalLayout name="getbackpwd_step3" inset="35,0,35,0">
+          <Control height="20"/>
+          <Container height="34">
+            <Label width="326" bkimage="RightBar\\getbackpwd-step3.png" />
+            <HorizontalLayout>
+              <Label text="确认账号"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+              <Label text="安全验证"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+              <Label text="重置密码"  align="center" textcolor="#FFFFFFFF" font="150000"/>
+            </HorizontalLayout>
+          </Container>
+          <Control height="30"/>
+          <Label text="新密码" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+          <Control height="6"/>
+          <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+            <Control width="10"/>
+            <EditClear height="30" width="300" padding="0,3,0,0" password="true" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="getbackpwdpassword" tiptext="6-20个字符，区分大小写" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="20" type="1"/>
+            <Control />
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdstep3password" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+          <Control height="10"/>
+          <Label text="重复密码" align="left" textcolor="#FFFFFFFF" font="150000" height="15"/>
+          <Control height="6"/>
+          <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+            <Control width="10"/>
+            <EditClear height="30" width="300" padding="0,3,0,0" password="true" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="getbackpwdconfirmpassword" tiptext="6-20个字符，区分大小写" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="20" type="1"/>
+            <Control />
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdstep3confirmpassword" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+          <Control height="42"/>
+          <HorizontalLayout height="36">
+            <Button text="完成" name="GetBackPwdStep3Btn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="150000"/>
+          </HorizontalLayout>
+          <Label name="error_tip_getbackpwdstep3" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+        </VerticalLayout>
+      </SliderTabLayoutUI>
+    </VerticalLayout>
+    <VerticalLayout name="GetBackPwdTipLayout" bkcolor="#99353535" visible="false" >
+      <Control />
+      <HorizontalLayout>
+        <Control />
+        <HorizontalLayout  height="60" width="325" bkcolor="#FF353535">
+          <Control />
+          <Label width="26" bkimage="file='RightBar\\icon_success.png' dest='0,20,26,40'"/>
+          <Control width="20"/>
+          <Label text="密码修改成功" font="130000" align="left" textcolor="#FFFFFFFF" showhtml="true"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </GetBackPwdWindowUI>
+</Window>

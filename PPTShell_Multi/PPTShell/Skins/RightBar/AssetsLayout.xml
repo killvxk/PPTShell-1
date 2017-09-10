@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Container>
+    <TileLayout name="content" columns="2" inset="0,8" childpadding="25" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+    </TileLayout>
+    <VerticalLayout name="loading" visible="false">
+      <Control />
+      <HorizontalLayout name="toolbar" height="35">
+        <Control />
+        <GifAnim name="loadinggif" pos="0,0,36,36" bkimage="RightBar/item/item_loading.gif" auto="true"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="loading_tip"  text="加载中..." padding="0,4,0,0" textcolor="#FFFFFFFF" align="center" />
+      <Control />
+    </VerticalLayout>
+    <VerticalLayout name="netless" visible="false" >
+      <Control name="none1"/>
+      <HorizontalLayout>
+        <Control />
+        <Control name="icon"  pos="0,0,139,133" bkimage="RightBar/Explorer/netless_icon.png"/>
+        <Control />
+      </HorizontalLayout>
+      <HorizontalLayout>
+        <Control />
+        <Button name="refresh"  pos="0,0,90,35" text="刷新" bkcolor="#FF11B0B6" hotbkcolor="#FF21d0d6" textcolor="#FFFFFFFF"/>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </Container>
+</Window>

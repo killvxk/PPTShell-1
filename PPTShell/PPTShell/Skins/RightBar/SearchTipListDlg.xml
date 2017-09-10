@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="120100" name="微软雅黑" size="12" bold="true" />
+  <VerticalLayout bkcolor="#FFFFFFFF">
+    <VerticalLayout height="34" inset="2,2,2,2">
+      <Container>
+        <Label name="tipLabelPPT" bkcolor="#FFFFFFFF"/>
+        <Button name="tipListPPT" font="120100" height="30" normalimage="file='RightBar/icon_logo_PPT.png' dest='3,6,22,25'" text="101教育PPT" align="left" textcolor="#FF000000" textpadding="30,7,0,0" />
+      </Container>
+    </VerticalLayout>
+    <VerticalLayout height="1" bkcolor="#FFE5E5E5" />
+    <VerticalLayout height="34" inset="2,2,2,2">
+      <Container>
+        <Label name="tipLabelBaidu" bkcolor="#FFFFFFFF"/>
+        <Button name="tipListBaidu" font="120100" height="30" normalimage="file='RightBar/icon_baidu.png' dest='3,6,22,25''" text="百度" align="left" textcolor="#FF000000" textpadding="30,7,0,0"/>
+      </Container>
+
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

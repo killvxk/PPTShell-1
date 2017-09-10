@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="240,200">
+    <Label name="DragImage" width="240" height="200"  bkcolor="#FF474747" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+</Window>

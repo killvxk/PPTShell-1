@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,150" caption="0,0,0,0" >
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <VerticalLayout bkcolor="#00000000" height="150">
+    <Control />
+
+      
+      <VerticalLayout bkcolor="#FFF3F3F3" width="350" height="150">
+	  
+        <VerticalLayout height="50">
+			<HorizontalLayout bkcolor="#FF11B0B6">
+			  <Control width="20"/>
+			  <Label font ="160100" text="重命名" width="50" align="left" textcolor="#FFFFFFFF" />
+			  <Control />
+			</HorizontalLayout>
+        </VerticalLayout>
+		
+        <VerticalLayout height="50">
+          <Control />
+          <HorizontalLayout inset="20,0,20,0" height="30">
+            <Edit name="editRename" font="140100" bordersize="1" bordercolor="#FFD4D4D4" multiline="false" maxchar="120" width="310" height="30" tiptext="请输入名称" textpadding="8,4,8,4" align="left" bkcolor="#FFFFFFFF" textcolor="#FF696868"/>
+          </HorizontalLayout>
+          <Control />
+        </VerticalLayout>
+		
+        <VerticalLayout height="50">
+			<HorizontalLayout height="50">
+			  <Control />
+			  <Button name="btnOK" font="140100" text="确定" width="120" textcolor="#FFFFFFFF" height="35" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+			  <Control width="20"/>
+			  <Button name="btnCancel" font="140100" text="取消" width="120" textcolor="#FFFFFFFF" height="35" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+			  <Control />
+			</HorizontalLayout>
+        </VerticalLayout>
+		
+      </VerticalLayout>
+      
+
+    <Control />
+  </VerticalLayout>
+</Window>

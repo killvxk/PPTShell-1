@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <Font id="220000" name="微软雅黑" size="22" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="150000" name="微软雅黑" size="15" bold="false" />
+  <Font id="130100" name="微软雅黑" size="13" bold="true" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="200100" name="微软雅黑" size="20" bold="true" />
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="120100" name="微软雅黑" size="12" bold="true" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <VerticalLayout height="494">
+      <HorizontalLayout>
+        <Control />
+        <VerticalLayout width="641" borderround="6,6" bkcolor="#FFF5F5F5">
+			<HorizontalLayout name="mainContainer" height="54" bkimage="file='Options\\icon_title.png' corner='10,10,10,10'">
+				<label width="22" height="22" bkimage="Options\\title.png" padding="20,16,0,0,"/>
+				<Label text="设置" textcolor="#FFFFFFFF" mouse="false" textpadding="5,0,0,0" font="160000"  width="50"/>
+				<Control />
+				<Button name="btnClose" float="true" pos="616,8,0,0" width="14" height="14"  normalimage="file='Commom\\close_normal.png'" hotimage="file='Commom\\close_hover.png'" pushedimage="file='Commom\\close_press.png'" />
+			</HorizontalLayout>
+			<HorizontalLayout name="mainContainer" height="378" padding="0,7,7,0">
+				<VerticalLayout name="OptionLayout">
+					<HorizontalLayout padding="0,12,0,0" height="17">
+						<Control name="setting_Advanced_Dot" bkimage="Options\\dot.png" width="4" height="4" padding="19,8,0,0"/>
+						<Option name="setting_Advanced" text="高级设置" align="left" padding="5,0,0,0" textcolor="#FF333333" font="120000" group="Setting_Tab" selected="true" 
+						bindtablayoutname="setting_Tab" bindtabindex="0"/>
+					</HorizontalLayout>
+					<HorizontalLayout padding="0,27,0,0" height="17">
+						<Control name="setting_SavePath_Dot" bkimage="Options\\dot.png" width="4" height="4" padding="19,8,0,0"/>
+						<Option name="setting_SavePath" text="保存位置管理" align="left" padding="5,0,0,0" width="100" textcolor="#FF333333" font="120000" group="Setting_Tab"  
+						bindtablayoutname="setting_Tab" bindtabindex="1"/>
+					</HorizontalLayout>
+					<HorizontalLayout padding="0,27,0,0" height="17" visible="false">
+						<Control name="setting_Individuation_Dot" bkimage="Options\\dot.png" width="4" height="4" padding="19,8,0,0"/>
+						<Option name="setting_Individuation" text="个性化设置" align="left" textpadding="5,0,0,0" textcolor="#FF333333" font="120000" group="Setting_Tab" 
+						bindtablayoutname="setting_Tab" bindtabindex="2"/>
+					</HorizontalLayout>
+					<HorizontalLayout padding="0,27,0,0" height="17">
+						<Control name="setting_Convention_Dot" bkimage="Options\\dot.png" width="4" height="4" padding="19,8,0,0"/>
+						<Option name="setting_Convention" text="常规设置" align="left" textpadding="5,0,0,0" textcolor="#FF333333" font="120000" group="Setting_Tab" 
+						bindtablayoutname="setting_Tab" bindtabindex="3"/>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<VerticalLayout name="OptionTabLayout" bkcolor="#FFFFFFFF" width="504" height="378">
+					<TabLayout name="OptionTab">
+						<VerticalLayout>
+							<HorizontalLayout height="17" padding="28,10,0,0">
+								<CheckBox name="chkOpenMode" normalimage="file='Options\check.png' dest='0,0,17,17' source='1,0,18,17'" hotimage="file='Options\check.png' dest='0,0,17,17' source='20,0,37,17'" 
+									selectedimage="file='Options\check.png' dest='0,0,17,17' source='39,0,56,17'" text="设置软件为默认打开方式" textpadding="30,0,0,0" align="left" textcolor="#FF888888" font="120000" width="165" height="17" />
+								<Control />
+							</HorizontalLayout>
+							<HorizontalLayout height="17" padding="28,20,0,0">
+								<CheckBox name="chkIcrplay" normalimage="file='Options\check.png' dest='0,0,17,17' source='1,0,18,17'" hotimage="file='Options\check.png' dest='0,0,17,17' source='20,0,37,17'" 
+									selectedimage="file='Options\check.png' dest='0,0,17,17' source='39,0,56,17'" text="打开互动课堂" textpadding="30,0,0,0" align="left" textcolor="#FF888888" font="120000" width="110" height="17" />
+								<Control />
+							</HorizontalLayout>
+						</VerticalLayout>
+						<VerticalLayout>
+							<HorizontalLayout height="14" padding="28,10,0,0">
+								<Label text="文件下载" textcolor="#FF333333" font="140000" align="left" />
+							</HorizontalLayout>
+							<HorizontalLayout height="14" padding="28,8,0,0">
+								<Label text="默认把接收到的文件下载到此文件夹中：" textcolor="#FF888888" font="120000" align="left" width="250" />
+								<Label name="errorMsg" text="当前目录不存在" textcolor="#FFFF0000" font="120000" align="left" width="200" visible="false" />
+							</HorizontalLayout>
+							<RichEdit name="editPath" height="36" width="360" font="120000" bordersize="1" bordercolor="#FFEAEAEA" multiline="false" align="left" bkcolor="#FFFFFFFF" focusbordercolor="#FF10B6B0"
+							textpadding="8,10,8,8" textcolor="#FF000001" padding="28,5,0,0" enabled="false" />
+							<HorizontalLayout height="40">
+								<Button name="ChangePath" text="更改目录" font="120000" textcolor="#FF888888" width="90" height="30" padding="28,10,0,0" bordersize="1" bordercolor="#FFEAEAEA" />
+								<Button name="OpenFolder" text="打开文件夹" font="120000" textcolor="#FF888888" width="90" height="30" padding="14,10,0,0" bordersize="1" bordercolor="#FFEAEAEA" />
+							</HorizontalLayout>
+							<HorizontalLayout height="14" padding="28,10,0,0">
+								<Label text="文件缓存" textcolor="#FF333333" font="140000" align="left" />
+							</HorizontalLayout>
+							<HorizontalLayout height="40">
+								<Button name="btnClearTemp" text="清除缓存" font="120000" textcolor="#FF888888" width="90" height="30" padding="28,10,0,0" bordersize="1" bordercolor="#FFEAEAEA" />
+							</HorizontalLayout>
+						</VerticalLayout>
+						<VerticalLayout>
+							<HorizontalLayout>
+								<Label text="本功能暂未开放" bkcolor="#FFC5D4F2" align="center" />
+							</HorizontalLayout>
+						</VerticalLayout>
+						<VerticalLayout>
+							<HorizontalLayout height="17" padding="28,10,0,0">
+								<CheckBox name="chkAutoRun" normalimage="file='Options\check.png' dest='0,0,17,17' source='1,0,18,17'" hotimage="file='Options\check.png' dest='0,0,17,17' source='20,0,37,17'" 
+									selectedimage="file='Options\check.png' dest='0,0,17,17' source='39,0,56,17'" text="开机自动开启" textpadding="30,0,0,0" align="left" textcolor="#FF888888" font="120000" width="150" height="17" />
+								<Control />
+							</HorizontalLayout>
+							<HorizontalLayout height="17" padding="28,20,0,0">
+								<CheckBox name="chkMakePassword" normalimage="file='Options\check.png' dest='0,0,17,17' source='1,0,18,17'" hotimage="file='Options\check.png' dest='0,0,17,17' source='20,0,37,17'" 
+									selectedimage="file='Options\check.png' dest='0,0,17,17' source='39,0,56,17'" text="设置开启密码" textpadding="30,0,0,0" align="left" textcolor="#FF888888" font="120000" width="110" height="17" />
+								<Control />
+							</HorizontalLayout>
+							<HorizontalLayout name="passwordLayout" height="36" padding="28,10,0,0">
+								<RichEdit name="password" height="36" width="208" font="120000" bordersize="1" bordercolor="#FFEAEAEA" multiline="false" align="left" bkcolor="#FFFFFFFF" focusbordercolor="#FF10B6B0"
+								textpadding="8,10,8,8" textcolor="#FF888888"  password="true" visible="false"/> <!--tiptext="请输入密码" tiptextcolor="#FFACABAB"-->
+								<Button name="passwordTip" float="true" pos="8,10,0,0" align="left" height="14" width="60" text="请输入密码" font="120000" textcolor="#FFABABAC" />
+							</HorizontalLayout>
+							<HorizontalLayout name="retypePasswordLayout" height="36" padding="28,10,0,0">
+								<RichEdit name="retypePassword" height="36" width="208" font="120000" bordersize="1" bordercolor="#FFEAEAEA" multiline="false" align="left" bkcolor="#FFFFFFFF" focusbordercolor="#FF10B6B0"
+								textpadding="8,10,8,8" textcolor="#FF888888"  password="true" visible="false"/><!--tiptext="请再次输入密码" tiptextcolor="#FFACABAB"-->
+								<Button name="retypePasswordTip" float="true" pos="8,10,0,0" align="left" height="14" width="85" text="请再次输入密码" font="120000" textcolor="#FFABABAC" />
+							</HorizontalLayout>
+							<Button name="passwordOk" text="确定" font="120000" textcolor="#FFFFFFFF" width="90" height="30" padding="28,28,0,0" normalimage="file='Options\submit_normal.png' source='0,0,90,30'" hotimage="file='Options\submit_hover.png' source='0,0,90,30'" pushedimage="file='Options\submit_press' source='0,0,90,30'" visible="false"/>
+							<Button name="passwordModify" text="修改密码" font="120000" textcolor="#FFFFFFFF" width="90" height="30" padding="28,28,0,0" normalimage="file='Options\submit_normal.png' source='0,0,90,30'" hotimage="file='Options\submit_hover.png' source='0,0,90,30'" pushedimage="file='Options\submit_press' source='0,0,90,30'" visible="false"/>
+							<label name="errorMsg" text="两次密码不一致" textcolor="#FFFF0000" font="120000" height="14" padding="28,5,0,0" visible="false" />
+						</VerticalLayout>
+					</TabLayout>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout>
+				<Control width="432"/>
+				<Button name="btnOK" text="确定" font="160000" textcolor="#FFFFFFFF" width="90" height="30" padding="0,12,0,0" normalimage="file='Options\submit_normal.png' source='0,0,90,30'" hotimage="file='Options\submit_hover.png' source='0,0,90,30'" pushedimage="file='Options\submit_press' source='0,0,90,30'"/>
+				<Button name="btnCancel" text="取消" font="160000" textcolor="#FFFFFFFF" width="90" height="30" padding="14,12,7,0" normalimage="file='Options\btn_cancel_hover.png' source='0,0,90,30'" hotimage="file='Options\submit_hover.png' source='0,0,90,30'" pushedimage="file='Options\submit_press.png' source='0,0,90,30'"/>
+			</HorizontalLayout>
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>
+

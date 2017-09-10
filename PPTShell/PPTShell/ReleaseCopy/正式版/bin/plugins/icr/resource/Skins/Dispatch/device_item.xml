@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<HorizontalLayout name="device_list_item" height="33">
+		<Label name="device_id" text="777777" width="100" />
+		<Label name="device_ip" text="192.168.1.1" width="110"/> 
+		<Label name="device_memory" text="16G/20G" width="130"/>
+		<Label name="device_power" text="80%" width="90" />
+		<Label name="dispatch_state" text="分发完成" width="110" />
+		<Progress name="dispatching" height="15" padding="0,10,0,25" width="180" bordersize="1" bordercolor="#FF0000FF" foreimage="file='Dispatch\\progress_fore.png'" value="30" />
+	</HorizontalLayout>
+</Window>

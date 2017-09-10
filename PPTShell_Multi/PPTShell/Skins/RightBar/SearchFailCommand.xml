@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+		<Font id="90000"  name="微软雅黑" size="9" bold="false"  />
+  		<Font id="110000" name="微软雅黑" size="11" bold="false" />
+  		<Font id="130000" name="微软雅黑" size="13" bold="false" />
+  		<Font id="140000" name="微软雅黑" size="14" bold="false" />
+  		<Font id="150000" name="微软雅黑" size="15" bold="false" />
+  		<Font id="160000" name="微软雅黑" size="16" bold="false" />
+  		<Font id="190000" name="微软雅黑" size="19" bold="false" />
+  		<Font id="210000" name="微软雅黑" size="21" bold="false" />
+  		<Font id="230000" name="微软雅黑" size="23" bold="false" />
+
+
+      <HorizontalLayout height="40"  >
+        
+      </HorizontalLayout>
+</Window>

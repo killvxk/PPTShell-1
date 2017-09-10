@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <VerticalLayout bkcolor="#66000000">
+    <Control />
+    <HorizontalLayout height="520">
+      <Control />
+      <VerticalLayout name="mainWindowLayout" width="720">
+        <HorizontalLayout height="50">
+          <Control />
+          <Label text="新功能介绍" font="160000" align="center" textcolor="#FFFFFFFF" />
+          <HorizontalLayout>
+            <Control />
+            <Button name="closeBtn" width="30" padding="0,10,0,0" height="30"  normalimage="file='About\\btn_close.png' source='0,0,30,30'" hotimage="file='About\\btn_close.png' source='30,0,60,30'" pushedimage="file='About\\btn_close.png' source='60,0,90,30'" />
+            <Control width="15" />
+          </HorizontalLayout>
+        </HorizontalLayout>
+        <Container>
+          <SliderTabLayoutUI height="400">
+          </SliderTabLayoutUI>
+          <VerticalLayout>
+            <Control />
+            <HorizontalLayout height="22">
+              <Control />
+              <HorizontalLayout name="sliderBtnLayout" bkimage="file='Introduction\\icon_background.png' corner='10,11,10,11'">
+
+              </HorizontalLayout>
+              <Control />
+            </HorizontalLayout>
+            <Control height="10" />
+          </VerticalLayout>
+        </Container>
+        <HorizontalLayout height="70" bkcolor="#FFFFFFFF" >
+          <Control />
+          <Button width="120" height="35" padding="0,18,0,0" text="立即体验" name="ExperienceBtn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="160000"/>
+          <Control />
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

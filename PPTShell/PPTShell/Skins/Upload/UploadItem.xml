@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <UploadItem height="160" width="150" inset="5,5,5,5" bkcolor="#FFFFFFFF" childpadding="5">
+    <Container name ="content">
+      <Label name="image" bkimage="RightBar/item/item_normal.png" align="center"/>
+      <!--hotimage="item/item_hover.png" pushedimage="item/item_pushed.png" selectedimage="item/item_pushed.png"-->
+      <Option name="item" pushedimage="file='RightBar/item/item_border_pushed.png'  corner='5,5,5,5'" normalimage="file='RightBar/item/item_border_normal.png'  corner='5,5,5,5'" selectedimage="file='RightBar/item/item_border_pushed.png'  corner='5,5,5,5'"/>
+
+      <VerticalLayout>
+        <VerticalLayout name="empty" >
+        </VerticalLayout>
+
+        <Label name="success" height="22" visible="false" bkimage="file='upload/pro_fore.png' corner='5,2,5,2'" textcolor="#FFFFFFFF"  text="√ 上传成功" align="center"/>
+        <Label name="fail" height="22" visible="false" bkimage="file='upload/pro_fail.png' corner='5,2,5,2'" textcolor="#FFFFFFFF"  text="上传失败" align="center"/>
+        <Progress name="progress" height="22"  align="center" textcolor="#FFFFFFFF" float="false" bkimage="file='upload/pro_bk.png' corner='5,2,5,2'" foreimage="file='upload/pro_fore.png' corner='5,2,5,2'" min="0" max="100" visible="false"/>
+      </VerticalLayout>
+
+    </Container>
+    <Label name="name" height="20" align="left" endellipsis="true"/>
+    <Edit  name="rename" height="20" bkimage="file='upload\\edit_rename_bk.png' corner='10,3,10,3'" visible="false"/>
+    <HorizontalLayout name="bottom" height="20">
+      <Label name="type" textcolor="#FFA1A1A1" align="left" endellipsis="true"/>
+      <Control />
+      <Button name="delete" pos="0,0,14,17" bkimage="upload\\btn_delete_normal.png"   endellipsis="true"/>
+    </HorizontalLayout>
+  </UploadItem>
+</Window>

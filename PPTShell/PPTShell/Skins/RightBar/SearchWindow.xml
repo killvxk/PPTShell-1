@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <Font id="120100" name="微软雅黑" size="12" bold="true" />
+  <SearchWindowUI bkcolor="#FF474747">
+    <VerticalLayout>
+      <VerticalLayout height="35" padding="12,0,12,0">
+        <HorizontalLayout>
+          <Control width="20" />
+          <HorizontalLayout bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+            <HorizontalLayout name="tipLayout" bkcolor="#FF303030" width="40">
+              <Label name="tipLabel" width="30"  bkimage="file='RightBar\\icon_logo_PPT.png' dest='8,8,27,27'" />
+              <Label name="triangleLabel" width="10" bkimage="file='RightBar\\icon_btn_triangle.png' dest='0,14,8,19'" />
+            </HorizontalLayout>
+            <EditClear textcolor="#FF555555" name="searchEdit" tiptext="搜索课件、视频、图片、音频" type="3" tiptextcolor="#FFDBDBDB" multiline="false" font="140100" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="32"/>
+          </HorizontalLayout>
+          <Control width="5" />
+          <Button font="120100" text="搜索" name="searchBtn" bkcolor="#FF11B0B6" textcolor="#FFFFFFFF" hotbkcolor="#FF00797C" pushedbkcolor="#FF5A797C" width="60"/>
+          <Control width="20" />
+        </HorizontalLayout>
+      </VerticalLayout>
+      <VerticalLayout height="14">
+      </VerticalLayout>
+      <Container>
+        <VerticalLayout name="searchContent" visible="false">
+          <VerticalLayout name="searchLCSelectOptions" height="52" inset="13,0,13,0">
+            <HorizontalLayout height="26">
+              <CheckBox name="boxall"	text="所有类型" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="80" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxcourse"	text="课件" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxvideo"	text="视频" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boximage"	text="图片" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxflash"	text="动画" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxvolume"	text="音频" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+            </HorizontalLayout>
+            <HorizontalLayout height="26">
+              <CheckBox name="boxquestion"	text="基础习题" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="80" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxcoursewareobjests"	text="互动习题" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="80" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxppttemplate"	text="PPT模板" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="80" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxother"	text="其他" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+            </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout name="searchBaiduSelectOptions" height="26" inset="13,0,13,0" visible="false">
+            <HorizontalLayout>
+              <CheckBox name="boxallBaidu"	text="所有类型" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="80" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boxcourseBaidu" text="课件" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+              <CheckBox name="boximageBaidu"	text="图片" bkimage="file='RightBar\icon_searchopt.png' dest='0,7,10,17'" selectedimage="file='RightBar\icon_searchopt_on.png' dest='0,7,10,17'" hotimage="file='RightBar\icon_searchopt_hover.png' dest='0,7,10,17'" width="60" textcolor="#FFFFFFFF" hottextcolor="0xFF577071" selectedtextcolor="0xFF11B0B6" font="120100" />
+            </HorizontalLayout>
+          </VerticalLayout>
+          <Control height="5"/>
+          <VerticalLayout height="1" bkcolor="#FF282828" />
+          <Control height="5"/>
+          <HorizontalLayout height="20" inset="13,0,13,0" >
+            <Label text="搜索" font="130000" width="30" textcolor="#FF868686"/>
+            <Label name="labelKeyWord"  font="130000" width="40" maxwidth="120" endellipsis="true" textcolor="#FFFFFFFF"/>
+            <Label text="，共找到" font="130000" width="55" textcolor="#FF868686"/>
+            <Label name="labelSearchCount" font="130000" endellipsis="true" width="40" textcolor="#FFFFFFFF"/>
+            <Label text="个结果" font="130000" width="40" textcolor="#FF868686"/>
+          </HorizontalLayout>
+          <TileWithButtonLayout name="searchContentList" childpadding="25" columns="2" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+          </TileWithButtonLayout>
+        </VerticalLayout>
+        <VerticalLayout name="searchhistory" inset="13,13,13,13">
+          <VerticalLayout bkcolor="#FF505050" height="397" >
+            <Label align="center" textpadding="0,4,0,0" text="搜索记录" textcolor="#FFc6c4c4" font="140100" height="47"/>
+            <List name="searchList" header="hidden" />
+          </VerticalLayout>
+          <Control />
+          <HorizontalLayout height="30">
+            <Control />
+            <Button name="clearHistory" width="135" normalimage="file='RightBar\icon_clearhistory.png' source='0,0,135,32'" hotimage="file='RightBar\icon_clearhistory.png' source='0,32,135,64'" pushedimage="file='RightBar\icon_clearhistory.png' source='0,64,135,96'"/>
+          </HorizontalLayout>
+          <Control height="16" />
+        </VerticalLayout>
+        <VerticalLayout name="netlessLayout" visible="false" inset="32,0,0,0">
+          <Control height="10" />
+          <Label text="您当前正处于网络断开的环境" font="130000" textcolor="#FFFFFF00" height="20"/>
+        </VerticalLayout>
+      </Container>
+
+    </VerticalLayout>
+    <VerticalLayout  name="search_netless" visible="false">
+      <Control name="none1"/>
+      <HorizontalLayout>
+        <Control />
+        <Control name="icon"  pos="0,0,139,133" bkimage="RightBar/Explorer/netless_icon.png"/>
+        <Control />
+      </HorizontalLayout>
+      <HorizontalLayout>
+        <Control />
+        <Button name="search_refresh"  pos="0,0,90,35" text="刷新" bkcolor="#FF11B0B6" hotbkcolor="#FF21d0d6" textcolor="#FFFFFFFF"/>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+    <VerticalLayout name="searchLoading" visible="false">
+      <Control />
+      <HorizontalLayout height="36">
+        <Control />
+        <GifAnim name="searchGifLoading" width="36"  bkimage="Guide\loading.gif" auto="false"/>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </SearchWindowUI>
+</Window>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="150000" name="微软雅黑" size="15" bold="false" />
+  <VerticalLayout  name="resless" visible="false">
+    <Control name="resless_top"/>
+    <VerticalLayout  height="140">
+      <HorizontalLayout height="100">
+        <Control name="resless_icon_left"/>
+        <Control name="resless_icon"  pos="0,0,100,100" bkimage=""/>
+        <Control name="resless_icon_right"/>
+      </HorizontalLayout>
+      <Control />
+      <Label name="resless_txt" text="" font="150000" textcolor="#FFE3E3E3"  align="center"/>
+    </VerticalLayout>
+    <Control name="resless_bottom"/>
+  </VerticalLayout>
+</Window>

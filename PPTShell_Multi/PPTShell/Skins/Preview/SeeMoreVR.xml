@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="190100" name="微软雅黑" size="19" bold="true" />
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="640">
+      <Control />
+      <VerticalLayout name="mainWindowLayout" width="1225">
+        <!-- 标题 -->
+        <HorizontalLayout name="PreivieTopContainer" height="50" inset="10,0,0,0"  bkcolor="#FF000000">
+          <Container width="50" bkimage="logo\\logo.png" />
+          <Label visible="false" font="140100" name="PreviewName" text="图片名称-预览"  endellipsis="true"  width="500" textcolor="#FFFFFFFF" padding="20,0"/>
+          <Control />
+          <Button name="btn_close" width="30" padding="30,10,0,0" height="30"  normalimage="file='Preview\\btn_close.png' source='0,0,30,30'" hotimage="file='Preview\\btn_close.png' source='30,0,60,30'" pushedimage="file='Preview\\btn_close.png' source='60,0,90,30'" />
+        </HorizontalLayout>
+
+        <!-- 中间 -->
+        <VerticalLayout name="lay_body" bkcolor="#FFFFFFFF" childpadding="15" inset="30,20,30,0" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+
+          <VerticalLayout name="lay_classification" height="38" bordercolor="#FFDFDFDF" bordersize="1">
+            <HorizontalLayout>
+              <Label padding="1,1,1,1" bkcolor="#FFF4F4F4" font="140000" text="学科:"  endellipsis="true"  width="62" textcolor="#FF333333"  align="center"/>
+
+              <Container>
+                <HorizontalLayout inset="30,0,0,0" name="classify_list" width="1020" childpadding="30">
+                </HorizontalLayout>
+
+                <VerticalLayout name="classify_list_mask" bkimage="file='RightBar/item/btn_bk_normal.png'  corner='1,1,1,1'"  visible="false">
+                  <Control />
+                  <HorizontalLayout name="toolbar" height="35">
+                    <Control />
+                    <GifAnim name="loading" pos="0,0,36,36" bkimage="RightBar/item/item_loading.gif" auto="true"/>
+                    <Control />
+                  </HorizontalLayout>
+                  <Label name="loading_tip"  text="加载中..." padding="0,4,0,0" textcolor="#FFFFFFFF" align="center" />
+                  <Control />
+                </VerticalLayout>
+              </Container>
+              
+              <HorizontalLayout name="lay_expand" width="69" inset="0,0,25,0">
+                <Button  name="btn_expand" width="30" font="140000" text="展开" textcolor="#FF333333"  align="center"/>
+                <VerticalLayout width="14">
+                  <Control />
+                  <Button  height="8" name="btn_expand" bkimage="Preview\\icon_expand.png"/>
+                  <Control />
+                </VerticalLayout>
+              </HorizontalLayout>
+
+              <HorizontalLayout name="lay_collapse" width="69" inset="0,0,25,0" visible="false">
+                <Button  name="btn_collapse" width="30" font="140000" text="收起" textcolor="#FF333333"  align="center"/>
+                <VerticalLayout width="14">
+                  <Control />
+                  <Button  height="8" name="btn_collapse" bkimage="Preview\\icon_collapse.png"/>
+                  <Control />
+                </VerticalLayout>
+              </HorizontalLayout>
+              
+            </HorizontalLayout>
+
+            <HorizontalLayout name="lay_classification_expanded" visible="false">
+              <Control width="62"/>
+              <VerticalLayout name="classify_list_more" width="1025">
+              </VerticalLayout>
+              <Control width="69"/>
+            </HorizontalLayout>
+            
+            
+          </VerticalLayout>
+
+          <HorizontalLayout name="lay_search" height="36" bkcolor="#FFE8E8E8" inset="4,4,4,4">
+            <RichEdit name="edit_search_vr" bkimage="file='Preview\\bk_left_search.png' corner='5,5,5,5'" width="200" textcolor="#FF555555" tiptext="在当前分类中搜索" tipcolor="#FFDBDBDB" multiline="false" font="140100" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="64"/>
+            <Button width="28" name="btn_search_vr" bkimage="file='Preview\\bk_right_search.png' corner='5,5,5,5'" normalimage="Preview\\icon_search.png"/>
+          </HorizontalLayout>
+
+          <Container name="lay_vr_list">
+            <TileLayout  name="vr_list" childpadding="22" columns="6">
+            </TileLayout>
+
+            <VerticalLayout name="vr_list_mask" bkimage="file='RightBar/item/btn_bk_normal.png'  corner='1,1,1,1'"  visible="false">
+              <Control />
+              <HorizontalLayout name="toolbar" height="35">
+                <Control />
+                <GifAnim name="loading" pos="0,0,36,36" bkimage="RightBar/item/item_loading.gif" auto="true"/>
+                <Control />
+              </HorizontalLayout>
+              <Label name="loading_tip"  text="加载中..." padding="0,4,0,0" textcolor="#FFFFFFFF" align="center" />
+              <Control />
+            </VerticalLayout>
+          </Container>
+
+        </VerticalLayout>
+
+        <!-- 底部 -->
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

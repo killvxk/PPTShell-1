@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Container name="lay_emptytip" visible="false">
+    <Control bkimage="file='Item/btn_bk_normal.png'  corner='1,1,1,1'"/>
+    <Label text="即将上线" align="center" textcolor="#FFFFFFFF" font="140010"/>
+  </Container>
+</Window>

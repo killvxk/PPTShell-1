@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout bkcolor="FF515151">
+    <!--icon-->
+    <VerticalLayout width="60">
+      <Control />
+      <HorizontalLayout height="42">
+        <Control />
+        <Control pos="0,0,42,42" name="image"  bkimage="Item/item_normal.png" />
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+
+    <!--center-->
+    <VerticalLayout name="center" width="150" inset="0,7,0,12">
+      <HorizontalLayout>
+        <Label name="name" font="140000" textcolor="#FFEDEDED" align="left" endellipsis="true"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+  
+    
+  </HorizontalLayout>
+</Window>

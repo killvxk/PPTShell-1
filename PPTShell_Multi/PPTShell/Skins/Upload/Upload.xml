@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800, 600" caption="0,0,0,0">
+
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+
+
+  <DBankUpload name="DBankUpload">
+    <VerticalLayout  height="50" inset="30,0,0,0" >
+      <Label   height="50" text="上传文件" font="160100" textcolor="#FFFFFFFF" align="left"/>
+    </VerticalLayout>
+
+    <HorizontalLayout height="65" bkcolor="#FF363636" inset="30,15,30,15" childpadding="15">
+      <!--<Label    width="43"   text="上传至"  font="140000" textcolor="#FFFFFFFF" align="left"/>
+      <Combo    name="upload_dest" itemfont="130000"  width="200"  dropboxsize="200,150" normalimage="file='upload\\combo_normal.png' corner='2,2,24,2'" hotimage="file='upload\\combo_hover.png' corner='2,2,24,2'" pushedimage="file='upload\\combo_hover.png' corner='2,2,24,2'">
+        <ListLabelElement text="我的课件" selected="true" />
+        <ListLabelElement text="我的资源" />
+        <ListLabelElement text="我的图库" />
+        <ListLabelElement text="视频资料" />
+        <ListLabelElement text="音频资料" />
+        <ListLabelElement text="卡通动画集" />
+      </Combo>-->
+      <LabelEx  width="175"  text="可上传的资源格式包括：PPT、图片、视频、音频、动画" font="120000" textcolor="#FFA1A1A1"/>
+    </HorizontalLayout>
+
+    <VerticalLayout name="select_layout" visible="false">
+      <Control />
+      <HorizontalLayout height="80">
+        <Control />
+        <VerticalLayout width="155" childpadding="3">
+          <Button name="choose"  pos="0,0,155,40" text=" + 选择文件" font="140000" bkcolor="#FF11B0B6" borderround="3,3" hotbkcolor="#FF21d0d6" textcolor="#FFFFFFFF"/>
+          <Label height="25"  font="120000" text="或将文件拖到这里" textcolor="#FFBCBCBC" align="center"/>
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+
+    <VerticalLayout name="content_layout" visible="false">
+      <TileLayout name="list" inset="5,5,5,5" childpadding="15" columns="3" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+        
+      </TileLayout>
+
+      <HorizontalLayout name="menu" bkcolor="#FF363636" height="65" inset="15,13,15,13" childpadding="13">
+        <Button name="start"  pos="0,0,130,38" text="开始上传" font="140000" bkcolor="#FF11B0B6" borderround="3,3" hotbkcolor="#FF21d0d6" textcolor="#FFFFFFFF"/>
+        <Button name="append"  pos="0,0,130,38" text="继续添加" font="140000" bkcolor="#FFAEAEAE" borderround="3,3" hotbkcolor="#FFBEBEBE" textcolor="#FFFFFFFF"/>
+        <Label  name="detail"  width="175"   text="{f 14}共{c #FF6600} 0 {/c}个文件，0.0M{/f}" showhtml="true" textcolor="#FF89A1A1" align="left"/>
+      </HorizontalLayout>
+
+    </VerticalLayout>
+
+    
+  </DBankUpload>
+</Window>

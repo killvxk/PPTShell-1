@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1920,1200" bktrans="true">
+  <VerticalLayout bkcolor="#01000001" >
+
+    <Label height="60" width="200" visible="false" name = "ShowToolTip"  float="true" text="长按并拖动选择放大区域"  bkimage="file='MagicPen\\ZoomTip.png'" align="center"/>
+    <VerticalLayout name = "RoundRect" float="true">
+      <HorizontalLayout>
+        <VerticalLayout width ="3" >
+          <Label name = "RoundDotLTop"  width ="3" height="3"  bkimage="file='MagicPen\\Zoom_Dot.png'" />
+          <control width ="3" bkimage="file='MagicPen\\Zoom_VLine.png'" align="center" />
+          <Label name = "RoundDotLCenter" width ="3" height="3" bkimage="file='MagicPen\\Zoom_Dot.png'" />
+          <control width ="3" bkimage="file='MagicPen\\Zoom_VLine.png'" align="center" />
+          <Label name = "RoundDotLButtom" width ="3" height="3" bkimage="file='MagicPen\\Zoom_Dot.png'" />
+        </VerticalLayout>
+        <VerticalLayout >
+          <Label height ="3" name = "RoundTopLine"  bkimage="file='MagicPen\\Zoom_HLine.png'" />
+          <control />
+          <Label height ="3" name = "RoundButtomLine"  bkimage="file='MagicPen\\Zoom_HLine.png'" />
+        </VerticalLayout>
+        <VerticalLayout width ="3" >
+          <Label name = "RoundDotRTop"  width ="3" height="3"  bkimage="file='MagicPen\\Zoom_Dot.png'" />
+          <control  width ="3" bkimage="file='MagicPen\\Zoom_VLine.png'" align="center" />
+          <Label name = "RoundDotRCenter" width ="3" height="3" bkimage="file='MagicPen\\Zoom_Dot.png'" />
+          <control width ="3" bkimage="file='MagicPen\\Zoom_VLine.png'" align="center" />
+          <Label name = "RoundDotRButtom" width ="3" height="3" bkimage="file='MagicPen\\Zoom_Dot.png'" />
+        </VerticalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

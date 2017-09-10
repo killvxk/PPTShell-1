@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,600" >
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <VerticalLayout bkcolor="#FF000000">
+    <HorizontalLayout height="30">
+      <Control width="10" />
+      <Label name="title" width="150" textcolor="#FFFFFFFF" font="130000"/>
+      <Control />
+      <Button name="close" width="30" normalimage="file='Guide\btn_topr_del.png' source='0,0,30,30'" hotimage="file='Guide\btn_topr_del.png' source='30,0,60,30'" pushedimage="file='Guide\btn_topr_del.png' source='60,0,90,30'"/>
+      <Control width="10" />
+    </HorizontalLayout>
+    
+  </VerticalLayout>
+
+</Window>

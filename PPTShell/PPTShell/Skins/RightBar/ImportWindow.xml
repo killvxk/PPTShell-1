@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="120100" name="微软雅黑" size="12" bold="true" />
+  <VerticalLayout padding="0,0,4,0">
+    <Control />
+    <!-- 导入提示 -->
+    <VerticalLayout name="EmptyLayout" height="400"  visible="true">
+      <HorizontalLayout >
+        <Control />
+        <VerticalLayout width="146">
+          <HorizontalLayout height="100">
+            <Control />
+              <Control width="124" height="100" align="center" bkimage="rightbar\\import.png"/>
+            <Control />
+          </HorizontalLayout>
+          <Control height="20"/>
+          <Label name="ImportTipOne" font="140100" text="文件夹是空的~"  textcolor="#FFFFFFFF"  align="center"/>
+          <Label name="ImportTipTwo" font="140100" text="来一点你的好东西吧"  textcolor="#FFFFFFFF"  align="center"/>
+          <Control height="10" />
+          <Button width="142" height="33" name="ImportBtn" font="140100" text="导入资源" textcolor="#FFFFFFFF" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" pushedbkcolor="#FF5A797C"/>
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <!-- 导入进度 -->
+    <VerticalLayout name="ImportLayout" height="200" visible="false" inset="5,0,5,0">
+      <HorizontalLayout height="20" >
+        <Label name="TipLbl"  font="120100" text="文件的奇幻旅程..."  textcolor="#FFFFFFFF" width="100"  align="left"/>
+        <Label name="CountLbl" font="120100" text="" textcolor="#FFFFFFFF" align="right" showhtml="true"/>
+      </HorizontalLayout>
+      <Control height="10"/>
+      <progress name="ImportProgress" height="15" value="50" bkimage="file='RightBar\bg_progress.png' restype='0' corner='10,0,10,0'" foreimage="RightBar\fore_progress.png" mouse="false" />
+      <Control height="20"/>
+      <HorizontalLayout >
+        <Control />
+        <Button width="84" height="33" name="CancelBtn" font="140100" text="取消" textcolor="#FFFFFFFF" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" pushedbkcolor="#FF5A797C"/>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

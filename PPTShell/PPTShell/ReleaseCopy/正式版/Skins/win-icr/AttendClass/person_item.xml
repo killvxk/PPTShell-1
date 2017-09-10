@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	 <Font id="0" name="微软雅黑" size="14"/>
+
+  <Container  name="persion_item" width="110"  height="150" >
+    <VerticalLayout  float="true" pos="0,0,105,150">
+		<!-- dest='21,0,100,79' -->
+		<UIHeadIcon name="photo" pos="0,10,85,96" bkimage="file='win-icr\\AttendClass\\icon_boy_student.png' "/>
+      <!-- <UIHeadIcon name="photo" width="85" height="85" bkimage="file='win-icr\\AttendClass\\icon_boy_student.png' "/> -->
+	   <!-- <Control   bkimage="file='win-icr\\AttendClass\\head_bg.png'" float="true" pos="0,0,100,100"/> -->
+	   <!-- <Control float="true" pos="0,0,200,200"/> -->
+	    <!-- <Label name = "temp1"  height="8"/> -->
+       <Label name="name" text="姓名" align="center" font="0"/>
+	   <Label name="stuid" text="学号" align="center" font="0"/>
+	  </VerticalLayout>
+
+  </Container>
+</Window>

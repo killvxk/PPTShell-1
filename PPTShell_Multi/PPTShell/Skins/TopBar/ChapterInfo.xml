@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="242,212">
+  <Font id="180000" name="微软雅黑" size="18" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Container bkcolor="#FF373737">
+    <VerticalLayout>
+      <HorizontalLayout height="38" >
+        <Control width="7" />
+        <Label name="title" endellipsis="true" textcolor="#FFFFFFFF" font="180000" />
+      </HorizontalLayout>
+      <HorizontalLayout height="30" >
+        <Control width="7" />
+        <Label name="title1" endellipsis="true" height="25" textcolor="#FF7A7A7A" font="140000" />
+      </HorizontalLayout>
+      <HorizontalLayout height="1" bkcolor="#FF515352"/>
+      <HorizontalLayout height="35">
+        <Control width="18" />
+        <Label text="章" width="75" font="140000" textcolor="#FF999999"/>
+        <Label bkcolor="#FF515352" width="1" />
+        <Control width="26" />
+        <Label name="chapter" font="140000" endellipsis="true" textcolor="#FF999999"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="1" bkcolor="#FF515352"/>
+      <HorizontalLayout height="35">
+        <Control width="18" />
+        <Label text="节" width="75" font="140000" textcolor="#FF999999"/>
+        <Label bkcolor="#FF515352" width="1" />
+        <Control width="26" />
+        <Label name="section" font="140000" endellipsis="true" textcolor="#FF999999"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="1" bkcolor="#FF515352"/>
+      <HorizontalLayout height="35">
+        <Control width="18" />
+        <Label text="小节" width="75" font="140000" textcolor="#FF999999"/>
+        <Label bkcolor="#FF515352" width="1" />
+        <Control width="26" />
+        <Label name="subSection" font="140000" endellipsis="true" textcolor="#FF999999"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="1" bkcolor="#FF515352"/>
+      <HorizontalLayout height="35">
+        <Control width="18" />
+        <Label text="小小节" width="75" font="140000" textcolor="#FF999999"/>
+        <Label bkcolor="#FF515352" width="1" />
+        <Control width="26" />
+        <Label name="subsubSetion" font="140000" endellipsis="true" textcolor="#FF999999"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </Container>
+</Window>

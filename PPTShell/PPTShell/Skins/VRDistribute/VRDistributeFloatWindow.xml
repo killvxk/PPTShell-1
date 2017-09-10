@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <VerticalLayout>
+    <Button name="VRDistribute" width="51" height="65" normalimage="file='VRDistribute\\Distribute.png' source='0,0,51,65'" hotimage="file='VRDistribute\\Distribute.png' source='51,0,102,65'" pushedimage="file='VRDistribute\\Distribute.png' source='102,0,153,65'" text="分发" textcolor="#FFFFFFFF" hottextcolor="#FFE4E4E4" pushedtextcolor="#FF189EA3" font="140100" tooltip="VR分发" textpadding="0,0,0,4" align="center" valign="bottom"/>
+  </VerticalLayout>
+</Window>

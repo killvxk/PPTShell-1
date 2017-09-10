@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<interactiveContent name="main.xml" scoreType="last">
+  <style href="${ref-path}/edu/esp/themes/default/main.css"/>
+  <pages>
+  </pages>
+</interactiveContent>

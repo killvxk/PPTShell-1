@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout name="contentResourceToolbarSytle">
+    <VerticalLayout name="empty" >
+    </VerticalLayout>
+    <Progress name="progress" height="6" float="false" bkimage="file='RightBar/item/item_pro_bk.png' corner='5,2,5,2'" foreimage="file='RightBar/item/item_pro_fore.png' corner='5,2,5,2'" min="0" max="100" visible="false"/>
+
+    <HorizontalLayout name="toolbar" height="30" visible="false">
+      <Button name="btn1"   normalimage="file='RightBar/item/btn_bk_normal.png'  corner='1,1,1,1'"   textcolor="#FFFFFFFF"/>
+      <Button name="btn2"  normalimage="file='RightBar/item/btn_bk_normal.png'  corner='1,1,1,1'"   textcolor="#FFFFFFFF"/>
+    </HorizontalLayout>
+  </VerticalLayout>      
+</Window>

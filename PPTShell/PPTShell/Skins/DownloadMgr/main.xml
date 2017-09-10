@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="350,720">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="100000" name="微软雅黑" size="10" bold="false" />
+  <VerticalLayout bkcolor="#FF303030">
+    <VerticalLayout height="40">
+      <Control height="2" bkimage="file='DownloadMgr\\tab\\line_header.png' corner='10,1,10,1'"/>
+      <Control />
+
+      <HorizontalLayout height="30">
+        <Control width="30"/>
+        <HorizontalLayout name="dm_tab_header_layout" inset="30,0,30,0" childpadding="4">
+          <Option userdata="0" textcolor="#FFFFFFFF" text="正在下载" name="dm_tab_header" group="dm_tab_header" normalimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,0,130,30'" hotimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,30,100,60'" selectedimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,30,100,60'"   pushedimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,60,100,90'"/>
+          <Option userdata="1" textcolor="#FFFFFFFF" text="下载完成" name="dm_tab_header" group="dm_tab_header" normalimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,0,130,30'" hotimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,30,100,60'" selectedimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,30,100,60'"   pushedimage="file='DownloadMgr\\tab\\tab_header_bk.png' source='0,60,100,90'"/>
+        </HorizontalLayout>
+        <Button name="dm_btn_close" pos="0,0,30,30" bkimage="file='DownloadMgr\\btn_close.png' source='0,0,30,30'" hotimage="file='DownloadMgr\\btn_close.png' source='30,0,60,30'" pushedimage="file='DownloadMgr\\btn_close.png' source='60,0,90,30'"/>
+        <Control width="5"/>
+      </HorizontalLayout>
+
+      <HorizontalLayout height="1">
+        <Control width="15"/>
+        <Control bkimage="file='DownloadMgr\\tab\\line_tab_header.png' corner='10,0,10,0'"/>
+        <Control width="15"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+
+    <TabLayout name="dm_download_tab" >
+      <VerticalLayout name="dm_tab_downloading">
+
+        <VerticalLayout name="dm_downloading_layout" >
+          <VerticalLayout name="dm_downloading_list" childpadding="5" inset="12,16,0,16" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='DownloadMgr\\scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='DownloadMgr\\scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='DownloadMgr\\scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+          </VerticalLayout>
+
+          <VerticalLayout height="55">
+            <Control height="12"/>
+            <HorizontalLayout childpadding="10">
+              <Control />
+              <Button  name="dm_pause_all" pos="0,0,100,30" normalimage="file='DownloadMgr\\tab\\btn_pause_all.png' source='0,0,100,30'"  hotimage="file='DownloadMgr\\tab\\btn_pause_all.png' source='0,32,100,62'"   pushedimage="file='DownloadMgr\\tab\\btn_pause_all.png' source='0,64,100,94'"/>
+              <Button  name="dm_start_all" pos="0,0,100,30" normalimage="file='DownloadMgr\\tab\\btn_start_all.png' source='0,0,100,30'"  hotimage="file='DownloadMgr\\tab\\btn_start_all.png' source='0,32,100,62'"   pushedimage="file='DownloadMgr\\tab\\btn_start_all.png' source='0,64,100,94'" visible="false"/>
+              <Button  name="dm_cancel_all"pos="0,0,100,30" normalimage="file='DownloadMgr\\tab\\btn_cancel_all.png' source='0,0,100,30'"  hotimage="file='DownloadMgr\\tab\\btn_cancel_all.png' source='0,32,100,62'" pushedimage="file='DownloadMgr\\tab\\btn_cancel_all.png' source='0,64,100,94'"/>
+              <Control />
+            </HorizontalLayout>
+            <Control height="12"/>
+          </VerticalLayout>
+        </VerticalLayout>
+
+        <VerticalLayout name="dm_downloading_none" visible="false">
+          <Control />
+          <HorizontalLayout height="136">
+            <Control />
+            <Control pos="0,0,136,136" bkimage="DownloadMgr\\tab\\icon_cat.png"/>
+            <Control />
+          </HorizontalLayout>
+          <Label name="name" text="亲，您当前没有下载任务哦~ " height="40" font="160000" textcolor="#FFEDEDED" align="center"/>
+          <Control />
+        </VerticalLayout>
+
+      </VerticalLayout>
+
+      <VerticalLayout name="dm_tab_downloaded">
+        <VerticalLayout name="dm_downloaded_layout">
+          <VerticalLayout name="dm_downloaded_list" childpadding="5" inset="12,16,0,16"  vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='DownloadMgr\\scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='DownloadMgr\\scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='DownloadMgr\\scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+          </VerticalLayout>
+
+          <VerticalLayout height="55">
+            <Control height="12"/>
+            <HorizontalLayout inset="0,0,0,0" childpadding="10">
+              <Control />
+              <Button  name="dm_clean_all"pos="0,0,135,30" normalimage="file='DownloadMgr\\tab\\btn_clean_all.png' source='0,0,135,30'"  hotimage="file='DownloadMgr\\tab\\btn_clean_all.png' source='0,32,135,62'" pushedimage="file='DownloadMgr\\tab\\btn_clean_all.png' source='0,64,135,94'"/>
+              <Control />
+            </HorizontalLayout>
+            <Control height="12"/>
+          </VerticalLayout>
+        </VerticalLayout>
+
+        <VerticalLayout name="dm_downloaded_none" visible="false">
+          <Control />
+          <HorizontalLayout height="136">
+            <Control />
+            <Control pos="0,0,136,136" bkimage="DownloadMgr\\tab\\icon_cat.png"/>
+            <Control />
+          </HorizontalLayout>
+          <Label name="name" text="亲，您暂时没有下载任务记录哦~ " height="40" font="160000" textcolor="#FFEDEDED" align="center"/>
+          <Control />
+        </VerticalLayout>
+
+      </VerticalLayout>
+    </TabLayout>
+  </VerticalLayout>
+</Window>

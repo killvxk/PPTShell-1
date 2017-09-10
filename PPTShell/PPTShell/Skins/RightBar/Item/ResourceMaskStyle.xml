@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout normalimage="file='RightBar/item/btn_bk_normal.png'  corner='1,1,1,1'" name="mask" visible="false">
+    <Control name="none1"/>
+    <HorizontalLayout name="toolbar" height="35">
+      <Control name="none21"/>
+      <GifAnim name="loading" width="36" height="36" bkimage="RightBar/item/item_loading.gif" autoplay="true"/>
+      <Control name="none23"/>
+    </HorizontalLayout>
+    <Label name="loading_tip"  text="加载中..." padding="0,4,0,0" textcolor="#FFFFFFFF" align="center" />
+    <Control name="none3"/>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font id="120000" name="微软雅黑" size="12"/>
+  <Container name="containerGroupItem" bkcolor="#FF474747" width="70" height="70" mousechild="false">
+    <VerticalLayout name="layoutGroupItem" hole="false" hscrollbar="false" vscrollbar="false" width="70" height="70" >
+      <HorizontalLayout height="50">
+        <Control />
+        <Control name="ctrGroupItemImage" width="56" height="50"/>
+        <Control />
+      </HorizontalLayout>
+      <Label font="120000" name="lblGroupItemName" textcolor="#99FFFFFF" align="center" endellipsis="true" height="20"/>
+    </VerticalLayout>
+  </Container>
+</Window>

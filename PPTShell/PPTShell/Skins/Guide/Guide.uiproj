@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<DirectUIProject Name="Guide" Version="1.0.6.158">
+    <File Name="GuideGrade.xml" />
+    <File Name="Skin.xml" />
+    <File Name="GuideChapter.xml" />
+</DirectUIProject>

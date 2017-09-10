@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <PencelView  name="PencelView">
+    
+    <Control name="top_padding"/>
+    <VerticalLayout  bkimage="ScreenTool\\bg_b_frame.png" name="colors"  vscrollbar="false" inset="17,11,17,10" childpadding="5">
+      
+    </VerticalLayout>
+    <Control />
+  </PencelView>
+</Window>

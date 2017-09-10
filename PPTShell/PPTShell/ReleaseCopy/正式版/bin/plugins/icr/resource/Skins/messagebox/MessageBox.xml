@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1200, 800">
+  <Font id="1" name="微软雅黑" size="14" bold="false" />
+  <Font id="2" name="微软雅黑" size="14" bold="true" />
+  <Font id="3" name="微软雅黑" size="19" bold="true" />
+  <Font id="4" name="微软雅黑" size="19" bold="false" />
+  <VerticalLayout name="MessageBox" bkcolor="#00000000" >
+    <Control />
+    <VerticalLayout name = "MessageBoxHeight" height="250">
+      <HorizontalLayout>
+        <Control />
+        <VerticalLayout width="430" >
+          <!-- 标题 -->
+          <HorizontalLayout height="50" inset="10,0,0,0" childpadding="10" bkcolor="#FF000000">
+            <Container width="56" bkimage="messageBox\\logo.png" />
+            <Label font="2" text="" name="title" textcolor="#FFFFFFFF" endellipsis="true" />
+          </HorizontalLayout>
+          <!-- 中间 -->
+          <HorizontalLayout name = "MessageBoxCenterHeight" height="108" bkcolor="#FFFFFFFF"  leftbordersize="2"  rightbordersize="3" bordercolor="#FF000000">
+              <Control name="type" bkimage="file='messageBox\\tooltip_icon.png' source='0,0,40,40'" float="true" pos="15,34,55,74"  width="40" height="40" />
+              <LabelEx  name="content"  font="4" text="11" endellipsis="true" padding="90,40"  />
+          
+          </HorizontalLayout>
+
+          <HorizontalLayout bkcolor="#FFFFFFFF" leftbordersize="2"  rightbordersize="3"  bottombordersize="3" bordercolor="#FF000000">
+          <!-- 底部 -->
+               <Control />
+               <Button name="msgboxbtn1" font="2" text="确定" width="80" height="30" padding="0,50" visible="false" textcolor="#FFFFFF" normalimage="messageBox\\btn_sure_default.png" hotimage="messageBox\\btn_sure_hover.png" pushedimage="messageBox\\btn_apply_default.png"/>
+
+               <Button name="msgboxbtn2" font="2" text="取消" width="80" height="30" padding="15,50" visible="false" textcolor="#FFFFFF" normalimage="messageBox\\btn_sure_default.png" hotimage="messageBox\\btn_sure_hover.png" pushedimage="messageBox\\btn_apply_default.png"/>
+
+               <Button name="msgboxbtn3" font="2" text="是否" width="80" height="30" padding="15,50" visible="false" textcolor="#FFFFFF" normalimage="messageBox\\btn_sure_default.png" hotimage="messageBox\\btn_sure_hover.png" pushedimage="messageBox\\btn_apply_default.png"/>
+              <Control />
+
+          </HorizontalLayout>
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

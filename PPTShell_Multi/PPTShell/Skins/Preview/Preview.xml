@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="190100" name="微软雅黑" size="19" bold="true" />
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="580">
+      <Control />
+      <VerticalLayout name="mainWindowLayout" width="920">
+        <!-- 标题 -->
+        <HorizontalLayout name="PreivieTopContainer" height="50" inset="10,0,0,0"  bkcolor="#FF000000">
+          <Container width="50" bkimage="logo\\logo.png" />
+          <Label font="140100" name="PreviewName" text="图片名称"  endellipsis="true"  width="590" textcolor="#FFFFFFFF" padding="20,0"/>
+          <Label font="140100" text="-预览"  width="35" textcolor="#FFFFFFFF"/>
+          <Control />
+          <Label font="120000" text="文件大小 :" textcolor="#FFFFFF"  padding="20,0" width="60" />
+          <Label font="120000" name="filesize" text="0K" textcolor="#FFFFFF"  padding="2,0" width="75"/>
+          <Label font="120000" text="下载次数 :" textcolor="#FFFFFF"  padding="14,0" width="60" visible="false"/>
+          <Label font="120000" name="downloadnum" text="0" textcolor="#FFFFFF" padding="2,0" width="60" visible="false"/>
+
+          <Button name="closeBtn" width="30" padding="30,10,0,0" height="30"  normalimage="file='Preview\\btn_close.png' source='0,0,30,30'" hotimage="file='Preview\\btn_close.png' source='30,0,60,30'" pushedimage="file='Preview\\btn_close.png' source='60,0,90,30'" />
+        </HorizontalLayout>
+
+        <Progress name="progress" height="6" float="false" bkcolor="#FF969696" bkimage="file='RightBar/item/item_pro_bk.png' corner='5,2,5,2'" foreimage="file='RightBar/item/item_pro_fore.png' corner='5,2,5,2'" min="0" max="100" visible="false"/>
+
+
+        <!-- 中间 -->
+        <VerticalLayout name="PreivieMiddleContainer" height="428" bkcolor="#FFFFFFFF">
+          <Container>
+            <Control />
+            <HorizontalLayout name="decription_lay" height="34" visible="false">
+              <Label font="140000" width="40" text="简介: "  padding="10,0" align="left"/>
+              <Label name="decription" font="140000" padding="0,0,10,0" text="暂无简介"  align="left" endellipsis="true"/>
+            </HorizontalLayout>
+          </Container>
+          <HorizontalLayout height="360">
+
+            <VerticalLayout name="leftContainer" width="140" >
+              <HorizontalLayout name="duration_lay" height="30" visible="false">
+                <Label font="140000" width="30" text="时长:"  padding="10,0" align="left"/>
+                <Label name="duration" font="140000" align="left"/>
+              </HorizontalLayout>
+              <Button name="allApplyBtn" font="140000" text="全部应用" width="100" height="30" padding="34,0" textcolor="#FFFFFF" normalimage="Preview\\btn_apply_default.png" hotimage="Preview\\btn_apply_hover.png" pushedimage="Preview\\btn_apply_default.png"/>
+              <Control  height="126"/>
+              <Button  name="pageLeftBtn" width="72" height="72"   padding="48,0"  normalimage="file='Preview\btn_kj_left.png' source='216,0,288,72'" hotimage="file='Preview\btn_kj_left.png' source='72,0,144,72'" pushedimage="file='Preview\btn_kj_left.png' source='144,0,216,72'" />
+            </VerticalLayout>
+
+            <VerticalLayout name="midContainer" width="640">
+              <Control />
+              <HorizontalLayout name="PreviewBigLayout" height="360" width="640">
+                <Control />
+                <VerticalLayout name="PreviewBigLayout2" height="360">
+                  <Control />
+                  <Control name="PreviewBig"/>
+                  <Control />
+                </VerticalLayout>
+                <Control />
+              </HorizontalLayout>
+              <Control name="PreviewBigError" bkimage="file='Preview\\image_unload.png'"   visible="false" />
+              <Button name="playBtn" width="85" height="85"  normalimage="file='Preview\btn_play.png' source='0,0,85,85'" hotimage="file='Preview\btn_play.png' source='85,0,170,85'" pushedimage="file='Preview\btn_play.png' source='0,0,85,85'" float="true" pos="278,170,363,255" />
+              <GifAnim name="loading11"  float="true" pos="278,170,314,206" bkimage="Preview\item_loading.gif"/>
+              <Control />
+            </VerticalLayout>
+
+            <VerticalLayout  name="rightContainer" width="140" >
+
+              <Button name="btn_pause_vr" font="140000" text="暂停" width="100" height="30" padding="6,0" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png" visible="false"/>
+              <Button name="btn_download_vr" font="140000" text="下载" width="100" height="30" padding="6,0" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png" visible="false"/>
+              <Button name="btn_insert_vr" font="140000" text="插入" width="100" height="30" padding="6,0" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png" visible="false"/>
+              <Control name="btn_padding" height="88" visible="false"/>
+              <Button name="fullScreenBtn" font="140000" text="全屏预览" width="100" height="30" padding="6,0" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png"/>
+              <Button name="insertPageBtn" font="140000" text="插入该页" width="100" height="30" padding="6,14" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png"/>
+              <Button name="cancelInsertBtn" font="140000" text="撤销插入" width="100" height="30" padding="6,14" textcolor="#FFFFFF" normalimage="Preview\\btn_cancel_default.png" hotimage="Preview\\btn_cancel_hover.png" pushedimage="Preview\\btn_cancel_default.png"/>
+              <Control  height="38"/>
+              <Button   name="pageRightBtn" width="72" height="72"   padding="20,0"  normalimage="file='Preview\btn_kj_right.png' source='216,0,288,72'" hotimage="file='Preview\btn_kj_right.png' source='72,0,144,72'" pushedimage="file='Preview\btn_kj_right.png' source='143,0,216,72'" />
+            </VerticalLayout>
+          </HorizontalLayout>
+          <Control />
+        </VerticalLayout>
+
+        <!-- 底部 -->
+        <HorizontalLayout  name="PreiviewBottomContainer" bkcolor="#FFE8E8E8" visible="true">
+          <HorizontalLayout width="46" >
+            <Button   name="scrollLeftBtn" width="30" height="70"   padding="16,15"  normalimage="file='Preview\btn_scroll_left.png' source='90,0,120,70'" hotimage="file='Preview\btn_scroll_left.png' source='30,0,60,70'" pushedimage="file='Preview\btn_scroll_left.png' source='60,0,90,70'" />
+          </HorizontalLayout>
+
+          <HorizontalLayout name="previewScrollCtn" padding="10" hscrollbar="true"  >
+
+          </HorizontalLayout>
+
+
+          <HorizontalLayout width="46">
+            <Button   name="scrollRigthBtn" width="30" height="70"   padding="10,15"  normalimage="file='Preview\btn_scroll_right.png' source='90,0,120,70'" hotimage="file='Preview\btn_scroll_right.png' source='30,0,60,70'" pushedimage="file='Preview\btn_scroll_right.png' source='60,0,90,70'" />
+          </HorizontalLayout>
+
+        </HorizontalLayout>
+
+        <HorizontalLayout  name="PreiviewPicBottomContainer" bkcolor="#FFFFFFFF" visible="false">
+
+        </HorizontalLayout>
+
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="340">
+      <Control />
+      <Container width="660" height="340" bkimage="About\\bg_about.png" visible="true">
+        <VerticalLayout>
+          <Control height="200"/>
+          <VerticalLayout height="40" childpadding="12">
+            <Label name="lblVersion" font="120000" text="版本号: 1.0.0.1" textcolor="#FFdeecf3" align="center" height="12"/>
+            <Label font="120000" name="lblBuild" text="Build" textcolor="#FFdeecf3" align="center" height="16" />
+            <Control />
+          </VerticalLayout>
+          <Control />
+        </VerticalLayout>
+        <Button name="btnClose" width="14" height="14" float="true" pos="636,10,650,24" normalimage="file='Commom\\close_normal.png'" hotimage="file='Commom\\close_hover.png'" pushedimage="file='Commom\\close_press.png'" />
+      </Container>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

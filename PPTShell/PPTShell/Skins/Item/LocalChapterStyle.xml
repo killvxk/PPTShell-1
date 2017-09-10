@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout height="15" childpadding="5">
+    <Control pos="0,0,15,15" bkimage="RightBar/item/icon_chapter.png"/>
+    <Label height="15" name="chapter" textcolor="#FF868686" endellipsis="true"/>
+  </HorizontalLayout>      
+</Window>

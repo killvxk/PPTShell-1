@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="140,2">
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <VerticalLayout bkcolor="#FF2A2A2A" bordersize="1" bordercolor="#FF5B5B5B">
+    <List name="menu_list" header="hidden" inset="1,1,1,1" itemhotbkcolor="#ff10b1b1" itemselectedbkcolor="#ff0e9194" itemdisabledbkcolor="#ff515151" itemdisabledtextcolor="#ff808080">
+      
+    </List>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <VerticalLayout bkcolor="#FF000000">
+    <HorizontalLayout name="titlebar"  height="50">
+	  <Label padding="10,0,0,0" width="50" height="50" bkimage="logo\\logo.png"/>
+      <Control width="10" />
+	  <Label name="toptitle" width="85" textcolor="#FFFFFFFF" font="130000"/>
+      <Label name="title" width="55" textcolor="#FFFFFFFF" font="130000"/>
+	  <Label name="subtitle" width="150" textcolor="#FFFFFFFF" font="130000"/>
+      <Control />
+      <Button name="close" padding="0,10,0,0"  width="30" height="30" normalimage="file='CoursePlayer\btn_topr_del.png' source='0,0,30,30'" hotimage="file='CoursePlayer\btn_topr_del.png' source='30,0,60,30'" pushedimage="file='CoursePlayer\btn_topr_del.png' source='60,0,90,30'"/>
+      <Control width="10" />
+    </HorizontalLayout>
+    
+  </VerticalLayout>
+
+</Window>

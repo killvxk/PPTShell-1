@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <HorizontalLayout height="28" childpadding="15">
+    <Label name="lblYear" width="35" align="right" font="140000" textcolor="#FF888888"/>
+    <VerticalLayout width="10" height="28" >
+      <HorizontalLayout>
+        <Control />
+        <Control name="ctrLineTop" width="2" bkimage="UpdateLog\\vertical_line.png" />
+        <Control />
+      </HorizontalLayout>
+      <Control name="ctrDot" bkimage="UpdateLog\\year_dot.png" width="10" height="10" />
+      <HorizontalLayout>
+        <Control />
+        <Control name="ctrLineBottom" width="2" bkimage="UpdateLog\\vertical_line.png" />
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </HorizontalLayout>
+</Window>

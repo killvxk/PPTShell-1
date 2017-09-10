@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <LocalItem height="150">
+    <Container name ="content">
+      <Label name="image" bkimage="RightBar/item/item_normal.png" align="center"/>
+      <!--hotimage="item/item_hover.png" pushedimage="item/item_pushed.png" selectedimage="item/item_pushed.png"-->
+      <Option name="item" pushedimage="file='RightBar/item/item_border_pushed.png'  corner='5,5,5,5'" normalimage="file='RightBar/item/item_border_normal.png'  corner='5,5,5,5'" selectedimage="file='RightBar/item/item_border_pushed.png'  corner='5,5,5,5'"/>
+
+    </Container>
+    <Label name="name"  padding="0,4,0,0" textcolor="#FFFFFFFF" align="center" endellipsis="true"/>
+  </LocalItem>
+</Window>

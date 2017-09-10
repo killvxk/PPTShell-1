@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window alpha = "230">
+	 <Font id="0" name="微软雅黑" size="24" bold="false" />
+	  <Font id="1" name="微软雅黑" size="22" bold="false" />
+	  <!--原来用80808080 -->
+  <VerticalLayout   bkcolor="#ffe5e5e5">
+
+	<!--标题栏 -->
+     <HorizontalLayout name="h_title" height="58"  bkcolor="#FF3B3B3B"  >
+	 
+	  <Control width="12" />
+      <Label name="title"   text="百科搜索" font="0"  textcolor="#FFFFFFFF"  />
+
+     <Button name="closebtn" padding="0,0,0,0"  width="59" height="58" normalimage="file='win-icr\Encyclopedia\closebtn_nomal.png' "  pushedimage="file='win-icr\Encyclopedia\closebtn_clicked.png'  " visible="true"/>
+	</HorizontalLayout>
+
+ 
+	<VerticalLayout name="toolbar"    mouse="false">
+	  <Control height="12" enabled = "false" mouse="false"/>
+	  <!--搜索输入框 -->
+      <HorizontalLayout  height = "60"   >
+		  <Control width="8"  enabled = "false" mouse="false" />
+		  <HorizontalLayout bkimage="file='win-icr\Encyclopedia\search_input_normal.png' corner='1,1,1,1' "   >
+			<Control padding="8,19, 0, 0"  width="22" height = "22"   bkimage="win-icr\Encyclopedia\search.png"/>
+			<EditClear name="input_keyword" padding= "0,5, 0, 0"  width="282" height = "50"  text="输入关键字" font="1"    tiptext="请输入关键字" tipcolor="#FF797979" multiline="false"  maxchar="30" type="1" />
+		  </HorizontalLayout>
+		  <Control width="15"    mouse="false"/>
+		  <Button   name="searchbtn"   width="100" height="60"  text="搜索"  font="1" textcolor="#FFFFFFFF"   normalimage="file='win-icr\Encyclopedia\btn_normal.png'"  pushedimage="file='win-icr\Encyclopedia\btn_clicked.png'" />
+		  <Control width="10"   mouse="false"/>
+      </HorizontalLayout>
+	   <Control height="22"   mouse="false"/>
+	 
+	  
+
+	  
+	   <!--本章关键词分段-->
+	  <VerticalLayout name="section_key_words"  height = "270"   enabled = "false"    mouse="false" >
+		<HorizontalLayout name = "section_keywords" height = "60"   enabled = "false"    mouse="false" >
+		  <Control bkimage="win-icr\Encyclopedia\section.png" width="6"  height = "40"  enabled = "false"  mouse="false"/>
+		   <Label    text=" 本章关键词"  font="1" textcolor="#FF649c01"   height = "40"  />
+		</HorizontalLayout>
+		    <Control hight="10"    enabled = "false"  mouse="false"/>	
+		<HorizontalLayout name = "section_keywords_line1" height = "50"  enabled = "false" >	
+				<Control width="30"   mouse="false" />
+		 	 <Button name="keyword0"  text="关键词1" font="1"   endellipsis="true" pushedtextcolor= "#FF649c01"  align ="left"   textcolor="#FF333333"  padding="0,0,0,0"   height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+			  
+			 <Button name="keyword1" text="关键词2" font="1"  endellipsis="true"  pushedtextcolor= "#FF649c01" align ="left" textcolor="#FF333333"    padding="0,0,0,0"  height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+		</HorizontalLayout>
+		 <Control height="10"   mouse="false"/>
+		<HorizontalLayout name = "section_keywords_line2" height = "50"  mouse="false">			
+		 	 <Control width="30"   mouse="false"/>
+			 <Button name="keyword2"  text="关键词3" font="1"  endellipsis="true"  pushedtextcolor= "#FF649c01" align ="left"  textcolor="#FF333333" padding="0,0,0,0"    height="30"  pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+			   
+			 <Button name="keyword3" text="关键词4" font="1"  endellipsis="true"  pushedtextcolor= "#FF649c01" align ="left"   textcolor="#FF333333"    padding="0,0,0,0"  height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png' corner='1,1,1,1'  " visible="false"/>
+		</HorizontalLayout>
+		<Control height="10"   mouse="false"/>
+		<HorizontalLayout name = "section_keywords_line3" height = "50"    mouse="false">			
+		 	 <Control width="30"   mouse="false"/>
+			 <Button name="keyword4" text="关键词5" font="1"   endellipsis="true" pushedtextcolor= "#FF649c01" align ="left" textcolor="#FF333333"    padding="0,0,0,0"  height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+			  
+			 <Button name="keyword5" text="关键词6" font="1"   endellipsis="true" pushedtextcolor= "#FF649c01" align ="left" textcolor="#FF333333"    padding="0,0,0,0"  height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+		</HorizontalLayout>	
+		<Control height="10"   mouse="false"/>		
+		<HorizontalLayout name = "section_keywords_line4" height = "50"   mouse="false">			
+		 	 <Control width="30"   mouse="false"/>
+			 <Button name="keyword6" text="关键词7" font="1"   endellipsis="true" pushedtextcolor= "#FF649c01" align ="left" textcolor="#FF333333"    padding="0,0,0,0"   height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+			  
+			 <Button name="keyword7" text="关键词8" font="1"   endellipsis="true" pushedtextcolor= "#FF649c01" align ="left" textcolor="#FF333333"    padding="0,0,0,0"  height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  corner='1,1,1,1' " visible="false"/>
+		</HorizontalLayout>
+			
+		</VerticalLayout>
+		
+		
+		<VerticalLayout name="section_no_key_words"  height = "700" width="446"    enabled = "false"    mouse="false"  visible="false">
+		 <Control height="140"   mouse="false"/>
+			<HorizontalLayout>
+				<Control width="145"   mouse="false"/>
+				<VerticalLayout>			   
+				 <Label pos="0,0,200,152"   bkimage="file='win-icr\\Encyclopedia\\no_keyword.png' " visible="true"/>
+				 <Label name="title"   text="  没有相应关键字" font="0"  textcolor="#00000000"  />
+				</VerticalLayout> 
+			</HorizontalLayout>
+			
+		</VerticalLayout>
+     
+     
+	  
+	  
+	  
+	  
+	 <!--
+	    <VerticalLayout   visible="false">
+		<Control height="40"  />
+      <Control   height="1" bkimage="file='win-icr\Encyclopedia\point_line.png' " />
+	   <Control height="20" />
+	  		   <HorizontalLayout name = "section_search_history"  height = "50" >
+			  <Control bkimage="win-icr\Encyclopedia\section.png"  width="6"  height = "30"/>		  
+			   <Label    text=" 搜索记录"  textcolor="#FF649c01" font="24"  height = "30"/>
+				 <Control width="30" />
+			  </HorizontalLayout>
+		    <Control width="30" />	
+			<HorizontalLayout name = "section_history_line1" height = "50"  >			
+		 	 <Button name="history1"  align="left"  text="关键词1"  textcolor="#FF333333"   padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			  <Control width="30" />
+			 <Button name="history2" text="关键词2" textcolor="#FF333333"    padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			</HorizontalLayout>
+			<HorizontalLayout name = "section_history_line2" height = "50"  >			
+		 	 <Button name="history3"  text="关键词3" textcolor="#FF333333"    padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			  <Control width="30" />
+			 <Button name="history4"  text="关键词4" textcolor="#FF333333"    padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			</HorizontalLayout>
+			<HorizontalLayout name = "section_history_line3" height = "50"  >			
+		 	 <Button name="history5" text="关键词5" textcolor="#FF333333"    padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			  <Control width="30" />
+			 <Button name="history6" text="关键词6" textcolor="#FF333333"   padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout name = "section_history_line4" height = "50"  >			
+		 	 <Button name="history7" text="关键词7" textcolor="#FF333333"    padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			  <Control width="30" />
+			 <Button name="history8" text="关键词8" textcolor="#FF333333"    padding="0,0,0,0" width="30" height="30"   pushedimage="file='win-icr\Encyclopedia\keyword_checked.png'  " visible="true"/>
+			</HorizontalLayout>
+			
+		</VerticalLayout>
+		-->
+		
+		
+	  <Control height="200"  mouse="false"/>
+	  
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

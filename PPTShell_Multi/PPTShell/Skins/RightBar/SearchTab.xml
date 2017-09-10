@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout>
+    <HorizontalLayout padding="8,0,0,0" name="searchTabLayoutBtn" height="23">
+      <Option name="searchBtnAll" group="searchResult" width="50" selected="true" text="全部" textcolor="#FFFFFFFF" normalimage="file='RightBar\btn_tab.png' corner='8,15,8,0'" selectedimage="file='RightBar\btn_tab_on.png' corner='8,15,8,0'" />
+      <Option name="searchBtnCourse" group="searchResult" width="50" text="课件" textcolor="#FFFFFFFF" normalimage="file='RightBar\btn_tab.png' corner='8,15,8,0'" selectedimage="file='RightBar\btn_tab_on.png' corner='8,15,8,0'" />
+      <Option name="searchBtnVideo" group="searchResult" width="50" text="视频" textcolor="#FFFFFFFF" normalimage="file='RightBar\btn_tab.png' corner='8,15,8,0'" selectedimage="file='RightBar\btn_tab_on.png' corner='8,15,8,0'" />
+      <Option name="searchBtnPic" group="searchResult" width="50" text="图片" textcolor="#FFFFFFFF" normalimage="file='RightBar\btn_tab.png' corner='8,15,8,0'" selectedimage="file='RightBar\btn_tab_on.png' corner='8,15,8,0'" />
+      <Option name="searchBtnFlash" group="searchResult" width="50" text="动画" textcolor="#FFFFFFFF" normalimage="file='RightBar\btn_tab.png' corner='8,15,8,0'" selectedimage="file='RightBar\btn_tab_on.png' corner='8,15,8,0'" />
+      <Option name="searchBtnVolume" group="searchResult" width="50" text="音频" textcolor="#FFFFFFFF" normalimage="file='RightBar\btn_tab.png' corner='8,15,8,0'" selectedimage="file='RightBar\btn_tab_on.png' corner='8,15,8,0'" />
+    </HorizontalLayout>
+    <TabLayout name="searchTabView"  selectedid="0">
+      <VerticalLayout padding="8,0,0,0" name="searchTabAll" bkcolor="#FF474747" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+        <VerticalLayout name="searchSimpleCourseView" visible="false">
+          <HorizontalLayout height="20" padding="0,0,0,0">
+            <Label text="课件" width="40" align="center" textcolor="#FFFFFFFF" bkimage="RightBar\btn_sure_default.png"/>
+            <Label name="simpleCourseCountText" showhtml="true" padding="10,0,0,0" textcolor="#FFFFFFFF"/>
+            <Control />
+            <Button text="查看全部" name="showAllBtn" userdata="course" textcolor="#FFFFFFFF"/>
+          </HorizontalLayout>
+          <VerticalLayout height="1" bkcolor="#FF11B0B6" padding="0,0,15,0"/>
+          <VerticalLayout name="searchSimpleCourseContent"/>
+        </VerticalLayout>
+        <VerticalLayout name="searchSimpleVideoView"  visible="false">
+          <HorizontalLayout height="20" padding="0,0,0,0">
+            <Label text="视频" width="40" align="center" textcolor="#FFFFFFFF" bkimage="RightBar\btn_sure_default.png"/>
+            <Label name="simpleVideoCountText" showhtml="true" padding="10,0,0,0" textcolor="#FFFFFFFF"/>
+            <Control />
+            <Button text="查看全部" name="showAllBtn" userdata="video" textcolor="#FFFFFFFF"/>
+          </HorizontalLayout>
+          <VerticalLayout height="1" bkcolor="#FF11B0B6" padding="0,0,15,0"/>
+          <VerticalLayout name="searchSimpleVideoContent"/>
+        </VerticalLayout>
+        <VerticalLayout name="searchSimplePicView" visible="false">
+          <HorizontalLayout height="20" padding="0,0,0,0">
+            <Label text="图片" width="40" align="center" textcolor="#FFFFFFFF" bkimage="RightBar\btn_sure_default.png"/>
+            <Label name="simplePicCountText" showhtml="true" padding="10,0,0,0" textcolor="#FFFFFFFF"/>
+            <Control />
+            <Button text="查看全部" name="showAllBtn" userdata="pic" textcolor="#FFFFFFFF"/>
+          </HorizontalLayout>
+          <VerticalLayout height="1" bkcolor="#FF11B0B6" padding="0,0,15,0"/>
+          <VerticalLayout name="searchSimplePicContent"/>
+        </VerticalLayout>
+        <VerticalLayout name="searchSimpleFlashView" visible="false">
+          <HorizontalLayout height="20" padding="0,0,0,0">
+            <Label text="动画" width="40" align="center" textcolor="#FFFFFFFF" bkimage="RightBar\btn_sure_default.png"/>
+            <Label name="simpleFlashCountText" showhtml="true" padding="10,0,0,0" textcolor="#FFFFFFFF"/>
+            <Control />
+            <Button text="查看全部" name="showAllBtn" userdata="flash" textcolor="#FFFFFFFF"/>
+          </HorizontalLayout>
+          <VerticalLayout height="1" bkcolor="#FF11B0B6" padding="0,0,15,0"/>
+          <VerticalLayout name="searchSimpleFlashContent"/>
+        </VerticalLayout>
+        <VerticalLayout name="searchSimpleVolumeView" visible="false">
+          <HorizontalLayout height="20" padding="0,0,0,0">
+            <Label text="音频" width="40" align="center" textcolor="#FFFFFFFF" bkimage="RightBar\btn_sure_default.png"/>
+            <Label name="simpleVolumeCountText" showhtml="true" padding="10,0,0,0" textcolor="#FFFFFFFF"/>
+            <Control />
+            <Button text="查看全部" name="showAllBtn" userdata="volume" textcolor="#FFFFFFFF"/>
+          </HorizontalLayout>
+          <VerticalLayout height="1" bkcolor="#FF11B0B6" padding="0,0,15,0"/>
+          <VerticalLayout name="searchSimpleVolumeContent"/>
+        </VerticalLayout>
+      </VerticalLayout>
+      <VerticalLayout padding="8,0,0,0" name="searchTabCourse">
+        <VerticalLayout name="searchCourseContent" bkcolor="#FF474747" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; " />
+        <VerticalLayout name="searchCoursePage" height="65" bkcolor="#FF474747" visible="false">
+        </VerticalLayout>
+      </VerticalLayout>
+      <VerticalLayout padding="8,0,0,0" name="searchTabVideo" >
+        <VerticalLayout name="searchVideoContent" bkcolor="#FF474747" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; " />
+        <VerticalLayout name="searchVideoPage" height="65" bkcolor="#FF474747" visible="false">
+        </VerticalLayout>
+      </VerticalLayout>
+      <VerticalLayout padding="8,0,0,0" name="searchTabPic">
+        <VerticalLayout name="searchPicContent" bkcolor="#FF474747" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; " />
+        <VerticalLayout name="searchPicPage" height="65" bkcolor="#FF474747" visible="false">
+        </VerticalLayout>
+      </VerticalLayout>
+      <VerticalLayout padding="8,0,0,0" name="searchTabFlash">
+        <VerticalLayout name="searchFlashContent" bkcolor="#FF474747" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; " />
+        <VerticalLayout name="searchFlashPage" height="65" bkcolor="#FF474747" visible="false">
+        </VerticalLayout>
+      </VerticalLayout>
+      <VerticalLayout padding="8,0,0,0" name="searchTabVolume">
+        <VerticalLayout name="searchVolumeContent" bkcolor="#FF474747" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; " />
+        <VerticalLayout name="searchVolumePage" height="65" bkcolor="#FF474747" visible="false">
+        </VerticalLayout>
+      </VerticalLayout>
+    </TabLayout>
+  </VerticalLayout>
+</Window>

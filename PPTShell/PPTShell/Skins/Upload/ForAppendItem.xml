@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  
+  <ForAppendItem height="160" width="150" bkimage="upload/for_append_bk.png" bordercolor="#FF434343" bordersize="2">
+    
+    <VerticalLayout>
+      <Control />
+      <HorizontalLayout height="100">
+        <Control />
+        <VerticalLayout name ="content" height="88" width="80" childpadding="10">
+          <HorizontalLayout height="48">
+            <Control />
+            <Label name="image" pos="0,0,48,48" bkimage="upload/for_append_icon.png" align="center"/>
+            <Control />
+          </HorizontalLayout>
+          <Label name="name"  font="160100" text="继续添加" textcolor="#FF96A189" align="center" />
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+    
+    <Button name="item" />
+    
+  </ForAppendItem>
+</Window>

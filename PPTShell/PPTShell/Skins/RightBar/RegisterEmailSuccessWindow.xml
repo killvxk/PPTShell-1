@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="0" name="微软雅黑" size="14" bold="true" />
+  <Font id="1" name="微软雅黑" size="14" bold="false" />
+  <Container>
+    <VerticalLayout inset="25,0,35,0">
+      <Control height="2"/>
+      <HorizontalLayout height="50">
+        <Label text="新用户注册" align="left" textcolor="#FFFFFFFF" font="140100"/>
+        <Control />
+        <Button text="返回登录" name="backlogin" textcolor="#FF15B0B6" font="140000" width="55" padding="0,17,0,0" height="20"/>
+      </HorizontalLayout>
+      <Label bkimage="RightBar\\icon_h_line.png" height="1" />
+      <Control height="40"/>
+      <HorizontalLayout name="EmailTipLayout" height="120">
+        <Control width="10"/>
+        <Label bkimage="RightBar\\Email.png" width="42" height="32" padding="0,3,0,0"/>
+        <Control width="10"/>
+        <VerticalLayout>
+          <Label text="验证邮件已发出,请48小时内登陆邮箱验证" font="140100" textcolor="#FFFFFFFF"/>
+          <Control height="5" />
+          <LabelMulti name="EmailTipText" font="140100" textcolor="#FF868686" height="80" multiline="true" />
+        </VerticalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout height="40">
+        <Button text="进入您的邮箱查收激活邮件" name="OpenEmailUrlBtn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="140000"/>
+      </HorizontalLayout>
+      <Control height="30"/>
+      <Label bkimage="RightBar\\icon_h_line.png" height="1" />
+      <Control height="5"/>
+      <Label height="20" text="还没有收到验证邮件呢?" textcolor="#FF868686" font="140000" />
+      <Control height="5"/>
+      <Label height="20" text="1.尝试到广告邮件、垃圾邮件目录里找找看" textcolor="#FFFFFFFF" font="140000" />
+      <Control height="5"/>
+      <HorizontalLayout height="20">
+        <Button width="122" name="reSendEmail" text="2.再次发送验证邮件" textcolor="#FF15B0B6" font="140000" />
+        <Control />
+      </HorizontalLayout>
+      <Control height="5"/>
+      <HorizontalLayout height="20">
+        <Label text="3.如果重新发送注册验证邮件仍然没有收到,请" textcolor="#FFFFFFFF" font="140000" />
+        <Button text="更换另" name="changeEmail" width="48" textcolor="#FF15B0B6" font="140000" />
+      </HorizontalLayout>
+      <HorizontalLayout height="20">
+        <Button width="84" name="changeEmail" text="一个邮件地址" textcolor="#FF15B0B6" font="140000" />
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+  </Container>
+</Window>

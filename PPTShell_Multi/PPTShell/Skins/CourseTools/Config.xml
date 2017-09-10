@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Group name="常用工具">
+    <Item>天平</Item>
+    <Item>抽卡牌</Item>
+    <Item>摸球</Item>
+    <Item>掷骰子</Item>
+    <Item>等腰直角三角板</Item>
+    <Item>量角器</Item>
+    <Item>直尺</Item>
+    <Item>直角三角板</Item>
+  </Group>
+</Root>

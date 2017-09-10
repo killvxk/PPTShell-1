@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window  size="100,765" mininfo="100,600">
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="140010" name="微软雅黑" size="14" bold="false" underline="true"/>
+  <VerticalLayout bkcolor="#FF3C3C3C">
+    <VerticalLayout>
+      <!-- 搜索 -->
+      <ListBarSearchButton font="140100" height="40" name="btnSearch" logopadding="0,5,0,0" logowidth="80" logoheight="30" textcolor="#FFBDBDBD" hottextcolor="#FFFFFFFF" selectedtextcolor="#FF10B0B6"  text="搜索" align="left" textpadding="30,10,0,0" bkcolor="#FF303030" hotbkcolor="#FF354B4C" normalicon="file='RightBar\\btn_search.png' corner='12,5,25,5'" hoticon="file='RightBar\\btn_search_hover.png' corner='12,5,25,5'" selectedicon="file='RightBar\\btn_search_on.png' corner='12,5,25,5'"/>
+      <VerticalLayout  height="1" bkcolor="#FF595959"/>
+      <!-- 云端资源 -->
+      <ListBarCloudExpandButton font="140100" height="70" name="ndcloudres" logopadding="0,10,0,0" logowidth="40" logoheight="40" textcolor="#FFBDBDBD" hottextcolor="#FFFFFFFF" expandtextcolor="#FF10B0B6" textpadding="0,30,0,0" align="center" text="教育资源库" bkcolor="#FF303030" hotbkcolor="#FF354B4C" normalicon="file='RightBar\\icon_cloud.png' dest='30,5,70,45'" hoticon="file='RightBar\\icon_cloud_hover.png' dest='30,5,70,45'" expandicon="file='RightBar\\icon_cloud_on.png' dest='30,5,70,45'"/>
+      <VerticalLayout  height="1" bkcolor="#FF595959"/>
+      <ListBarSelectChapterLayout name="ndclondselectchapter" visible="false">
+        <Control />
+        <HorizontalLayout height="35" >
+          <Control />
+          <Button text="选择章节" name="btnSelectChapter" width="70" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" font="140000"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </ListBarSelectChapterLayout>
+      <PPTShellList name="ndcloudreslist" header="hidden" vscrollbar="true"  visible="false" itemhotbkcolor="#FF354B4C" itemselectedimage="RightBar\\check_on.png">
+        <!-- 课件 -->
+        <ListCloudCourseItem name="CourseElement" height="90" userdata="课件" type="1" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_kj.png" hotimage="RightBar\\icon_kj_hover.png" selectedimage="RightBar\\icon_kj_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="课件" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right" valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center" valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left" valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloudCourseItem>
+
+        <!-- 多媒体 -->
+        <ListCloudAssetsItem name="AssetsElement" height="90" userdata="多媒体" type="13" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_video.png" hotimage="RightBar\\icon_video_hover.png" selectedimage="RightBar\\icon_video_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="多媒体" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right"  valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left"  valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloudAssetsItem>
+
+        <!-- 习题 -->
+        <ListCloudQuestionItem name="QuestionElement" height="90" userdata="基础习题" type="6" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_question.png" hotimage="RightBar\\icon_question_hover.png" selectedimage="RightBar\\icon_question_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="基础习题" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right"  valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left"  valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloudQuestionItem>
+
+        <!-- 互动题型 -->
+        <ListCloudCoursewareObjectsItem name="CoursewareObjectsElement" height="90" userdata="互动题型" type="7" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_course_obj.png" hotimage="RightBar\\icon_course_obj_hover.png" selectedimage="RightBar\\icon_course_obj_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="互动题型" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right"  valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left"  valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloudCoursewareObjectsItem>
+
+        <!-- PPT -->
+        <ListCloudPPTTemplateItem name="PPTTemplateElement" height="90" userdata="PPT模板" type="8" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_ppt.png" hotimage="RightBar\\icon_ppt_hover.png" selectedimage="RightBar\\icon_ppt_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="PPT模板" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right"  valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left"  valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloudPPTTemplateItem>
+
+        <!-- 3D -->
+        <ListCloud3DResourceItem name="3DElement" height="90" userdata="3D资源" type="10" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_3D.png" hotimage="RightBar\\icon_3D_hover.png" selectedimage="RightBar\\icon_3D_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="3D资源" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right"  valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left"  valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <control name="tip" pos="55,10,34,17" width="34" height="17" mouse="false" float="true" bkimage="rightbar/icon_test.png"/>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloud3DResourceItem>
+
+        <!-- VR -->
+        <ListCloudVRResourceItem name="VRElement" height="90" userdata="VR资源" type="12" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_VR.png" hotimage="RightBar\\icon_VR_hover.png" selectedimage="RightBar\\icon_VR_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="VR资源" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="right"  valign="center" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="120000" align="left"  valign="center"/>
+              <Control />
+            </HorizontalLayout>
+            <control name="tip" pos="55,10,34,17" width="34" height="17" mouse="false" float="true" bkimage="rightbar/icon_test.png"/>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListCloudVRResourceItem>
+
+      </PPTShellList>
+
+      <!-- 本地资源库 -->
+      <ListBarLocalExpandButton font="140100" height="70" name="ndlocalres" logopadding="0,10,0,0" logowidth="40" logoheight="40" textcolor="#FFBDBDBD" hottextcolor="#FFFFFFFF" expandtextcolor="#FF10B0B6" textpadding="0,30,0,0" align="center" text="本地资源库" bkcolor="#FF303030" hotbkcolor="#FF354B4C" normalicon="file='RightBar\\icon_computer.png' dest='30,5,70,45'" hoticon="file='RightBar\\icon_computer_hover.png' dest='30,5,70,45'" expandicon="file='RightBar\\icon_computer_on.png' dest='30,5,70,45'"/>
+      <VerticalLayout  height="1" bkcolor="#FF595959"/>
+      <PPTShellList height="40" name="ndlocalresimport" header="hidden" vscrollbar="true" visible="false" itemhotbkcolor="#FF354B4C" itemdisabledbkcolor="#FF3C3C3C" itemselectedimage="RightBar\\check_on.png">
+        <!--导入框-->
+        <ListBarLocalImportItem name="local_button_element" height="40" mouse="false" enabled="false">
+          <VerticalLayout>
+            <VerticalLayout>
+              <HorizontalLayout childpadding="5" padding="6,9,6,0">
+                <Button name="btn_local_import" height="21" width="88" normalimage="RightBar\\btn_insert.png" hotimage="RightBar\\btn_insert_hover.png" pushedimage="RightBar\\btn_insert_on.png"/>
+              </HorizontalLayout>
+            </VerticalLayout>
+            <control  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListBarLocalImportItem>
+      </PPTShellList>
+      <PPTShellList name="ndlocalreslist" header="hidden" vscrollbar="true" visible="false" itemhotbkcolor="#FF354B4C" itemselectedimage="RightBar\\check_on.png">
+        <!-- 本地课件 -->
+        <ListLocalCourseItem name="ndLocalCourseElement" height="90" userdata="本地课件" type="52" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_kj.png" hotimage="RightBar\\icon_kj_hover.png" selectedimage="RightBar\\icon_kj_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="本地课件" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalCourseItem>
+        <!-- 本地视频 -->
+        <ListLocalVideoItem name="ndLocalVideoElement" height="90" userdata="本地视频" type="53" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_video.png" hotimage="RightBar\\icon_video_hover.png" selectedimage="RightBar\\icon_video_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="本地视频" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalVideoItem>
+        <!-- 本地图片 -->
+        <ListLocalImageItem name="ndLocalImageElement" height="90" userdata="本地图片" type="54" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_pic.png" hotimage="RightBar\\icon_pic_hover.png" selectedimage="RightBar\\icon_pic_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="本地图片" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalImageItem>
+        <!-- 本地动画 -->
+        <ListLocalFlashItem name="ndLocalFlashElement" height="90" userdata="本地动画" type="55" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_flash.png" hotimage="RightBar\\icon_flash_hover.png" selectedimage="RightBar\\icon_flash_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="本地动画" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalFlashItem>
+        <!-- 本地音频 -->
+        <ListLocalVolumeItem name="ndLocalVolumeElement" height="90" userdata="本地音频" type="56" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_audio.png" hotimage="RightBar\\icon_audio_hover.png" selectedimage="RightBar\\icon_audio_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="本地音频" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalVolumeItem>
+        <!-- 本地基础习题 -->
+        <ListLocalQuestionItem name="ndLocalQuestionElement" height="90" userdata="基础习题" type="57" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_question.png" hotimage="RightBar\\icon_question_hover.png" selectedimage="RightBar\\icon_question_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="基础习题" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalQuestionItem>
+        <!-- 本地互动习题 -->
+        <ListLocalCoursewareObjectsItem name="ndLocalCoursewareObjectsElement" height="90" userdata="互动习题" type="58" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_course_obj.png" hotimage="RightBar\\icon_course_obj_hover.png" selectedimage="RightBar\\icon_course_obj_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="互动习题" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false" />
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false"/>
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListLocalCoursewareObjectsItem>
+      </PPTShellList>
+      <!--ITEM -->
+      <!--本地ITEM结束 -->
+      <!-- 我的网盘 -->
+      <ListBarDBankExpandButton font="140100" height="70" name="nddbankres" logopadding="0,10,0,0" logowidth="40" logoheight="40" textcolor="#FFBDBDBD" hottextcolor="#FFFFFFFF" expandtextcolor="#FF10B0B6" textpadding="0,30,0,0" align="center" text="我的网盘" bkcolor="#FF303030" hotbkcolor="#FF354B4C" normalicon="file='RightBar\\icon_dbank.png' dest='30,5,70,45'" hoticon="file='RightBar\\icon_dbank_hover.png' dest='30,5,70,45'" expandicon="file='RightBar\\icon_dbank_on.png' dest='30,5,70,45'" visible="false"/>
+      <VerticalLayout  height="1" bkcolor="#FF595959"/>
+      <ListBarLoginLayout name="ndbanklogin" visible="false">
+        <Control />
+        <Label text="尚未登录" align="center" textcolor="#FFC9C9C9" height="20" font="140000"/>
+        <Control height="10" />
+        <HorizontalLayout height="35" >
+          <Control />
+          <Button text="登录" name="btnLogin" width="66" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" font="140000"/>
+          <Control />
+        </HorizontalLayout>
+        <Control height="10" />
+        <HorizontalLayout height="20" >
+          <Control />
+          <Button text="快速注册" name="btnRegister" width="66" textcolor="#FF11B0B6"  font="140010"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </ListBarLoginLayout>
+      <PPTShellList name="nddbankresupload" height="40" header="hidden" vscrollbar="true" visible="false" itemhotbkcolor="#FF354B4C" itemselectedimage="RightBar\\check_on.png">
+        <!-- 网盘按钮 -->
+        <ListBarDBankUploadItem name="ndDbankButtonElement" type="101" height="40" mouse="false" enabled="false" bkcolor="#FF3C3C3C">
+          <VerticalLayout>
+            <VerticalLayout height="39">
+              <HorizontalLayout childpadding="5" padding="5,9,5,0">
+                <!--<Button  height="21" width="42"  normalimage="RightBar\\btn_add_default.png" hotimage="RightBar\\btn_add_hover.png" pushedimage="RightBar\\btn_add_hover.png"/>-->
+                <Button  name="btn_dbank_upload" height="21" width="88" normalimage="RightBar\\btn_upload_default.png" hotimage="RightBar\\btn_upload_hover.png" pushedimage="RightBar\\btn_upload_on.png"/>
+              </HorizontalLayout>
+            </VerticalLayout>
+            <control  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListBarDBankUploadItem>
+      </PPTShellList>
+      <PPTShellList name="nddbankreslist" header="hidden" vscrollbar="true" visible="false" itemhotbkcolor="#FF354B4C" itemselectedimage="RightBar\\check_on.png">
+        <!-- 网盘课件 -->
+        <ListDBankCourseItem name="ndDbankCourseElement" height="90" userdata="我的课件" type="102" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_kj.png" hotimage="RightBar\\icon_kj_hover.png" selectedimage="RightBar\\icon_kj_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20" >
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="我的课件" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false"/>
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false" />
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListDBankCourseItem>
+
+        <!-- 网盘多媒体 -->
+        <ListDBankAssetsItem name="ndDbankAssetsElement" height="90" userdata="我的多媒体" type="113" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_video.png" hotimage="RightBar\\icon_video_hover.png" selectedimage="RightBar\\icon_video_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="我的多媒体" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+             <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false"/>
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false" />
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListDBankAssetsItem>
+
+        <!-- 网盘简单习题 -->
+        <ListDBankQuestionItem name="ndDbankQuestionElement" height="90" userdata="基础习题" type="107" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_question.png" hotimage="RightBar\\icon_question_hover.png" selectedimage="RightBar\\icon_question_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="基础习题" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false"/>
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false" />
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListDBankQuestionItem>
+        
+        <!-- 网盘互动习题 -->
+        <ListDBankCoursewareObjectsItem name="ndDbankCoursewareObjectsElement" height="90" userdata="互动题型" type="108" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+          <VerticalLayout>
+            <VerticalLayout height="46">
+              <HorizontalLayout>
+                <control />
+                <Option name="icon"  width="40" height="40"  mouse="false" normalimage="RightBar\\icon_course_obj.png" hotimage="RightBar\\icon_course_obj_hover.png" selectedimage="RightBar\\icon_course_obj_on.png" padding="0,10,0,0"/>
+                <control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="20">
+              <Button name="contentBtn" width="100" visible="true" mouse="false" text="互动题型" font="140100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+            </VerticalLayout>
+            <!--数据 -->
+            <HorizontalLayout name="CountContainer">
+              <Control />
+              <Label name="curCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center" visible="false"/>
+              <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center"  valign="center" visible="false" />
+              <Label name="totalCount" textcolor="#FFFFFFFF" font="140100" align="center"  valign="center"  />
+              <Control />
+            </HorizontalLayout>
+            <VerticalLayout  height="1" bkcolor="#FF595959"/>
+          </VerticalLayout>
+        </ListDBankCoursewareObjectsItem>
+      </PPTShellList>
+      <!--ITEM -->
+      <!--ND网盘 -->
+    </VerticalLayout>
+    <VerticalLayout name="QRCodeContainerLayout" visible="false" height="140" inset="30,10,30,10">
+      <Container name="QRCodeContainer" bkimage="file='RightBar\\QRCode.png'" />
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

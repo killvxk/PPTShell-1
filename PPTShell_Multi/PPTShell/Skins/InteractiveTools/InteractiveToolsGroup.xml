@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <VerticalLayout name="containerGroup" hole="false" hscrollbar="false" vscrollbar="false">
+    <Container name="containerGroupName" width="354" height="38">
+      <Label font="160100" name="lblGroupName" textcolor="#FFFFFFFF" align="left" textpadding="12,0,12,0" endellipsis="true"/>
+    </Container>
+    <VerticalLayout name="containerGroupTools" bkcolor="#FF474747" hole="false" hscrollbar="false" vscrollbar="false">
+
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

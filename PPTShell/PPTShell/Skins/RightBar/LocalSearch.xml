@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout>
+    <HorizontalLayout height="20" padding="8,15,0,0">
+      <Label name="simpleTitle" width="60" align="center" endellipsis="true" textcolor="#FFFFFFFF" bkimage="RightBar\btn_sure_default.png"/>
+      <Label name="simpleCountText" showhtml="true" padding="10,0,0,0" textcolor="#FFFFFFFF"/>
+      <Control />
+      <Button text="查看全部" name="showAllBtn" textcolor="#FFFFFFFF"/>
+    </HorizontalLayout>
+    <VerticalLayout height="1" bkcolor="#FF11B0B6" padding="8,0,15,0"/>
+    <VerticalLayout name="searchSimpleContent" padding="8,0,0,0"/>
+  </VerticalLayout>
+</Window>

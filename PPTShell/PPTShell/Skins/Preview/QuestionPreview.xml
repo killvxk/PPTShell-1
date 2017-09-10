@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="596" >
+      <Control />
+      <VerticalLayout name="mainWindowLayout" width="984">
+        <!-- title -->
+        <HorizontalLayout name="layoutTitle" height="50" inset="10,0,0,0"  bkcolor="#FF000000">
+          <Container width="50" bkimage="logo\\logo.png" />
+          <Label font="140100" name="lblTitle" text="习题预览"  endellipsis="true"  width="500" textcolor="#FFFFFFFF" padding="20,0"/>
+          <Control />
+          <Label font="120000" name="lblFileSizeDesc" text="文件大小 :" textcolor="#FFFFFF"  padding="20,0" width="60" />
+          <Label font="120000" name="lblFileSize" text="0K" textcolor="#FFFFFF"  padding="2,0" width="75"/>
+          <Button name="btnClose" width="30" padding="30,10,0,0" height="30"  normalimage="file='Preview\\btn_close.png' source='0,0,30,30'" hotimage="file='Preview\\btn_close.png' source='30,0,60,30'" pushedimage="file='Preview\\btn_close.png' source='60,0,90,30'" />
+        </HorizontalLayout>
+        <!-- 显示部分 -->
+        <HorizontalLayout name="layoutDisplayContainer" height="428"  bkcolor="#FFFFFFFF">
+          <VerticalLayout width="140" >
+            <Control />
+            <Button  name="btnQuestionPreview" width="72" height="72"   padding="48,0"  normalimage="file='Preview\btn_kj_left.png' source='216,0,288,72'" hotimage="file='Preview\btn_kj_left.png' source='72,0,144,72'" pushedimage="file='Preview\btn_kj_left.png' source='144,0,216,72'" />
+            <Control />
+          </VerticalLayout>
+          <VerticalLayout name="layoutQuestion" width="704">
+            <Control />
+            <HorizontalLayout height="36">
+              <Control />
+              <GifAnim name="gifLoading" width="36" height="36" bkimage="Preview\item_loading.gif"/>
+              <Control />
+            </HorizontalLayout>
+            <Control />
+          </VerticalLayout>
+          <Container  width="140" >
+            <VerticalLayout>
+              <Control />
+              <Button name="btnQuestionNext" width="72" height="72"   padding="20,0"  normalimage="file='Preview\btn_kj_right.png' source='216,0,288,72'" hotimage="file='Preview\btn_kj_right.png' source='72,0,144,72'" pushedimage="file='Preview\btn_kj_right.png' source='143,0,216,72'" />
+              <Control />
+            </VerticalLayout>
+            <VerticalLayout float="true" pos="0,0,140,154" height="154" inset="0,36,0,0" >
+              <Button name="btnFullScreen" font="140000" text="全屏预览" width="100" height="30" padding="6,0" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png"/>
+              <Button name="btnInsert" font="140000" text="插入该页" width="100" height="30" padding="6,14" textcolor="#FFFFFF" normalimage="Preview\\btn_sure_default.png" hotimage="Preview\\btn_sure_hover.png" pushedimage="Preview\\btn_sure_default.png"/>
+              <Button name="btnCancelInsert" font="140000" text="撤销插入" visible="true" width="100" height="30" padding="6,14" textcolor="#FFFFFF" normalimage="Preview\\btn_cancel_default.png" hotimage="Preview\\btn_cancel_hover.png" pushedimage="Preview\\btn_cancel_default.png"/>
+            </VerticalLayout>
+          </Container>
+        </HorizontalLayout>
+        <!-- 缩略图列表 -->
+        <HorizontalLayout  name="layoutThumbnailContainer" bkcolor="#FFE8E8E8" visible="true" height="118">
+          <HorizontalLayout width="46" >
+            <Control />
+            <VerticalLayout width="30">
+              <Control />
+              <Button name="btnThumbnailPreview" width="30" height="70" normalimage="file='Preview\btn_scroll_left.png' source='90,0,120,70'" hotimage="file='Preview\btn_scroll_left.png' source='30,0,60,70'" pushedimage="file='Preview\btn_scroll_left.png' source='60,0,90,70'" />
+              <Control />
+            </VerticalLayout>
+            <Control />
+          </HorizontalLayout>
+          <HorizontalLayout name="layoutThumbnailList" height="118" inset="0,4,0,4" hscrollbar="true"/>
+          <HorizontalLayout width="46">
+            <Control />
+            <VerticalLayout width="30">
+              <Control />
+              <Button name="btnThumbnailNext" width="30" height="70" normalimage="file='Preview\btn_scroll_right.png' source='90,0,120,70'" hotimage="file='Preview\btn_scroll_right.png' source='30,0,60,70'" pushedimage="file='Preview\btn_scroll_right.png' source='60,0,90,70'" />
+              <Control />
+            </VerticalLayout>
+            <Control />
+          </HorizontalLayout>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true"> 
+      <VerticalLayout name="layoutBG"  bkcolor="#01000001" >
+        <HorizontalLayout height="50" inset="0,0,8,0">
+          <Control />
+          <Button name="btnClose" pos="0,0,50,50" normalimage="ScreenTool\\blackboard\\btn_close.png" pushedimage="file='ScreenTool\\btn_close_press.png'"/>
+        </HorizontalLayout>
+      </VerticalLayout> 
+</Window>

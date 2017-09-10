@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <HorizontalLayout >
+    <VerticalLayout bkimage="file='MagicPen\\Zoom.png' "  inset ="5,5,5,5"  >
+      <HorizontalLayout >
+        <Label name ="CopyBmpLabel"></Label>
+      </HorizontalLayout>
+    </VerticalLayout>
+    <VerticalLayout  width="60">
+      <Button name="btnClose" width="60" height="60" normalimage="file='MagicPen\\Close_Default.png'" hotimage="file='MagicPen\\Close_Selected.png' "  /> 
+    </VerticalLayout>
+  </HorizontalLayout>
+</Window>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="140,235">
+  <Font id="1" name="微软雅黑" size="14" bold="true" />
+  <VerticalLayout bkcolor="#FF2A2A2A" hole="false" bordersize="1" bordercolor="#FF5B5B5B">
+    <List name="menu_List" header="hidden" inset="1,1,1,1" itemhotbkcolor="#ff10b1b1" itemselectedbkcolor="#ff0e9194" itemdisabledbkcolor="#ff515151" itemdisabledtextcolor="#ff808080">
+      <ListContainerElement name="menu_open" height="25" visible="true">
+        <Label name="new" text="打开" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100" />
+      </ListContainerElement>
+      <Control name="menu_import_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_import" height="25" visible="true">
+        <Label name="import" text="导入" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_clearup_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_clearup" height="25" visible="true">
+        <Label name="del" text="清空" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_upload_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_upload" height="25" visible="true">
+        <Label name="del" text="上传" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_upload_netdisc_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_upload_netdisc" height="25" visible="true">
+        <Label name="del" text="上传到我的网盘" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_download_local_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_download_local" height="25" visible="true">
+        <Label name="del" text="下载到本地" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_delete_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_delete" height="25" visible="true">
+        <Label name="del" text="删除" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_rename_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_rename" height="25" visible="true">
+        <Label name="rename" text="重命名" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+      <Control name="menu_edit_exercises_split" height="1" bkcolor="#FF5B5B5B" visible="true"/>
+      <ListContainerElement name="menu_edit_exercises" height="25" visible="true">
+        <Label name="del" text="编辑习题" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="140100"/>
+      </ListContainerElement>
+    </List>
+  </VerticalLayout>
+</Window>

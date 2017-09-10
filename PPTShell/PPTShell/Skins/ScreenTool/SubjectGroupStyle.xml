@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+    <VerticalLayout inset="0,0,10,0">
+      <VerticalLayout height="40">
+        <Control />
+        <HorizontalLayout height="25">
+          <Control width="10"/>
+          <Label name="group_name" textcolor="#FFEFEFEF"/>
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+
+      <TileLayout name="group_list" columns="5"  bkcolor="#EE474747">
+
+      </TileLayout>
+    </VerticalLayout>
+</Window>

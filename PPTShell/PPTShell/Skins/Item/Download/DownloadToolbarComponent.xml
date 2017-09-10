@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+
+  <VerticalLayout>
+    <Control />
+    <HorizontalLayout childpadding="20" height="26">
+
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

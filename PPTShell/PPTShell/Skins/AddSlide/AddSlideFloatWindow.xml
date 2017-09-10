@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="300000" name="微软雅黑" size="30" bold="false" />
+  <VerticalLayout>
+    <Button name="AddSlide" width="86" height="38" normalimage="AddSlide\\add_normal.png" hotimage="AddSlide\\add_hover.png" pushedimage="AddSlide\\add_down.png" textcolor="#FFFFFFFF" font="300000" tooltip="新建幻灯片" align="true" valign="true"/>
+  </VerticalLayout>
+</Window>

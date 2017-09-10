@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="300000" name="微软雅黑" size="30" bold="false" />
+  <VerticalLayout>
+    <Button name="AddQuestion" width="86" height="38" normalimage="CoursePlayer\\add_normal.png" hotimage="CoursePlayer\\add_hover.png" pushedimage="CoursePlayer\\add_down.png" textcolor="#FFFFFFFF" font="300000" tooltip="插入习题" align="true" valign="true"/>
+  </VerticalLayout>
+</Window>

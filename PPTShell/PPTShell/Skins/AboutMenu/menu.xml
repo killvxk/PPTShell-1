@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="160,257" bktrans="true">
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <VerticalLayout name="mainContainer" bkimage="AboutMenu\\bg.png" hole="false">
+    <Control height="8" />
+    <HorizontalLayout>
+      <Control width="8" />
+      <VerticalLayout name="mainWindowLayout">
+        <List name="menu_List" header="hidden" inset="0,3,0,0" itemhotbkcolor="#ff10b1b1" itemselectedbkcolor="#ff0e9194" >
+          <!-- itemselectedbkcolor="#ff0e9194" inset="0,10,0,10" itemhotimage="file='item_top_active.png' corner='2,2,2,2'" -->
+          <!--inset="7,10,9,10" itemhotbkcolor="#ff10b1b1" itemselectedbkcolor="#ff0e9194"-->
+          <ListContainerElement name="menu_Update" height="46" inset="52,0,0,0" padding="0,0,0,0">
+            <Container float="true" pos="18,12,40,34" bkimage="AboutMenu\\icon_update.png" />
+            <Container name="new_Version" float="true" pos="110,12,116,18" bkimage="AboutMenu\\icon_dot.png" visible="false" />
+            <Label text="检查更新" mouse="false" textcolor="#ffffffff" font="140100"/>
+          </ListContainerElement>
+          <Control height="1" name="menu_Update_line" bkcolor="#ff444444" padding="16,0,16,0"/>
+          <ListContainerElement name="menu_Log" height="46" inset="52,0,0,0" >
+            <Container float="true" pos="18,12,40,34" bkimage="AboutMenu\\icon_log.png" />
+            <Label text="更新日志" mouse="false" textcolor="#ffffffff" font="140100"/>
+          </ListContainerElement>
+          <Control height="1" bkcolor="#ff444444" padding="16,0,16,0"/>
+          <ListContainerElement name="menu_FeedBack" height="46" inset="52,0,0,0">
+            <Container float="true" pos="18,12,40,34" bkimage="AboutMenu\\icon_feedback.png" />
+            <Label text="意见反馈" mouse="false" textcolor="#ffffffff" font="140100"/>
+          </ListContainerElement>
+          <Control height="1" bkcolor="#ff444444" padding="16,0,16,0"/>
+          <ListContainerElement name="menu_About" height="46" inset="52,0,0,0">
+            <Container float="true" pos="18,12,40,34" bkimage="AboutMenu\\icon_about.png" />
+            <Label text="关于..." mouse="false" textcolor="#ffffffff" font="140100"/>
+          </ListContainerElement>
+		  <Control height="1" bkcolor="#ff444444" padding="16,0,16,0"/>
+          <ListContainerElement name="menu_Options" height="46" inset="52,0,0,0">
+		    <Container float="true" pos="18,12,40,34" bkimage="AboutMenu\\ico_option.png" />
+            <Label text="设置" mouse="false" textcolor="#ffffffff" font="140100"/>
+          </ListContainerElement>
+        </List>
+      </VerticalLayout>
+      <Control width="8" />
+    </HorizontalLayout>
+    <Control height="14" />
+  </VerticalLayout>
+</Window>

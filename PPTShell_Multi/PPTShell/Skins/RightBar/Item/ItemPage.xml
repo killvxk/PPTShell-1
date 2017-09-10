@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout name="layoutItemPage">
+    <VerticalLayout name="contentViewLayout" childpadding="25" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='RightBar/Explorer/scroll_normal.png' corner='8,12,8,12'&quot; thumbhotimage=&quot;file='RightBar/Explorer/scroll_hover.png' corner='8,12,8,12'&quot; thumbpushedimage=&quot;file='RightBar/Explorer/scroll_pushed.png' corner='8,12,8,12'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;18&quot; ">
+    </VerticalLayout>
+    <VerticalLayout name="contentPageLayout" height="45">
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

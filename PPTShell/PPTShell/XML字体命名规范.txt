@@ -1,0 +1,10 @@
+
+ID规则为 字体大小（2位）+ 字体名称代号（1位）+ 是否粗体（1位）+ 是否下划线(1位）++ 是否斜体(1位) 
+字体大小如果小于2位的不补
+微软雅黑目前定义为代号0,宋体定义为1
+
+ 举例：
+  <Font id="90110" name="微软雅黑" size="9" bold="false" underline="true" italic="true" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="141010" name="宋体" size="16" bold="false" underline="true"/>
+  

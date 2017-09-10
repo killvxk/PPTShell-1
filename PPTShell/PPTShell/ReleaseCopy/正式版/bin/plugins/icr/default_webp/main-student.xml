@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<interactiveContent name="main-student.xml" scoreType="last"> 
+  <pages> 
+    <page name="blank" href="pages/blank.xml" preview=""/> 
+  </pages> 
+</interactiveContent>

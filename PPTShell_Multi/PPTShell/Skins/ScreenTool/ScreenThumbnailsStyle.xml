@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <ScreenThumbnails height="129" >
+    <HorizontalLayout>
+      <Control />
+      <VerticalLayout width="760" >
+        <Control />
+        <HorizontalLayout height="24" >
+          <Control /> 
+           <Button name="thumbnail_pickup" width="82"  align="center" bkimage="ScreenTool\\thumbnail\\btn_pickup_normal.png" hotimage="ScreenTool\\thumbnail\\btn_pickup_hot.png" pushedimage="ScreenTool\\thumbnail\\btn_pickup_pushed.png"/>
+           <Button name="thumbnail_expand" visible="false" width="82" bkimage="ScreenTool\\thumbnail\\btn_expand_normal.png" hotimage="ScreenTool\\thumbnail\\btn_expand_hot.png" pushedimage="ScreenTool\\thumbnail\\btn_expand_pushed.png"/>
+          <Control />
+        </HorizontalLayout>
+        <HorizontalLayout name="thumbnail_layout" height="105" bkimage="file='ScreenTool\\thumbnail\\bg_list_frame.png' corner='20,10,20,10'">
+          <Control />
+          <Button name="pre_page"  pos="0,0,33,105" bkimage="ScreenTool\\thumbnail\\btn_pre_normal.png" hotimage="ScreenTool\\thumbnail\\btn_pre_hot.png" pushedimage="ScreenTool\\thumbnail\\btn_pre_pushed.png"/>
+          <HorizontalLayout width="694" name="thumbnail_list" childpadding="1" hscrollbar="true">
+          </HorizontalLayout>
+          <Button name="next_page" pos="0,0,33,105" bkimage="ScreenTool\\thumbnail\\btn_next_normal.png" hotimage="ScreenTool\\thumbnail\\btn_next_hot.png" pushedimage="ScreenTool\\thumbnail\\btn_next_pushed.png"/>
+          <Control />
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+  </ScreenThumbnails>
+</Window>

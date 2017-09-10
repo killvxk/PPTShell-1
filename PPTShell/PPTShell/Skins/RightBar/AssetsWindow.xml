@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <AssetsWindowUI bkcolor="#FF474747">
+    <VerticalLayout height="5" />
+    <HorizontalLayout name="guide" height="40">
+    </HorizontalLayout>
+    <Container name="content">
+      
+    </Container>
+  </AssetsWindowUI>
+</Window>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="140,235">
+  <ListContainerElement height="25">
+    <Label name="menu_text" align="center" mouse="false" textcolor="#ffffffff" disabledtextcolor="#ff808080" font="1" />
+  </ListContainerElement>
+</Window>

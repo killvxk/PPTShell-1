@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <EncourageView name="EncourageView">
+    
+    <Control name="top_padding" height="74"/>
+    <List  name="encourages" vscrollbar="false" header="hidden"  bkimage="ScreenTool\\bg_b_frame.png"  itemhotimage="ScreenTool\\bg_a_frame.png" itemhotbkcolor="" itemselectedbkcolor="#FF191919">
+      
+    </List>
+    <Control />
+  </EncourageView>
+</Window>

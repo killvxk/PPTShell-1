@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<Font id="0" name="微软雅黑" size="14"/>
+    <Option name="persion_item" text="" height="50" textcolor="#FF000000" font="0" group="group_list_xx" selectedbkcolor="#FF659602"/>
+</Window>

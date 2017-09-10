@@ -1,0 +1,101 @@
+﻿[
+	{
+        "name": "课时工具",
+        "type": 1,
+        "value": [
+            {
+                "name": "天平"
+            },
+            {
+                "name": "摸球",
+                "test": true
+            },
+            {
+                "name": "掷骰子"
+            },
+            {
+                "name": "植树工具",
+                "test": true
+            },
+            {
+                "name": "图形切割"
+            },
+            {
+                "name": "模拟时钟"
+            },
+            {
+                "name": "方块塔"
+            }
+            
+        ]
+    },
+    {
+        "name": "常用工具",
+        "type": 1,
+        "value": [
+            {
+                "name": "计算器",
+                "type": 1,
+                "value": "Calc.exe"
+            },
+			{
+                "name": "直尺"
+            },
+            {
+                "name": "直角三角板"
+            },
+            {
+                "name": "等腰直角三角板"
+            },
+            {
+                "name": "量角器"
+            },
+            {
+                "name": "数轴"
+            },
+            {
+                "name": "圆规",
+                "test": true
+            },
+            {
+                "name": "点线角",
+                "value": "点",
+                "test": true
+            },
+            {
+                "name": "点线角",
+                "value": "线",
+                "test": true
+            },
+            {
+                "name": "点线角",
+                "value": "角",
+                "test": true
+            }
+        ]
+    },
+    {
+        "name": "平面几何图形",
+        "value": "平面几何"
+    },
+    {
+        "name": "立体几何图形",
+        "value": "立体几何",
+         "test": true
+    }
+]
+
+
+enum ToolGroupCreateType
+{
+	eCreate_FromDirectory
+	eCreate_FromValue,
+};
+
+
+enum ToolItemType
+{
+	eTool_Geometry,
+	eTool_Exec,
+	eTool_Interact,
+};

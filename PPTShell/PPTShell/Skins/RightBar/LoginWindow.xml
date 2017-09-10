@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <Font id="160100" name="微软雅黑" size="16" bold="true" /> 
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <LoginWindowUI>
+    <VerticalLayout inset="25,0,35,0">
+      <Control height="2"/>
+      <Label text="登录101教育PPT" align="left" height="50" textcolor="#FFFFFFFF" font="160100"/>
+      <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+        <Label width="45" bkimage="file='RightBar\\icon_user.png' dest='12,9,33,30'" />
+        <Label width="1" bkimage="file='RightBar\\icon_line.png' dest='0,8,1,32'" />
+        <Control width="10"/>
+        <EditClear height="30" width="260" padding="0,3,0,0" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="username" tiptext="请输入用户名" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="30" type="1"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip_username" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+      <Control height="15"/>
+      <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+        <Label width="45" bkimage="file='RightBar\\icon_password.png' dest='14,9,32,30'" />
+        <Label width="1" bkimage="file='RightBar\\icon_line.png' dest='0,8,1,32'" />
+        <Control width="10"/>
+        <EditClear height="30" width="260" padding="0,3,0,0"  password="true" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="password" tiptext="请输入密码" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="20" type="1"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip_password" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+      <Control height="15"/>
+      <HorizontalLayout height="20">
+        <CheckBox name="SavePassword"	text="记住密码" bkimage="file='RightBar\btn-checkbox.png' dest='0,0,22,22' source='0,0,22,22'" selectedimage="file='RightBar\btn-checkbox2.png' dest='0,0,22,22' source='22,0,44,22'" width="100" textpadding="5,0,0,0" textcolor="#FFFFFFFF" padding="10,0,0,0" font="130000"/>
+        <CheckBox name="AutomaticLogin"	text="自动登录" bkimage="file='RightBar\btn-checkbox.png' dest='0,0,22,22' source='0,0,22,22'" selectedimage="file='RightBar\btn-checkbox2.png' dest='0,0,22,22' source='22,0,44,22'" width="100" textpadding="5,0,0,0" textcolor="#FFFFFFFF" padding="10,0,0,0" font="130000"/>
+        <Control />
+        <Button text="忘记密码?" name="forgetPassword" width="66" align="right" textcolor="#FF339900"  font="130000"/>
+      </HorizontalLayout>
+      <Control height="20"/>
+      <HorizontalLayout height="40">
+        <Button text="登录" name="LoginBtn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="160000"/>
+      </HorizontalLayout>
+      <Control height="15"/>
+      <HorizontalLayout height="20">
+        <Button text="注册新账号" name="GoRegister" width="66" textcolor="#FF11B0B6"  font="130000"/>
+        <Control />
+        <Button text="随便看看" name="GoGuide" width="66" textcolor="#FF11B0B6"  font="130000"/>
+      </HorizontalLayout>
+      <Label name="error_tip_net" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+      <Control height="32"/>
+      <HorizontalLayout height="12">
+        <Control padding="0,5,0,0" height="1" bkcolor="#FFFFFFFF"/>
+        <Label text="其他账号登录" font="120000" align="center" textcolor="#FFFFFFFF" width="90"/>
+        <Control padding="0,5,0,0" height="1" bkcolor="#FFFFFFFF"/>
+      </HorizontalLayout>
+      <Control height="26"/>
+      <HorizontalLayout height="48">
+        <Control />
+        <Button name="weiboLoginBtn" normalimage="RightBar\\icon-weibo.png" hotimage="RightBar\\icon-weibo-hover.png" pushedimage="RightBar\\icon-weibo-press.png" width="48"/>
+        <Control width="32"/>
+        <Button name="qqLoginBtn" normalimage="RightBar\\icon-qq.png" hotimage="RightBar\\icon-qq-hover.png" pushedimage="RightBar\\icon-qq-press.png" width="48"/>
+        <Control width="32"/>
+        <Button name="ndLoginBtn" normalimage="RightBar\\icon-nd.png" hotimage="RightBar\\icon-nd-hover.png" pushedimage="RightBar\\icon-nd-press.png" width="48"/>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <VerticalLayout name="LoginTipLayout" bkcolor="#99353535" visible="false" >
+      <Control />
+      <HorizontalLayout>
+        <Control />
+        <HorizontalLayout  height="60" width="325" bkcolor="#FF353535">
+          <Control />
+          <Label width="26" bkimage="file='RightBar\\icon_success.png' dest='0,20,26,40'"/>
+          <Control width="20"/>
+          <Label name="LoginTip" font="160000" align="left" textcolor="#FFFFFFFF" showhtml="true"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </LoginWindowUI>
+</Window>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1200, 800">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="190100" name="微软雅黑" size="19" bold="true" />
+  <Font id="190000" name="微软雅黑" size="19" bold="false" />
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <VerticalLayout name="MessageBox" bkcolor="#66000000" >
+    <Control />
+    <VerticalLayout name = "MessageBoxHeight" height="302">
+      <HorizontalLayout>
+        <Control />
+        <VerticalLayout width="420" >
+          <!-- 标题 -->
+          <HorizontalLayout height="50" inset="10,0,0,0" childpadding="10" bkcolor="#FF000000">
+            <Container width="50" bkimage="logo\\logo.png" />
+            <Label font="140100" text="" name="title" textcolor="#FFFFFFFF" endellipsis="true" />
+          </HorizontalLayout>
+          <!-- 中间 -->
+          <HorizontalLayout name = "MessageBoxCenterHeight" height="108" bkcolor="#FFFFFFFF"  leftbordersize="2"  rightbordersize="3" bordercolor="#FF000000">
+            <Control name="type" bkimage="file='MessageBox\\tooltip_icon.png' source='0,0,40,40'" float="true" pos="15,34,55,74"  width="40" height="40" />
+            <Control width="90" />
+            <VerticalLayout padding="0,52,0,0">
+              <LabelEx  name="content" font="190000" text="11" endellipsis="true"  />
+              <LabelEx  name="content1" font="190000" text="11" endellipsis="true" visible="false"/>
+            </VerticalLayout>
+            <Control width="20" />
+          </HorizontalLayout>
+          <HorizontalLayout bkcolor="#FFFFFFFF" leftbordersize="2"  rightbordersize="3" bordercolor="#FF000000">
+          <!-- 底部 -->
+               <Control />
+               <Button name="msgboxbtn1" font="140100" text="确定" width="80" height="30" padding="0,20" visible="false" textcolor="#FFFFFF" normalimage="MessageBox\\btn_sure_default.png" hotimage="MessageBox\\btn_sure_hover.png" pushedimage="MessageBox\\btn_apply_default.png"/>
+
+               <Button name="msgboxbtn2" font="140100" text="取消" width="80" height="30" padding="15,20" visible="false" textcolor="#FFFFFF" normalimage="MessageBox\\btn_sure_default.png" hotimage="MessageBox\\btn_sure_hover.png" pushedimage="MessageBox\\btn_apply_default.png"/>
+
+               <Button name="msgboxbtn3" font="140100" text="是否" width="80" height="30" padding="15,20" visible="false" textcolor="#FFFFFF" normalimage="MessageBox\\btn_sure_default.png" hotimage="MessageBox\\btn_sure_hover.png" pushedimage="MessageBox\\btn_apply_default.png"/>
+
+               <Button name="msgboxbtn4" font="140100" text="忽略" width="80" height="30" padding="15,20" visible="false" textcolor="#FFFFFF" normalimage="MessageBox\\btn_sure_default.png" hotimage="MessageBox\\btn_sure_hover.png" pushedimage="MessageBox\\btn_apply_default.png"/>
+              <Control />
+
+          </HorizontalLayout>
+		  <HorizontalLayout height="1" padding="1,0,1,0">
+			   <Control height="1" bkcolor="#FFE5E5E5"/>
+		  </HorizontalLayout>
+		  <HorizontalLayout height="56" bkcolor="#FFFFFFFF" leftbordersize="2"  rightbordersize="3"  bottombordersize="3"  bordercolor="#FF000000">
+			<!--<CheckBox name="AddSkyCheck" text="�����ļ��ͬʱ���浽�ҵ����" selected="true" float="true" pos="96,245,0,0" width="100" height="20" textpadding="20,4,0,0" align="left" selectedimage="file='MessageBox\\checked.png' dest='0,2,16,18'" normalimage="file='MessageBox\\unchecked.png' dest='0,2,16,18'" />-->
+			<CheckBox name="AddSkyCheck" font="140000" text="保存文件的同时保存到我的网盘" textcolor="#FFA1A1A1" selected="true" float="true" pos="20,18,0,0" width="220" height="18" textpadding="20,0,0,0" align="left" selectedimage="file='MessageBox/checked.png' dest='0,2,16,18'" normalimage="file='MessageBox/unchecked.png' dest='0,2,16,18'" />
+		  </HorizontalLayout>
+
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

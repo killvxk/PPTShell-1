@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Container bkimage="file='TopBar\\updatetip.png' corner='40,14,14,14'" inset="10,15,10,10">
+    <VerticalLayout name="mainWindowLayout">
+      <Control height="15"/>
+      <HorizontalLayout height="44">
+        <Control width="15"/>
+        <Label bkimage="TopBar\\icon_updatetip.png" width="44" />
+        <Control width="15"/>
+        <VerticalLayout>
+          <Label font="140000" height="20" text="老师，有可用更新我已经帮您下载" />
+          <Label font="140000" height="20" text="好啦，赶快更新享受更完美的体验吧~" />
+        </VerticalLayout>
+        <Control width="10"/>
+      </HorizontalLayout>
+      <Control height="5" />
+      <HorizontalLayout height="35">
+        <Control width="74"/>
+        <Button name="startNewApp"  text="启动新版本" width="110"  bkcolor="#FF11B0B6" hotbkcolor="#FF48D1CC" pushedbkcolor="#FF0FB1B6" textcolor="#FFFFFFFF" font="140000"/>
+        <Control width="20"/>
+        <Button name="onLater" text="稍后再说" width="110"  bkcolor="#FF969696" hotbkcolor="#FF48D1CC" pushedbkcolor="#FF0FB1B6"  textcolor="#FFFFFFFF" font="140000"/>
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </Container>
+</Window>

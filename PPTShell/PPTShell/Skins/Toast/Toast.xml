@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="200,50">
+  <Font id="240100" name="微软雅黑" size="24" bold="true" />
+    <HorizontalLayout name="toastLayout" bkimage="file='toast\\toast.png' corner='10,10,10,10'">
+      <Text name="toastContent" font="240100" text="" padding="25,20,25,20" align="left" textcolor="#FFFFFFFF"/>
+    </HorizontalLayout>
+</Window>

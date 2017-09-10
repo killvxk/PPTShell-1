@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,50" size="866,600" defaultfontcolor="#FF333333">
+	<Font id="0" name="微软雅黑" size="14" bold="false" />
+    <Font id="1" name="微软雅黑" size="16" bold="false"/>
+    <Font id="2" name="微软雅黑" size="12" bold="false"/>	
+    <Font id="3" name="微软雅黑" size="14" bold="true" textcolor="#494949"/>	
+    <Default name="Label" value="font=&quot;0&quot;" />
+	
+    <VerticalLayout bordersize="1" bordercolor="#FFE8E8E6" bkcolor="#FFFFFFFF">
+        <!--标题栏-->
+        <HorizontalLayout name="caption" height="50" inset="10,0,10,0"  bkcolor="#FF000000">
+            <Container width="50" bkimage="Common\\logo.png" />
+            <Control />            
+            <Button name="close" width="30" height="30"  padding="0,10,0,0"  normalimage="file='Common\\btn_close.png' source='0,0,30,30'" hotimage="file='Common\\btn_close.png' source='30,0,60,30'" pushedimage="file='Common\\btn_close.png' source='60,0,90,30'" />
+        </HorizontalLayout>
+        
+        <!--分发统计-->
+        <Container height="90" inset="30,0,30,0" bkcolor="#FFE8E8E6">
+            <!--分发进度-->
+            <VerticalLayout name="dispatching">
+                <HorizontalLayout height="30" inset="0,10,0,0">
+                    <Label name="device_num_summary" font="1" text="已连接0台，本次分发0台" />                    
+                </HorizontalLayout>
+				<HorizontalLayout>
+					<VerticalLayout width="700" inset="0,8,20,0">
+						<Progress name="dispatch_progress" width="672" height="16" bordersize="1" bordercolor="#FF11B0B6"
+								foreimage="file='Dispatch\\progress_fore.png'" value="30" textpadding="0,2,0,0" />
+						<HorizontalLayout width="672">				
+							<Label name="dispatch_info" text="" font="2" width="480" />
+							<Label name="dispatch_rate" text="" font="2" align="right" width="192"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					<Button name="dispatch_button" text="开始分发" font="1" textcolor="#FFFFFFFF" width="108" height="42" normalimage="Dispatch\\button_normal.png" pushedimage="Dispatch\\button_pressed.png" /> 
+				</HorizontalLayout>
+            </VerticalLayout>
+            
+            <!--分发完成-->
+            <VerticalLayout name="dispatched" visible="false"> 
+                <HorizontalLayout height="30" inset="0,10,0,0">            
+					<Label name="dispatch_result" text="分发完成" font="1" textcolor="#FF51A401"/>
+				</HorizontalLayout>
+				<VerticalLayout inset="0,5,0,0">
+					<Label name="dispatch_success_num" text="分发成功：0台设备" />
+					<HorizontalLayout height="16" width="250">
+						<Label name="dispatch_failed_num" text="分发失败：0台设备" padding="0,0,0,2"/>
+						<Button name="dispatch_again" width="80" text="再次分发" valign="bottom" showhtml="true" textcolor="#FF11B0B6" />
+					</HorizontalLayout>
+				</VerticalLayout>
+            </VerticalLayout>
+        </Container>
+        
+        <!--设备列表头部-->
+        <HorizontalLayout name="device_list_head" height="55" inset="30,0,10,0">
+            <Label text="设备ID" width="110" font="3" /> 
+			<Label text="IP地址" width="130" font="3"/> 
+			<Label text="内存" width="107" font="3"/> 
+			<Label text="电量" width="100" font="3"/>
+			<Label text="状态" width="100" font="3"/>
+			<Label text="进度" width="200" font="3" align="center"/>
+        </HorizontalLayout>
+		
+		<Control height="1" bkcolor="#FFE8E8E6" padding="30,0,30,0"/>
+        
+        <!--设备列表-->
+        <VerticalLayout name="device_list" inset="30,0,10,0" vscrollbar="true"
+			vscrollbarstyle="thumbnormalimage=&quot;file='Dispatch\\scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;4&quot;">
+            <!--编码动态插入设备信息，layout文件名为device_item.xml-->
+        </VerticalLayout>
+		
+		<Control height="11" />        
+    </VerticalLayout>
+</Window>

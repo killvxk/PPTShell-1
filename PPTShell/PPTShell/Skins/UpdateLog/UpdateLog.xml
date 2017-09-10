@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="645">
+      <Control />
+      <Container name="mainContainer" width="660" height="645" bkcolor="#FFFFFFFF" borderround="7,7" visible="true" >
+        <!--日志内容-->
+        <VerticalLayout name="layoutUpdateLog" hscrollbar="false" vscrollbar="false" visible="true" borderround="5,5">
+          <!--点赞列表-->
+          <Container name="containerPraise" height="282" bkimage="UpdateLog//praise_bk.png">
+            <VerticalLayout name="layoutPraise" inset="68,115,68,67"  childpadding="20" vscrollbar="true"  vscrollbarstyle="thumbnormalimage=&quot;file='TopBar\daily_bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; padding=&quot;2,2,2,2&quot; maxwidth=&quot;8&quot;">
+            </VerticalLayout>
+            <Button name="btnSuggest" width="93" height="33" float="true" pos="489,224,582,257" normalimage="UpdateLog\\suggest_normal.png" hotimage="UpdateLog//suggest_hover.png" pushedimage="UpdateLog//suggest_press.png" visible="true"></Button>
+          </Container>
+          <!--日志列表-->
+          <VerticalLayout bkcolor="#FFF5F5F5" inset="20,20,0,0" childpadding="20" borderround="5,5">
+            <Label align="left" font="140000" text="更新日志" textcolor="#FF10B0B6"></Label>
+            <VerticalLayout name="layoutLogList" vscrollbar="true" inset="0,0,8,0"  vscrollbarstyle="thumbnormalimage=&quot;file='TopBar\daily_bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; padding=&quot;2,2,2,2&quot; maxwidth=&quot;8&quot;">
+            </VerticalLayout>
+          </VerticalLayout>
+        </VerticalLayout>
+        <!--loading界面-->
+        <VerticalLayout name="layoutLoading" hscrollbar="false" vscrollbar="false" visible="false">
+          <Control />
+          <HorizontalLayout hscrollbar="false" height="36" vscrollbar="false" >
+            <Control />
+            <GifAnim name="gifLoading" width="36" height="36" bkimage="Guide\loading.gif" auto="true" />
+            <Control />
+          </HorizontalLayout>
+          <Control />
+        </VerticalLayout>
+        <!--loading失败界面-->
+        <VerticalLayout name="layoutLoadingFail" hscrollbar="false" vscrollbar="false" visible="false" >
+          <Control />
+          <HorizontalLayout hscrollbar="false" vscrollbar="false" height="158" >
+            <Control />
+            <VerticalLayout hscrollbar="false" vscrollbar="false" childpadding="20" height="158" >
+              <HorizontalLayout hscrollbar="false" vscrollbar="false" >
+                <Control />
+                <GifAnim name="gifLoadingFail" width="36" height="36" bkimage="Guide\loading.gif" auto="true" />
+                <Control />
+              </HorizontalLayout>
+              <VerticalLayout height="46">
+                <Label text="网络不稳定或断网" font="160100" textcolor="#FF11B0B6" align="center"></Label>
+                <Label text="我们正在为你努力连接" font="120000" textcolor="#FFAEAEAE" align="center"></Label>
+              </VerticalLayout>
+              <HorizontalLayout hscrollbar="false" vscrollbar="false" height="36" >
+                <Control />
+                <Button name="btnRefresh" text="刷新" font="160100" textcolor="#FFFFFFFF" width="118" height="36" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+                <Control />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <Control />
+          </HorizontalLayout>
+          <Control />
+        </VerticalLayout>
+        <Button name="btnClose" width="14" height="14" float="true" pos="636,10,650,24" normalimage="file='Commom\\close_normal.png'" hotimage="file='Commom\\close_hover.png'" pushedimage="file='Commom\\close_press.png'" />
+      </Container>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

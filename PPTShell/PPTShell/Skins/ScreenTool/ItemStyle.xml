@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <InstrumentItem >
+    <VerticalLayout>
+      <Control />
+      <VerticalLayout height="58">
+        <HorizontalLayout height="38">
+          <Control />
+          <Control name="tool_image" pos="0,0,38,38"/>
+          <Control />
+        </HorizontalLayout>
+        <Label name="tool_name" textcolor="#FFCFCFCF" align="center" />
+      </VerticalLayout>
+      <Control />
+    </VerticalLayout>
+
+    <VerticalLayout name="lay_test_icon" inset="0,5,5,0" visible="false">
+      <HorizontalLayout>
+        <Control />
+        <Control name="test_icon" pos="0,0,34,17" bkimage="ScreenTool\\item\\icon_test.png"/>
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </InstrumentItem>
+</Window>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="800,800" bktrans="true">
+  <!--<HorizontalLayout bkcolor="#00000000">
+    <Control width="176"/>
+    <VerticalLayout>
+      <PanelView  name="MainPanel" bkcolor="#66FF0000"/>
+      <Control height="109"/>
+    </VerticalLayout>
+    <Control width="176"/>
+  </HorizontalLayout>-->
+  <PanelView  name="MainPanel" bkcolor="#01000001"/>
+</Window>

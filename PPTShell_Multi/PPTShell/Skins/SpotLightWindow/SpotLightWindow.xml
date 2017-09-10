@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <SpotLightWindowUI name="SpotLightBackGround" bkcolor="#BB000000" visible="false">
+    <SpotLightUI float="true" bkcolor="#FF000000" bktranscolor="#BB000000" bktranscolor1="#FFBBBBBB" />
+    <Button name="zoomBtn" bkimage="SpotLightWindow\\SpotLight.png" width="30" height="30" float="true" />
+    <List name="SpotLightToolsH" height="64" width="194" header="hidden" vscrollbar="false" float="true" visible="false">
+      
+    </List>
+    <List name="SpotLightToolsV" height="194" width="64"  header="hidden" vscrollbar="false" float="true" visible="false">
+      <ListContainerElement height="64" width="64">
+        <Label name="LightShapeBackground" bkimage="SpotLightWindow\\icon_btn_top.png" />
+        <VerticalLayout name="LightShapeLayout">
+          <Button font="120000" height="64" width="64" name="LightShapeBtn" textcolor="#FF000001" hottextcolor="#FFFFFFFF" text="矩形" textpadding="0,30,0,0" normalimage="file='SpotLightWindow\\icon_Rectangle.png' dest='19,10,45,36'" hotimage="file='SpotLightWindow\\icon_Rectangle_on.png' dest='19,10,45,36'"/>
+        </VerticalLayout>
+      </ListContainerElement>
+      <VerticalLayout height="1" bkimage="file='SpotLightWindow\\split.png' dest='1,0,63,1'"/>
+      <ListContainerElement height="64" width="64">
+        <Label name="LightSwitchBackground" bkimage="SpotLightWindow\\icon_btn_mid.png"/>
+        <VerticalLayout name="LightSwitchLayout">
+          <Button font="120000" height="64" width="64" name="LightStatusBtn" textcolor="#FF000001" hottextcolor="#FFFFFFFF" text="关灯" textpadding="0,30,0,0" normalimage="file='SpotLightWindow\\icon_closelight.png' dest='19,10,45,36'" hotimage="file='SpotLightWindow\\icon_closelight_on.png' dest='19,10,45,36'"/>
+        </VerticalLayout>
+      </ListContainerElement>
+      <VerticalLayout height="1" bkimage="file='SpotLightWindow\\split.png' dest='1,0,63,1'"/>
+      <ListContainerElement height="64" width="64">
+        <Label name="LightCloseBackground" bkimage="SpotLightWindow\\icon_btn_bottom.png"/>
+        <VerticalLayout name="CloseLayout">
+          <Button font="120000" height="64" width="64" name="CloseBtn" textcolor="#FF000001" hottextcolor="#FFFFFFFF" text="关闭" textpadding="0,30,0,0" normalimage="file='SpotLightWindow\\icon_close.png' dest='19,10,45,36'" hotimage="file='SpotLightWindow\\icon_close_on.png' dest='19,10,45,36'"/>
+        </VerticalLayout>
+      </ListContainerElement>
+    </List>
+  </SpotLightWindowUI>
+</Window>

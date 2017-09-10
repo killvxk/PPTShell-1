@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="333, 50" bktrans="true">
+  <Font id="1" name="微软雅黑" size="14" bold="false" />
+  <Font id="2" name="微软雅黑" size="14" bold="false" />
+  <VerticalLayout  bordersize="0" bkcolor="#FFFFFFFF"  bordercolor="#FF333333" borderround="5,5" bkimage="win-icr\\PushScreenTipDlg\\bg.png">
+      <HorizontalLayout>
+        <GifAnim name="gifLoading" width="36" height="36" bkimage="win-icr\\PushScreenTipDlg\\loading.gif" auto="true" padding="6,6,0,0"/>
+		<Label name="icon" width="36" height="36" bkimage="win-icr\\PushScreenTipDlg\\success.png" auto="true" padding="6,6,0,0" visible="false" />
+        <Label name="info" text="正在推送屏幕..." valign = "vcenter" textcolor="#FFFFFFFF" font="1" padding="15,5,0,0" height="40"/>
+		<HorizontalLayout width = "70" name="Close_Area">
+		<Control   bkimage="file='win-icr\\AttendClass\\left_right_space.png'"  width="2" padding="0,5,0,5" />
+        <Button name="close" font="2"  textcolor="#FFFFFFFF" text="取 消" hotimage="file='win-icr\\PushScreenTipDlg\\close_hover.png'" pushedimage="file='win-icr\\PushScreenTipDlg\\close_hover.png'" width="50" height="35" padding="18,7,0,0"/>
+		</HorizontalLayout>
+      </HorizontalLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="0, 0">
+  <Font id="0" name="微软雅黑" size="14" bold="false" />
+  <Font id="1" name="微软雅黑" size="16" bold="false" />
+  <Font id="2" name="微软雅黑" size="20" bold="true" />
+	
+  <VerticalLayout bkcolor="#FFEFF3EF">
+
+         <!--左边-->
+        <VerticalLayout height="62">
+             <!--上边信息栏-->
+              <HorizontalLayout height="62" bkimage="file='win-icr\\AttendClass\\title_bg.png' hole=&quot;true&quot; xtiled=&quot;true&quot; ytiled=&quot;true&quot;">
+				<Label name="TitleLabel" text="       花名册" textcolor="#FFFFFFFF" font="2" />			  
+				<Label name="student_info" text="在线: 0        离线: 0" width="250" textcolor="#FFFFFFFF" font="2" align="right" />
+				<Control name="xx2"  width="40"/>
+				<Button name="close" width="59" height="58" normalimage="file='win-icr\\AttendClass\\close_move_btn.png'" hotimage="file='win-icr\\AttendClass\\close_normal_btn.png'"/>		   
+              </HorizontalLayout>
+		</VerticalLayout>
+		
+		<VerticalLayout>
+		
+		<HorizontalLayout>
+		  <!--中间列表-->
+		  <TileLayout name="person_list" itemsize="110,150"  inset="10,10,10,10" vscrollbar="true"  vscrollbarstyle="thumbnormalimage=&quot;file='win-icr\\TopBar\\daily_bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; padding=&quot;2,2,2,2&quot; maxwidth=&quot;8&quot;">
+		  </TileLayout>
+
+           <!--右边-->
+          <VerticalLayout width="220" inset="18,10,5,10" bkimage="file='win-icr\\AttendClass\\right_panle.png' hole=&quot;true&quot; xtiled=&quot;true&quot; ytiled=&quot;true&quot;">
+              <!--右边列表-->
+			  <!-- <Control bkimage="file='win-icr\\AttendClass\\right_panle.png' hole=&quot;true&quot; xtiled=&quot;true&quot; ytiled=&quot;true&quot;"/> -->
+              <VerticalLayout  name="group_list_xx"  vscrollbar="true"  vscrollbarstyle="thumbnormalimage=&quot;file='win-icr\\TopBar\\daily_bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; padding=&quot;2,2,2,2&quot; maxwidth=&quot;8&quot;">
+              </VerticalLayout>
+			  
+          </VerticalLayout>
+		  
+		</HorizontalLayout>
+		
+		</VerticalLayout>
+	
+    </VerticalLayout>
+</Window>

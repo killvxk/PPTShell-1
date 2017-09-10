@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <VerticalLayout height="34">
+    <Control />
+    <HorizontalLayout height="34">
+      <Control />
+      <Option name="color_item" pos="0,0,34,34" group="colors"/>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

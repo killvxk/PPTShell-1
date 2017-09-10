@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <VerticalLayout bkcolor="#66000000">
+    <Control />
+    <HorizontalLayout height="35">
+      <Control />
+      <VerticalLayout name="mainWindowLayout" width="488">
+        <Label name="packStatus" textcolor="#FFFFFFFF" align="center" font="140000" />
+        <Progress height="15" bkcolor="#FF112233" foreimage="file='TopBar/fore_progress.png' corner='5,2,5,2'" name="packProgress" min="0" max="100" />
+      </VerticalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

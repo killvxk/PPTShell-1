@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="200, 100" roundcorner="4, 4">
+	<Font id="120000" name="微软雅黑" size="12" bold="false" />
+	<VerticalLayout width="200" height="100" bkimage="Options\\bkMask.png">
+		<HorizontalLayout height="36" padding="0,20,0,0">
+			<Control />
+				<GifAnim name="gifLoading" width="36" height="36" bkimage="Options\item_loading.gif"  />
+			<Control />
+		</HorizontalLayout>
+		<HorizontalLayout height="14" padding="0,10,0,0">
+			<Control />
+				<label text="清除缓存中..."  width="70" height="14" font="120000" textcolor="#FFFFFFFF" />
+			<Control />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

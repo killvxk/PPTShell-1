@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="140">
+      <Control />
+      <HorizontalLayout bkimage="file='ProgressMasker\bg_dialog.png' corner='10,10,10,10'"  inset="15,15,15,15" width="420">
+        <VerticalLayout name="mainWindowLayout" >
+
+          <Control />
+
+          <VerticalLayout height="53" name="loading" childpadding="20" inset="15,0,15,0">
+            <Label name="title" text="解析启动命令中..." align="center"/>
+            <Progress height="15" name="progress" foreimage="file='ProgressMasker\saving_pro_fore.png' corner='10,7,10,7'" bkimage="file='ProgressMasker\saving_pro_bk.png' corner='10,7,10,7'"/>
+          </VerticalLayout>
+
+
+          <HorizontalLayout height="47" name="success"  visible="false">
+            <Control />
+            <HorizontalLayout width="130" childpadding="15">
+              <Control pos="0,0,47,47" bkimage="ProgressMasker\saving_icon_success.png"/>
+              <Label text="下载完成" align="center"/>
+            </HorizontalLayout>
+            <Control />
+          </HorizontalLayout>
+
+
+
+          <HorizontalLayout height="47" name="fail"  visible="false">
+            <Control />
+            <HorizontalLayout width="130" childpadding="15" >
+              <Control pos="0,0,47,47" bkimage="ProgressMasker\saving_icon_fail.png"/>
+              <Label text="下载失败" align="center"/>
+            </HorizontalLayout>
+            <Control />
+          </HorizontalLayout>
+
+          <Control />
+        </VerticalLayout>
+      </HorizontalLayout>
+      
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout>
+ 
+</Window>

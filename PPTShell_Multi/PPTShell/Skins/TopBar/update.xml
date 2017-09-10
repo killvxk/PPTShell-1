@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true">
+  <Font id="360000" name="微软雅黑" size="36" bold="false" />
+  <Font id="200000" name="微软雅黑" size="20" bold="false" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="150000" name="微软雅黑" size="15" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="280000" name="微软雅黑" size="28" bold="false" />
+  <VerticalLayout bkcolor="#66000000">
+    <Control />
+    <VerticalLayout name="mainLayout" height="430">
+      <HorizontalLayout>
+        <Control />
+        <VerticalLayout name="mainWindowLayout" width="610">
+          <VerticalLayout name="hasUpdateLayout" visible="false" bkcolor="#FFFFFFFF" inset="10,15,15,15">
+            <HorizontalLayout height="100">
+              <Label width="96" height="96" bkimage="TopBar\\logo_update.png" />
+              <Control width="20" />
+              <VerticalLayout width="250">
+                <Label text="发现101教育PPT新版本啦!" font="200000"  textpadding="0,8,0,0" textcolor="#FF000000"/>
+                <Control height="13" />
+                <HorizontalLayout>
+                  <Label text="新版本号:" font="150000" width="75" textcolor="#FF666666"/>
+                  <Label name="updateInfoTitle" align="left" font="150000" textcolor="#FFFE7809"/>
+                </HorizontalLayout>
+                <Control height="2" />
+                <HorizontalLayout>
+                  <Label text="文件大小:" font="150000" width="75" textcolor="#FF666666"/>
+                  <Label name="allFilesSize" align="left" font="150000" textcolor="#FF666666"/>
+                </HorizontalLayout>
+                <Control height="10" />
+              </VerticalLayout>
+              <VerticalLayout>
+                <HorizontalLayout height="50">
+                  <Label text="已完成更新!" height="32" align="left" font="140000" textcolor="#FFFE7809" textpadding="0,12,0,0"/>
+                  <Control />
+                  <Button name="closeBtn" height="30" width="30" normalimage="TopBar\\btn-del.png" hotimage="TopBar\\btn-del-active.png" pushedimage="TopBar\\btn-del-hover.png" />
+                </HorizontalLayout>
+                <HorizontalLayout>
+                  <Control />
+                  <Button text="启动新版本" name="playnewBtn" width="120" height="35" textcolor="#FFFFFFFF" font="150000" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C"/>
+                </HorizontalLayout>
+              </VerticalLayout>
+            </HorizontalLayout>
+            <Control height="10" />
+            <Label text="更新说明:" textcolor="#FF000000" font="160000"/>
+            <Control height="5" />
+            <VerticalLayout inset="10,15,15,0" bkcolor="#FFECECEC" name="updateInfoLayout" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='Guide\bg_scroll_handle.png' corner='0,4,0,4'&quot; bknormalimage=&quot;file='Guide\bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; maxwidth=&quot;8&quot;">
+            </VerticalLayout>
+          </VerticalLayout>
+          <VerticalLayout name="updateProcessingLayout" bordersize="1" bordercolor="#FFFCFCFC" bkcolor="#FFFFFFFF" visible="false">
+            <VerticalLayout bkimage="TopBar\\btn_sure_hover.png" height="100">
+              <HorizontalLayout height="35">
+                <Control />
+                <Button name="closeBtn" height="30" width="30" normalimage="TopBar\\btn-del.png" hotimage="TopBar\\btn-del-active.png" pushedimage="TopBar\\btn-del-hover.png" />
+              </HorizontalLayout>
+              <Label name="updateProcessingLabel" text="正在下载更新" textcolor="#FFFFFFFF" font="280000" align="center"/>
+            </VerticalLayout>
+            <VerticalLayout inset="50,0,30,0">
+              <Control height="50"/>
+              <Label text="当前文件下载进度" font="140000" textcolor="#FF000000" />
+              <Progress width="488" name="currentProgress" height="15" bkcolor="#FFF0F0F0" foreimage="file='TopBar\\fore_progress.png' corner='5,2,5,2'" min="0" max="100"/>
+              <Control height="50"/>
+              <Label text="完整文件下载进度" font="140000"  textcolor="#FF000000" />
+              <Progress width="488" name="totalProgress" height="15" bkcolor="#FFF0F0F0" foreimage="file='TopBar\\fore_progress.png' corner='5,2,5,2'" min="0" max="100"/>
+              <Control height="20"/>
+              <Label name="updateInfoParamLabel" font="140000" endellipsis="true" textcolor="#FF000000" />
+              <Control />
+            </VerticalLayout>
+          </VerticalLayout>
+          <VerticalLayout name="newestLayout" bordersize="1" bordercolor="#FFFCFCFC" bkcolor="#FFFFFFFF" visible="false">
+            <VerticalLayout bkimage="TopBar\\bg_alert_top.png" height="138">
+              <Control height="60" />
+              <Label name="LocalVersion" textcolor="#FFFFFFFF" font="280000" align="center"/>
+            </VerticalLayout>
+            <Label text="101教育PPT 已经是最新版本" padding="0,60,0,0" textcolor="#FF000000" font="200000" align="center"/>
+            <HorizontalLayout height="100" padding="0,50,0,0">
+              <Control />
+              <Button name="confirmBtn" font="140000" text="确定" width="118" height="36" textcolor="#FFFFFFFF" normalimage="TopBar\\btn_sure_default.png" hotimage="TopBar\\btn_sure_hover.png" pushedimage="TopBar\\btn_sure_default.png"/>
+              <Control />
+            </HorizontalLayout>
+          </VerticalLayout>
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

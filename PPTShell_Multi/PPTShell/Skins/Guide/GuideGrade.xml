@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <VerticalLayout bkimage="file='guide\\icon_background.png' corner='10,1,10,10'">
+    <Container>
+      <MainCourseUI name="MainCourse" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='Guide\bg_scroll_handle.png' corner='0,4,0,4'&quot; bknormalimage=&quot;file='Guide\bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot; maxwidth=&quot;8&quot;">
+        <VerticalLayout name="CourseSectionLabel" height="25" visible="false">
+        </VerticalLayout>
+        <VerticalLayout name="CourseSectionLayout" visible="false">
+          <HorizontalLayout>
+            <Control width="15" />
+            <Label name="StatusLabel" width="70"/>
+            <Control width="35" />
+            <VerticalLayout name="CourseSection">
+            </VerticalLayout>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="CourseGradeLabel" height="25" >
+        </VerticalLayout>
+        <VerticalLayout name="CourseGradeLayout">
+          <HorizontalLayout>
+            <Control width="15" />
+            <VerticalLayout width="70">
+              <Control height="12" />
+              <Label name="StatusLabel" font="8" align="center"  height="16" textcolor="#FF58A8E7" text="请选择您的"/>
+              <Label name="StatusLabel1" font="8" align="center"  height="16" textcolor="#FF58A8E7" text="授课年级段"/>
+              <Control />
+            </VerticalLayout>
+            <Label name="StatusImage" width="35" />
+            <VerticalLayout name="CourseGrade">
+            </VerticalLayout>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="CourseCourseLabel" height="25">
+        </VerticalLayout>
+        <VerticalLayout name="CourseCourseLayout">
+          <HorizontalLayout>
+            <Control width="15" />
+            <VerticalLayout width="70">
+              <Control height="20" />
+              <Label name="StatusLabel" font="8" align="center"  height="16" textcolor="#FFDE77ED" text="请选择学科"/>
+              <Control />
+            </VerticalLayout>
+            <Label name="StatusImage" width="35" />
+            <VerticalLayout name="CourseCourse" width="828">
+            </VerticalLayout>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="CourseEditionLabel" height="25">
+        </VerticalLayout>
+        <VerticalLayout name="CourseEditionLayout">
+          <HorizontalLayout>
+            <Control width="15" />
+            <VerticalLayout width="70">
+              <Control height="12" />
+              <Label name="StatusLabel" font="8" align="center" height="16" textcolor="#FFFCAC31" text="请选择教材"/>
+              <Label name="StatusLabel1" font="8" align="center" height="16" textcolor="#FFFCAC31" text="版本"/>
+              <Control />
+            </VerticalLayout>
+            <Label name="StatusImage" width="35" />
+            <VerticalLayout name="CourseEdition" width="828">
+            </VerticalLayout>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="CourseSubEditionLabel" height="25">
+        </VerticalLayout>
+        <VerticalLayout name="CourseSubEditionLayout">
+          <HorizontalLayout>
+            <Control width="15" />
+            <VerticalLayout width="70">
+              <Control height="12" />
+              <Label name="StatusLabel" font="8" align="center" height="16" textcolor="#FF9CBC70" text="请选择子版"/>
+              <Label name="StatusLabel1" font="8" align="center" height="16" textcolor="#FF9CBC70" text="本"/>
+              <Control />
+            </VerticalLayout>
+            <Label name="StatusImage" width="35" />
+            <VerticalLayout name="CourseSubEdition" width="828">
+            </VerticalLayout>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <Control height="15" />
+      </MainCourseUI>
+      <VerticalLayout name="InitShowWindow" bkcolor="#FFFFFFFF">
+        <Control />
+        <HorizontalLayout>
+          <Control />
+          <Label name="InitText" textcolor="#FF000001" text="正在获取数据,请稍后..." align="center" font="2"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+      <VerticalLayout name="GifLoadingLayout" visible="false">
+        <Control />
+        <HorizontalLayout>
+          <Control />
+          <GifAnim name="GifLoading" width="36" height="36" bkimage="Guide\loading.gif" auto="false"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+    </Container>
+    <VerticalLayout height="50" name="confirmLayout" visible="false">
+      <HorizontalLayout padding="0,5,0,0">
+        <Control />
+        <Button width="110" height="35" font="5" text="确定" name="confirmBtn" textcolor="#FFFFFFFF" bkcolor="#FFFA851B" hotbkcolor="#FFFA991B" pushedbkcolor="#FFFA851B" />
+        <Control width="20"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

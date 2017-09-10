@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="config"
+	OutputDirectory="$(tempDir)\$(TargetName)\$(ConfigurationName)"
+	IntermediateDirectory="$(tempDir)\$(TargetName)\$(ConfigurationName)"
+	>
+	<Tool
+		Name="VCLinkerTool"
+		OutputFile="$(binDir)\$(ConfigurationName)\$(ProjectName).exe"
+	/>
+	<UserMacro
+		Name="TempDir"
+		Value="..\..\temp"
+	/>
+	<UserMacro
+		Name="BinDir"
+		Value="..\..\bin"
+	/>
+</VisualStudioPropertySheet>

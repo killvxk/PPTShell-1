@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="config"
+	>
+	<UserMacro
+		Name="tempDir"
+		Value="../../temp"
+	/>
+	<UserMacro
+		Name="binDir"
+		Value="../../bin"
+	/>
+</VisualStudioPropertySheet>

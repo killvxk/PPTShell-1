@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="510,350" caption="0,0,0,0" mininfo="510,350" maxinfo="510,350">
+  <Font id="170100" name="微软雅黑" size="17" default="true" />
+  
+  <VerticalLayout bkcolor="#FFF3F3F3">
+      <HorizontalLayout name="HLCaption" height="180" bkimage="newfolder\\folder.png">
+        <HorizontalLayout name="HLCaptionLeft" height="30" />
+        <HorizontalLayout name="HLCaptionRight" width="32" height="32" inset="0,2,2,0">
+            <Button name="CloseBtn" maxheight="30" maxwidth="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="right" normalimage="file='newfolder\\btn_close.png' source='0,0,30,30'" hotimage="file='newfolder\\btn_close.png' source='30,0,60,30'" pushedimage="file='btn_close.png' source='60,0,90,30'" />
+        </HorizontalLayout>
+      </HorizontalLayout>
+    <RichEdit name="SearchEdit" font="170100" float="true" pos="42,133,0,0" width="428" height="33"  autohscroll="true" multiline="false" bkcolor="#FFFFFFFF" 
+              textpadding="5,0,5,5" textcolor="#FF000000" inset="4,4,1,1" disabledtextcolor="#FFA7A6AA" maxchar="20"
+              tiptext="请输入文件名" tiptextcolor="#FF888888"/>
+    <Label name="lblTip" text="给您的新文件夹取一个好听又好记的名字吧~" float="true" pos="84,220,0,0" width="340" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+    <Button name="AddBtn" enabled="flase" font="170100" text="确定" float="true" pos="192,290,0,0" width="120" height="35" bkcolor="#FF0FB0B6" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" hotbkcolor="#FF00797C" pushedbkcolor="#FF5A797C" disabledbkcolor="#FF5A797C"/>
+    </VerticalLayout>
+</Window>

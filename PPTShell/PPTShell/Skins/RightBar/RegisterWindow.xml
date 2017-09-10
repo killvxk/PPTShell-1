@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="140000" name="微软雅黑" size="14" bold="false" />
+  <Font id="130000" name="微软雅黑" size="13" bold="false" />
+  <RegisterWindowUI>
+    <VerticalLayout inset="25,0,35,0">
+      <Control height="2"/>
+      <HorizontalLayout height="50">
+        <Label text="新用户注册" align="left" textcolor="#FFFFFFFF" font="160000"/>
+        <Control />
+        <Button text="返回登录" name="backlogin" textcolor="#FF15B0B6" font="140100" width="55" padding="0,17,0,0" height="20"/>
+      </HorizontalLayout>
+      <Label bkimage="RightBar\\icon_h_line.png" height="1" />
+      <Control height="15"/>
+      <Label text="手机号/邮箱" align="left" textcolor="#FFFFFFFF" font="140000" height="15"/>
+      <Control height="10"/>
+      <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+        <Control width="10"/>
+        <EditClear height="30" width="300" padding="0,3,0,0" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="registerusername" tiptext="请输入手机号/邮箱" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="30" type="1"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip_registerusername" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+      <Control height="10"/>
+      <Label text="密码" align="left" textcolor="#FFFFFFFF" font="140000" height="15"/>
+      <Control height="10"/>
+      <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+        <Control width="10"/>
+        <EditClear height="30" width="300" padding="0,3,0,0"  password="true" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="registerpassword" tiptext="6-20个字符，区分大小写" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="20" type="1"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip_registerpassword" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+      <Control height="10"/>
+      <Label text="重复密码" align="left" textcolor="#FFFFFFFF" font="140000" height="15"/>
+      <Control height="10"/>
+      <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3'">
+        <Control width="10"/>
+        <EditClear height="30" width="300" padding="0,3,0,0"  password="true" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="registerconfirmpassword" tiptext="6-20个字符，区分大小写" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="20" type="1"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip_registerconfirmpassword" visible="false" height="20" padding="0,8,0,0" textcolor="#FFFF0000" font="130000" />
+      <Control height="10"/>
+      <Label text="验证码" align="left" textcolor="#FFFFFFFF" font="140000" height="15"/>
+      <Control height="10"/>
+      <HorizontalLayout height="40" bkimage="file='RightBar\\icon_bk_login_edit.png' corner='3,3,3,3' dest='0,0,200,40'">
+        <Control width="10"/>
+        <EditClear height="30" width="180" padding="0,3,0,0" textcolor="#FFDBDBDB" nativebkcolor="#FF363636" bkcolor="#FF363636" name="checkcode" tiptext="请输入验证码" tiptextcolor="#FF797979" multiline="false" font="130000" textpadding="8,3,30,0" clear="true" clearimage="RightBar\close.png" maxchar="6" type="2"/>
+        <Control width="20" />
+        <HorizontalLayout width="120" name="checkcodeLayout">
+          <Label name="checkcodeimage" width="70"/>
+          <Button name="refreshcheckcode" width="50" height="20" text="换一张" font="130000" textcolor="#FF33FF00" padding="0,10,0,0" />
+        </HorizontalLayout>
+        <HorizontalLayout width="110" name="phonecodeLayout" visible="false">
+          <Button name="sentphonecode" text="发送验证码" font="130000" textcolor="#FFFFFFFF" borderround="2,2" disabledtextcolor="#FFFFFFFF" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" />
+        </HorizontalLayout>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+      <Control height="20"/>
+      <HorizontalLayout height="40">
+        <Button text="注册" name="RegisterBtn" textcolor="#FFFFFFFF" borderround="2,2" bkcolor="#FF11B0B6" hotbkcolor="#FF00797C" disabledbkcolor="#FFBCBCBC" font="140000"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="40">
+        <Control />
+        <Label text="注册视为同意 " height="15" width="90" textcolor="#FFFFFFFF" font="140000" padding="0,12,0,0"/>
+        <Button name="statementBtn" text="《法律条款和隐私声明》" width="145" textcolor="#FF11B0B6"  font="140000"/>
+        <Control />
+      </HorizontalLayout>
+      <Label name="error_tip_net" visible="false" height="20" padding="0,8,0,0"  textcolor="#FFFF0000" font="130000" />
+      <Control />
+    </VerticalLayout>
+    <VerticalLayout name="RegisterTipLayout" bkcolor="#99353535" visible="false" >
+      <Control />
+      <HorizontalLayout>
+        <Control />
+        <HorizontalLayout  height="60" width="325" bkcolor="#FF353535">
+          <Control width="40"/>
+          <Label width="26" bkimage="file='RightBar\\icon_success.png' dest='0,20,26,40'"/>
+          <Control width="30"/>
+          <Label text="恭喜您注册成功!" font="160000" align="left" textcolor="#FFFFFFFF"/>
+          <Control width="20"/>
+        </HorizontalLayout>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </VerticalLayout>
+  </RegisterWindowUI>
+</Window>

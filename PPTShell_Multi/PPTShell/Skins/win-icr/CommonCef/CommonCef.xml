@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+ <Font id="1" name="微软雅黑" size="18" bold="false" />
+  
+  
+  <VerticalLayout bkcolor="#FF000000"  bkimage="file='win-icr\Encyclopedia\search_input_normal.png' corner='1,1,1,1' "  >
+    <!-- <HorizontalLayout name="h_title" height="30"  inset="2,2,0,0"  bkcolor="#FF000000"> -->
+   <HorizontalLayout name="h_title" height="30"    bkcolor="#FF000000">
+	    <Control width="10" />
+      <Label name="title" text="标题"  textcolor="#FFFFFFFF" font="1"/>
+	  <Control />
+	   
+     <Button name="close_button" padding="0,0,0,0" width="30" height="30" normalimage="file='win-icr\CommonCef\closebtn_nomal.png' " hotimage="file='win-icr\CommonCef\closebtn_clicked.png'  "  pushedimage="file='win-icr\CommonCef\closebtn_clicked.png'  " visible="true"/>
+	<!-- <Button name="CommonCefTopClose" padding="0,10,0,0" width="30" height="30" normalimage="file='CommonCef\btn_topr_del.png' source='0,0,30,30'" hotimage="file='CommonCef\btn_topr_del.png' source='30,0,60,30'" pushedimage="file='CommonCef\btn_topr_del.png' source='60,0,90,30'" visible="false"/>
+	 -->
+	</HorizontalLayout>
+    <!--<VerticalLayout name="mainChapter" vscrollbar="true" vscrollbarstyle="thumbnormalimage=&quot;file='win-icr\CommonCef\bg_scroll_handle.png' corner='0,4,0,4'&quot; bknormalimage=&quot;file='win-icr\CommonCef\bg_scroll.png' corner='0,4,0,4'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; width=&quot;8&quot;">
+    </VerticalLayout>
+    -->
+	<!--
+	<VerticalLayout name="toolbar" bkcolor="#FF000000" height="30" visible="false">
+      <HorizontalLayout>
+        <CheckBox name="DefaultSetting"	text="设置默认选项" bkimage="file='CommonCef\check1.png' dest='0,20,20,40'" selectedimage="file='CommonCef\check2.png' dest='0,20,20,40'" width="100" textpadding="20,0,0,0" textcolor="#FF000000" padding="10,0,0,0" font="0" visible="false"/>
+        <Control />
+        <Button name="preStep" padding="0,12,0,0" text="前进" width="110" height="35" bkcolor="#FF11B0B6" textcolor="#FFFFFFFF" font="5" visible="true"/>
+        <Button name="onCreate" padding="18,12,0,0" text="后退" width="110" height="35" bkcolor="#FF969696" hotbkcolor="#FF48D1CC" pushedbkcolor="#FF0FB1B6" disabledtextcolor ="#FFFFFFFF" textcolor="#FFFFFFFF" font="5" enabled="false"/>
+        <Control width="30" />
+      </HorizontalLayout>
+    </VerticalLayout>
+	
+	-->
+  </VerticalLayout>
+</Window>

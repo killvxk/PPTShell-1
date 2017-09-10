@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+  <Font id="200100" name="微软雅黑" size="20" bold="true"/>
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <HorizontalLayout height="60">
+      <Control />
+      <HorizontalLayout name="content" width="250" bkcolor="#99000000" inset="0,5,0,0">
+        <Control />
+        <GifAnim name="loading" pos="0,0,36,36" padding="7,7,7,7" bkimage="ShadeWindow\\loading.gif" auto="true"/>
+        <Label name="loading_tip" text="加载中..." padding="10,10,10,10" font="200100" textcolor="#FFFFFFFF" align="left"/>
+        <Control />
+      </HorizontalLayout>
+      <Control />
+    </HorizontalLayout>
+    <Control />
+  </VerticalLayout> 
+</Window>

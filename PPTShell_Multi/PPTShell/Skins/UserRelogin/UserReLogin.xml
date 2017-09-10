@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <Font id="160100" name="微软雅黑" size="16" bold="true" />
+  <Font id="120100" name="微软雅黑" size="12" bold="true" />
+  <Font id="200100" name="微软雅黑" size="20" bold="true" />
+
+  <VerticalLayout bkcolor="#FF000000">
+    <VerticalLayout bkimage ="UserRelogin\\bg_head.png" height="163" >
+      <VerticalLayout height="80" >
+        <Control height ="17"/>
+        <HorizontalLayout height="60">
+          <Control height ="1" />
+          <Label name = "UserPhoto" width="60" bkimage="UserRelogin\\icon_loginX.png" />
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+      <VerticalLayout height ="65">
+        <control height ="20" />
+        <HorizontalLayout height="25">
+          <control />
+          <Label name = "UserName" width="120"text = "王万来" textcolor="#FF00797C"  font="160100" align="center"/>
+          <Label name = "UserType" width="40" text = "老师" textcolor="#FFFFFFFF"  font="160100" align="left" />
+          <control />
+        </HorizontalLayout>
+        <HorizontalLayout height ="20">
+          <control height ="2"/>
+          <Combo name = "UserDept" width="160" height="20" text = "高三(七)班"   textcolor="#Ffffffff"
+                 align="center"font="120100" hotimage="file='UserReLogin\\GradeCobox.png' source='239,0,357,35'"
+                 itemselectedbkcolor="#FFFFFFFF" itemhotbkcolor="#FF1b92ff" itemhottextcolor="#FFFFFFFF"
+                 itembkcolor="#FFFFFFFF" itemtextcolor="#FF696868" itemfont="120100" itemalign="left"
+                 bkimage="file='Feedback\\combo_dropdown.png' dest='148,10,157,18'"/>
+          <control />
+        </HorizontalLayout>
+      </VerticalLayout>
+    </VerticalLayout>
+
+    <List name="menu_List" header="hidden" itemhotbkcolor="#ff10b1b1" itemselectedbkcolor="#ff0e9194" >
+      <ListContainerElement name="ModifyPwdBtn" height="43" inset="52,0,0,0" padding="0,0,0,0">
+        <Container float="true" pos="18,12,34,28" bkimage="UserRelogin\\modifypass.png" />
+        <Container float="true" pos="110,12,116,18" visible="false" />
+        <Label text="修改密码" mouse="false" textcolor="#ffffffff" font="150100"/>
+      </ListContainerElement>
+      <Control height="1" bkcolor="#ff444444" padding="6,0,6,0"/>
+      <ListContainerElement name="ChangeUserBtn" height="43" inset="52,0,0,0" >
+        <Container float="true" pos="18,12,34,28" bkimage="UserRelogin\\user.png" />
+        <Label text="切换用户" mouse="false" textcolor="#ffffffff" font="150100"/>
+      </ListContainerElement>
+      <Control height="1" bkcolor="#ff444444" padding="6,0,6,0"/>
+      <ListContainerElement name="LogOutBtn" height="43" inset="52,0,0,0">
+        <Container float="true" pos="18,12,34,28" bkimage="UserRelogin\\exit.png" />
+        <Label text="退出" mouse="false" textcolor="#ffffffff" font="150100"align="left"/>
+      </ListContainerElement>
+    </List>
+  </VerticalLayout>
+</Window>

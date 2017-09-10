@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package version="0.1"> 
+  <target name="default"> 
+    <add src="*"/>  
+    <group name="71a32232-831a-4316-b15d-fdd94a76e81f.xml"/>
+  </target>  
+  <target name="student"> 
+    <add src="*"/> 
+  </target> 
+</package>

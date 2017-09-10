@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="true"> 
+  <Font id="140100" name="微软雅黑" size="14" bold="true" />
+  <Font id="190100" name="微软雅黑" size="19" bold="true" />
+  <VerticalLayout bkcolor="#66000000" >
+    <Control />
+    <VerticalLayout height="380">
+      <HorizontalLayout>
+        <Control />
+        <VerticalLayout name="mainWindowLayout" width="500" > 
+          <!-- 标题 -->
+          <HorizontalLayout height="50" inset="10,0,0,0" childpadding="10" bkcolor="#FF000000">
+            <Container width="50" bkimage="logo\\logo.png" />
+            <Label font="140100" text="二维码连接图" textcolor="#FFFFFFFF" />
+            <Button name="closeBtn" width="30" padding="0,10,0,0" height="30"  normalimage="file='About\\btn_close.png' source='0,0,30,30'" hotimage="file='About\\btn_close.png' source='30,0,60,30'" pushedimage="file='About\\btn_close.png' source='60,0,90,30'" />
+          </HorizontalLayout>
+          <!-- 中间 -->
+          <HorizontalLayout height="330"  bkcolor="#FFFFFFFF">
+            <Control />
+            <VerticalLayout width="500">
+              <Control height="10" />
+    
+                <Label height="25" font="190100" text="手机“扫一扫”立即安装101教育PPT手机版" align="center" />
+              <Control height="20" />
+        
+              <HorizontalLayout height="250" >
+                <Control />
+                <Control name="QRCodeImage" width="250" height="250"  />
+                <Control />
+              </HorizontalLayout>
+              <Control />
+            </VerticalLayout>
+            <Control />
+          </HorizontalLayout>
+          
+        </VerticalLayout>
+        <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control />
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="800,800" bktrans="true">
+  <Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="160000" name="微软雅黑" size="16" bold="false" />
+  <HorizontalLayout bkcolor="0x01000001">
+    <Control width ="70"/>
+    <VerticalLayout>
+      <Control height="30"/>
+      <VerticalLayout name="layoutBG" bkimage="file='ScreenTool\\blackboard\\bg_blackboard_frame.png' corner='100,100,100,100'" >
+        <HorizontalLayout height="50" inset="0,0,8,0">
+          <Control />
+          <Button name="btnClose" pos="0,0,50,50" normalimage="ScreenTool\\blackboard\\btn_close.png" pushedimage="file='ScreenTool\\btn_close_press.png'"/>
+        </HorizontalLayout>
+        <TabLayout name="tabPageContainer" inset="42,0,42,0"/>
+        <!--bordersize="1" bordercolor="#FF123456"-->
+        <HorizontalLayout height="110" inset="0,0,44,12" >
+          <Control />
+          <VerticalLayout width="500" >
+            <Control />
+            <HorizontalLayout width="500" height="57" childpadding="28">
+              <Control />
+              <Button name="btnPageAppend" width="54" height="57" normalimage="ScreenTool\\blackboard\\btn_page_append_normal.png" pushedimage="file='ScreenTool\\blackboard\\btn_page_append_press.png'"/>
+              <VerticalLayout name="layoutCount" vscrollbar="false" hscrollbar="false" width="234" height="57">
+                <Control />
+                <HorizontalLayout name="layoutCountBK" bkimage="file='ScreenTool\\blackboard\\page_count_bg.png' corner='100,0,100,0'" width="234" height="55" vscrollbar="false" hscrollbar="false">
+                  <Button name="btnPagePrevious" width="54" height="57" normalimage="ScreenTool\\blackboard\\btn_pre_page_normal.png"   pushedimage="ScreenTool\\blackboard\\btn_pre_page_press.png"/>
+                  <Control />
+                  <Label name="lblPageCurrentIndex" text="1" font="160000" align="right" textcolor="#FFE5950E" width="48" height="57" />
+                  <Label text="/" font="120000" align="center" textcolor="#FFFFFFFF" width="12" height="57" />
+                  <Label name="lblPageTotalCount" text="1" font="120000" align="left" textcolor="#FFFFFFFF" width="48" height="57" />
+                  <Control />
+                  <Button name="btnPageNext" width="54" height="57" normalimage="ScreenTool\\blackboard\\btn_next_page_normal.png"  pushedimage="ScreenTool\\blackboard\\btn_next_page_press.png"/>
+                </HorizontalLayout>
+                <Control />
+              </VerticalLayout>
+              <Button name="btnPageRemove" width="54" height="57" normalimage="ScreenTool\\blackboard\\btn_page_append_normal.png" pushedimage="file='ScreenTool\\blackboard\\btn_page_append_press.png'" visible="false"/>
+            </HorizontalLayout>
+            <Control />
+          </VerticalLayout>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Control height ="30"/>
+    </VerticalLayout>
+    <Control width ="70"/>
+  </HorizontalLayout>
+</Window>

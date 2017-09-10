@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<Font id="120000" name="微软雅黑" size="12" bold="false" />
+  <Font id="130100" name="微软雅黑" size="13" bold="true" />
+  <ListIconItem height="90" inset="4,0,6,0" textcolor="#FFD8D8D8" hottextcolor="#FFFFFFFF" textselectedcolor="#FF10b0b6" selcounttextcolor="#FFE1D419" modifyname="false">
+    <VerticalLayout>
+      <VerticalLayout height="46">
+        <HorizontalLayout>
+          <control />
+          <Option name="icon"  width="40" height="40" mouse="false" normalimage="rightbar/icon_file.png" hotimage="rightbar/icon_file_hover.png" selectedimage="rightbar/icon_file_on.png" padding="0,10,0,0" />
+          <control />
+        </HorizontalLayout>
+      </VerticalLayout>
+      <VerticalLayout name="contentLayout" height="24">
+        <Button name="contentBtn" width="84" visible="true" mouse="false" tooltip="点击修改名称" text="" font="130100" align="center" endellipsis="true" textcolor="#FFD8D8D8" hottextcolor="#FF00FFFF" pushedtextcolor="#FF27969B"/>
+      </VerticalLayout>
+      <!--数据 -->
+      <HorizontalLayout name="CountContainer" visible="true">
+          <Control />
+          <Label name="curCount" textcolor="#FFFFFFFF" text="0" font="130100" align="center" valign="center" visible="false"/>
+          <Label name="Separator" width="10" text="/" textcolor="#FFFFFFFF" font="120000" align="center" valign="center" visible="false"/>
+          <Label name="totalCount" textcolor="#FFFFFFFF" text="0" font="120000" align="center" valign="center" visible="false"/>
+          <Control />
+      </HorizontalLayout>
+      <control  visible="false" />
+      <VerticalLayout  height="1" bkcolor="#FF595959"/>
+    </VerticalLayout>
+  </ListIconItem>
+</Window>

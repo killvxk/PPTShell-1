@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <VerticalLayout bkcolor="#ffE0EDEC" bordersize="1" bordercolor="#ff11b0b6">
+    <VerticalLayout height ="24"  bkcolor="#ff11b0b6">
+      <HorizontalLayout>
+        <control></control>
+        <Button width ="24" name="Loading_CloseBtn" align="center" normalimage="Commom\\close_normal.png" hotimage="Commom\\close_hover.png" pushedimage="Commom\\close_press.png"></Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+    <VerticalLayout>
+      <control height="10"></control>
+      <HorizontalLayout>
+        <Label name="LoadingFail" text="数据加载未完全，请稍等" align="center" textcolor="#ffff0000" ></Label>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

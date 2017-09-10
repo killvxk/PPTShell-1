@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout normalimage="file='Item/btn_bk_normal.png'  corner='1,1,1,1'" name="mask" visible="false">
+    <Control />
+    <HorizontalLayout height="36">
+      <Control />
+      <GifAnim name="loading" width="36" height="36" bkimage="Item/item_loading.gif" autoplay="true"/>
+      <Control />
+    </HorizontalLayout>
+    <Label name="loading_tip"  text="加载中..." padding="0,4,0,0" textcolor="#FFFFFFFF" align="center" />
+    <Control />
+  </VerticalLayout>
+</Window>

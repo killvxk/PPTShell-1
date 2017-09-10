@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="640,480">
+  <Container>
+      <Label name="DisplayImage" width="640" height="480" bkcolor="#FF474747" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+      <HorizontalLayout>
+        <VerticalLayout />
+        <Button name="btnClose" width="32" height="32" normalimage="ImageCtrl/close_normal.png" hotimage="ImageCtrl/close_hover.png" pushedimage="ImageCtrl/close_press.png" />
+      </HorizontalLayout>
+  </Container>
+</Window>

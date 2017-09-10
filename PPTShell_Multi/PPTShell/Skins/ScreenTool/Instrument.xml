@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="800,800" bktrans="true">
+  <Font id="200100" name="微软雅黑" size="20" bold="true" />
+  <Font id="150100" name="微软雅黑" size="15" bold="true" />
+
+  <Container  bkcolor="#00000000">
+    <VerticalLayout name="SpotLightLayout">
+      
+    </VerticalLayout>
+    <HorizontalLayout name="InstrumentLayout">
+      
+      <HorizontalLayout width="70">
+        <VerticalLayout>
+          <Control />
+
+          <Container height="571" name="left_container">
+            <VerticalLayout name="left_hover_layout" >
+              <Control />
+              <HorizontalLayout height="58">
+                <Button name="left_hover"   pos="0,0,42,58" normalimage="ScreenTool\\btn_lhover_normal.png" hotimage="ScreenTool\\btn_lhover_hot.png" pushedimage="ScreenTool\\btn_lhover_pushed.png" />
+                <Control />
+              </HorizontalLayout>
+              <Control />
+            </VerticalLayout>
+
+            <VerticalLayout name="left_tool_layout"  visible="false" >
+              <List  name="tools" bkimage="ScreenTool\\bg_a_frame.png"  vscrollbar="false" header="hidden" itemhotimage="" itemhotbkcolor="" itemselectedimage="ScreenTool\\item\\bg_item_pushed.png">
+              </List>
+
+
+              <VerticalLayout height="58">
+                <Button name="left_packup" pos="0,0,70,30" normalimage="ScreenTool\\item\\btn_lpickup_normal.png" hotimage="ScreenTool\\item\\btn_lpickup_hot.png" pushedimage="ScreenTool\\item\\btn_lpickup_pushed.png"/>
+                <Label name="ppt_page" text="1/1" height="28" bkimage="ScreenTool\\bg_page_frame.png" showhtml="true" align="center" textcolor="FFFFFFFF"/>
+              </VerticalLayout>
+            </VerticalLayout>
+          </Container>
+
+
+          <VerticalLayout >
+            <Control />
+            <VerticalLayout name="left_action_buttons" height="66" width="67" childpadding="6">
+              <Button name="pre_action"   pos="0,0,67,30" normalimage="ScreenTool\\btn_pre_normal.png" hotimage="ScreenTool\\btn_pre_hot.png" pushedimage="ScreenTool\\btn_pre_pushed.png"  />
+              <Button name="next_action"  pos="0,0,67,30" normalimage="ScreenTool\\btn_next_normal.png" hotimage="ScreenTool\\btn_next_hot.png" pushedimage="ScreenTool\\btn_next_pushed.png" />
+            </VerticalLayout>
+            <Control height="40"  />
+          </VerticalLayout>
+
+
+        </VerticalLayout>
+
+
+      </HorizontalLayout>
+
+      <VerticalLayout name="main">
+
+        <Container>
+          <HorizontalLayout name="lay_count_down" visible="false">
+            <Control />
+            <VerticalLayout width="386">
+              <Control />
+              <HorizontalLayout height="386" name="lay_count_down" bkimage="ScreenTool\\countdown\\frame_bg.png">
+                <Control />
+                <VerticalLayout width="154">
+                  <Control />
+                  <Control height="226" name="count_down_second" />
+                  <Control />
+                </VerticalLayout>
+                <Control />
+              </HorizontalLayout>
+              <Control />
+            </VerticalLayout>
+            <Control />
+          </HorizontalLayout>
+          
+          <HorizontalLayout>
+            <Control name="tab_left_padding"/>
+            <TabLayout name="tool_tab" width="90">
+            </TabLayout>
+            <Control name="tab_right_padding"/>
+          </HorizontalLayout>
+        </Container>
+
+        <HorizontalLayout height="74">
+          <Control />
+         <Button name="vr_play" pos="0,0,214,74" normalimage="ScreenTool\\btn_vr_play.png" pushedimage="ScreenTool\\btn_vr_play_on.png" visible="false"/>
+          <Button name="vr_stop" pos="0,0,214,74" normalimage="ScreenTool\\btn_vr_stop.png" pushedimage="ScreenTool\\btn_vr_stop_on.png" visible="false"/>
+          <Control />
+        </HorizontalLayout>
+        
+        
+        
+
+      </VerticalLayout>
+
+      <HorizontalLayout width="70">
+        <VerticalLayout>
+          <Control />
+
+          <Container height="571" name="right_container">
+            <VerticalLayout name="right_hover_layout">
+              <Control />
+              <HorizontalLayout height="58">
+                <Control />
+                <Button name="right_hover"   pos="0,0,42,58" normalimage="ScreenTool\\btn_rhover_normal.png" hotimage="ScreenTool\\btn_rhover_hot.png" pushedimage="ScreenTool\\btn_rhover_pushed.png" />
+              </HorizontalLayout>
+              <Control />
+            </VerticalLayout>
+
+            <VerticalLayout name="right_tool_layout" visible="false">
+              <List  bkimage="ScreenTool\\bg_a_frame.png" name="tools" vscrollbar="false" header="hidden" itemhotimage="" itemhotbkcolor="" itemselectedimage="ScreenTool\\item\\bg_item_pushed.png">
+              </List>
+
+
+              <VerticalLayout height="58">
+                <Button name="right_packup" pos="0,0,70,30" normalimage="ScreenTool\\item\\btn_rpickup_normal.png" hotimage="ScreenTool\\item\\btn_rpickup_hot.png" pushedimage="ScreenTool\\item\\btn_rpickup_pushed.png"/>
+                <Label name="ppt_page" text="1/1" height="28" bkimage="ScreenTool\\bg_page_frame.png" showhtml="true" align="center" textcolor="FFFFFFFF"/>
+              </VerticalLayout>
+            </VerticalLayout>
+
+          </Container>
+
+          <VerticalLayout>
+            <Control />
+            <HorizontalLayout height="66">
+              <Control />
+              <VerticalLayout name="right_action_buttons" width="67" childpadding="6">
+                <Button name="pre_action"   pos="0,0,67,30" normalimage="ScreenTool\\btn_pre_normal.png" hotimage="ScreenTool\\btn_pre_hot.png" pushedimage="ScreenTool\\btn_pre_pushed.png"  />
+                <Button name="next_action"  pos="0,0,67,30" normalimage="ScreenTool\\btn_next_normal.png" hotimage="ScreenTool\\btn_next_hot.png" pushedimage="ScreenTool\\btn_next_pushed.png" />
+              </VerticalLayout>
+            </HorizontalLayout>
+            <Control height="40"/>
+          </VerticalLayout>
+
+        </VerticalLayout>
+      </HorizontalLayout>
+
+    </HorizontalLayout>
+  </Container>
+  
+
+</Window>
